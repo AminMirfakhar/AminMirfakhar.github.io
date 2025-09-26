@@ -34,3 +34,5 @@ Previously, I was an Automation Engineer at [DSDAco.](https://www.dsdaco.com/en/
 
 Prior to pursuing my PhD, I graduated with honors from Sharif University of Technology, earning a Master of Science in Mechatronics Engineering and a Bachelor of Science in a Mechanical Engineering.
 
+If you’d like to get in touch, please feel free to contact me at smirfakhar<At>tulane.edu.
+
