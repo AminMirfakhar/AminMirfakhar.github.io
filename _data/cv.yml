@@ -10,12 +10,12 @@
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Additive Manufacturing
+    - title: 
       items:
         - Slicing and path planning optimization
-    - title: Robotic and Automation
-    - title: Real time Decision Making
-    - title: Reinforcement Learning
+        - Robotic and Automation
+        - Real time Decision Making
+        - Reinforcement Learning
 
 
 - title: Education
@@ -95,7 +95,7 @@
       description: A R&D project, implemented defect detection via image processing and segmentation techniques using artificialintelligence. This project had been leaded to production.
 
 
-    - title: <a href="https://github.com/alshedivat/al-folio">parkinsons spoon</a>
+    - title: <a href="https://github.com/alshedivat/al-folio">Parkinsons spoon</a>
       institution: Human and Robot Interaction Laboratory
       year: 2018
       description: Made the feeding process become more manageable and less frustrating by prototyping Parkinson’s spoons that could remain stable even as the hand shakes with tremors.
