@@ -7,19 +7,6 @@
       value: smirfakhar@tulane.edu
 
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-
 - title: Education
   type: time_table
   contents:
@@ -40,7 +27,6 @@
       year: 2016 - 2020
 
 
-
 - title: Professional Experience
   type: time_table
   contents:
@@ -57,7 +43,6 @@
         - Worked on simulation and control of robotics systems, including a 2-DOF parallel robot and a multi-rotor drone.
 
 
-
 - title: Academic Experience
   type: time_table
   contents:
@@ -67,11 +52,11 @@
         
     - title: TA - Intro to Data Science
       institution:  Prof. Saad Hassan
-      year: Spring 2025
+      year: 2025
 
     - title: TA - Machine Component Design 2
       institution:  Prof. Roohollah Talebitooti
-      year: Spring 2019
+      year: 2019
 
 
 - title: Projects
@@ -91,5 +76,4 @@
     - year: 2029
       items:
         - Max Planck Medal
-
 
