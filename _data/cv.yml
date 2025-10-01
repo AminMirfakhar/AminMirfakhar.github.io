@@ -5,17 +5,8 @@
       value: Amin Mirfakhar
     - name: Email
       value: <a href="mailto:smirfakhar@tulane.edu"><u>smirfakhar@tulane.edu</u></a>
-
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: a
-      items:
-        - Slicing and path planning optimization
-        - Robotic and Automation
-        - Real time Decision Making
-        - Reinforcement Learning
+    - name: Academic Interests
+      value: Slicing and path planning optimization, Robotic and Automation, Real time Decision Making, Reinforcement Learning
 
 
 - title: Education
