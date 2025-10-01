@@ -9,11 +9,13 @@
 
 - title: Academic Interests
   type: nested_list
-  items:
-      - Slicing and path planning optimization
-      - Robotic and Automation
-      - Real time Decision Making
-      - Reinforcement Learning
+  contents:
+    - title: a
+      items:
+        - Slicing and path planning optimization
+        - Robotic and Automation
+        - Real time Decision Making
+        - Reinforcement Learning
 
 
 - title: Education
