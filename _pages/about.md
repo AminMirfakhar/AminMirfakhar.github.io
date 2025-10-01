@@ -6,7 +6,7 @@ subtitle: <a href='#'>PhD Student, Tulane University</a>
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: IMG_3972_Croped.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>309 Paul Hall</p>
