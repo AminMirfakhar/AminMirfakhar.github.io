@@ -69,7 +69,7 @@
 - title: Selected Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">Six Degree of Freedom Motion Simulator (Hexapod) with 2.2 Ton Payload Capacity</a>
+    - title: <a href="https://aminmirfakhar.github.io/projects/1_project.html">Six Degree of Freedom Motion Simulator (Hexapod) with 2.2 Ton Payload Capacity</a>
       institution: Durali System Design and Automation
       year: 2023 - 2024
       description: Kinematics/dynamics modeling, PLC programming (Siemens S7-1517), servo driver integration (Lenze i950), and HMI design.
