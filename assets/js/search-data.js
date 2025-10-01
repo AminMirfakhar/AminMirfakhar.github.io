@@ -103,7 +103,7 @@ ninja.data = [{
         title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.linkedin.com/in/aminmirfakhar", "_blank");
+          window.open("https://www.linkedin.com/in/amin-mirfakhar-aa7398aa", "_blank");
         },
       },{
         id: 'social-rss',
