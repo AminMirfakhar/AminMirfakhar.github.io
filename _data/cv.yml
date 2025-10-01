@@ -6,9 +6,12 @@
     - name: Email
       value: <a href="mailto:smirfakhar@tulane.edu"><u>smirfakhar@tulane.edu</u></a>
     - name: Academic Interests
-      value: <u>Slicing and path planning optimization</u><br> <u>Robotic and Automation</u>, <u>Real time Decision Making</u>, <u>Reinforcement Learning</u>
+      value: <ul>
+      <li class="sub-link">Slicing and path planning optimization</li>
+      <li class="sub-link">Slicing and path planning optimization</li>
+    </ul>
 
-
+      
 - title: Education
   type: time_table
   contents:
