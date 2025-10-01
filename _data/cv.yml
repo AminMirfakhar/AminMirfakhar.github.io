@@ -32,13 +32,13 @@
   type: time_table
   contents:
     - title: Automation Engineer
-      institution: Durali System Design and Automation (DSDA)
+      institution: Durali System Design and Automation <a href="https://www.dsdaco.com/en/">(DSDA)</a>
       year: 2022 - 2025
       description:
         - Contributed to multiple R&D and production projects in automation, image processing,robotics, and dynamic system modeling.
         
     - title: Research Assistant
-      institution: Human and Robot Interaction Laboratory (Taarlab)
+      institution: Human and Robot Interaction Laboratory <a href="https://taarlab.com/">(Taarlab)</a>
       year: 2018 - 2020
       description:
         - Worked on simulation and control of robotics systems, including a 2-DOF parallel robot and a multi-rotor drone.
