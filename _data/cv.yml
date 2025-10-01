@@ -4,7 +4,7 @@
     - name: Full Name
       value: Amin Mirfakhar
     - name: Email
-      value: smirfakhar@tulane.edu
+      value: <a href="mailto:smirfakhar@tulane.edu"><u>smirfakhar@tulane.edu</u></a>
 
 
 - title: Education
@@ -52,11 +52,11 @@
         
     - title: TA - Intro to Data Science
       institution:  Prof. Saad Hassan
-      year: 2025
+      year: Spring 2025
 
     - title: TA - Machine Component Design 2
       institution:  Prof. Roohollah Talebitooti
-      year: 2019
+      year: Spring 2019
 
 
 - title: Projects
