@@ -47,7 +47,7 @@
       description:
         - Contributed to multiple R&D and production projects in automation, image processing,robotics, and dynamic system modeling.
 
-  - title: Co-Founder and Chief Technology Officer (CTO)
+    - title: Co-Founder and Chief Technology Officer (CTO)
       institution: Rebuild Robotics <a href="https://rebuildrobotics.io/">(RebuildRobotics)</a>
       year: 2022 - 2025
       description:
@@ -84,18 +84,18 @@
       year: 2023 - 2024
       description: Kinematics/dynamics modeling, PLC programming (Siemens S7-1517), servo driver integration (Lenze i950), and HMI design.
 
-      - title: <a href="https://github.com/alshedivat/al-folio">Autonomous Drywall Installation Robot</a>
+    - title: <a href="https://github.com/alshedivat/al-folio">Autonomous Drywall Installation Robot</a>
       institution: Rebuild Robotics
       year: 2023 - 2024
       description: Electrical component selection, programming, and interface development.
 
-      - title: <a href="https://github.com/alshedivat/al-folio">Conveyor Belt Monitoring System</a>
+    - title: <a href="https://github.com/alshedivat/al-folio">Conveyor Belt Monitoring System</a>
       institution: Durali System Design and Automation
       year: 2022 - 2023
       description: A R&D project, implemented defect detection via image processing and segmentation techniques using artificialintelligence. This project had been leaded to production.
 
 
-      - title: <a href="https://github.com/alshedivat/al-folio">parkinsons spoon</a>
+    - title: <a href="https://github.com/alshedivat/al-folio">parkinsons spoon</a>
       institution: Human and Robot Interaction Laboratory
       year: 2018
       description: Made the feeding process become more manageable and less frustrating by prototyping Parkinson’s spoons that could remain stable even as the hand shakes with tremors.
