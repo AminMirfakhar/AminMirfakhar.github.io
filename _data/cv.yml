@@ -7,6 +7,17 @@
       value: <a href="mailto:smirfakhar@tulane.edu"><u>smirfakhar@tulane.edu</u></a>
 
 
+- title: Academic Interests
+  type: nested_list
+  contents:
+    - title: Additive Manufacturing
+      items:
+        - Slicing and path planning optimization
+    - title: Robotic and Automation
+    - title: Real time Decision Making
+    - title: Reinforcement Learning
+
+
 - title: Education
   type: time_table
   contents:
@@ -35,6 +46,12 @@
       year: 2022 - 2025
       description:
         - Contributed to multiple R&D and production projects in automation, image processing,robotics, and dynamic system modeling.
+
+  - title: Co-Founder and Chief Technology Officer (CTO)
+      institution: Rebuild Robotics <a href="https://rebuildrobotics.io/">(Taarlab)</a>
+      year: 2022 - 2025
+      description:
+        - Worked on simulation and control of robotics systems, including a 2-DOF parallel robot and a multi-rotor drone.
         
     - title: Research Assistant
       institution: Human and Robot Interaction Laboratory <a href="https://taarlab.com/">(Taarlab)</a>
@@ -59,21 +76,41 @@
       year: Spring 2019
 
 
-- title: Projects
+- title: Selected Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: <a href="https://github.com/alshedivat/al-folio">Six Degree of Freedom Motion Simulator (Hexapod) with 2.2 Ton Payload Capacity</a>
+      institution: Durali System Design and Automation
+      year: 2023 - 2024
+      description: Kinematics/dynamics modeling, PLC programming (Siemens S7-1517), servo driver integration (Lenze i950), and HMI design.
+
+      - title: <a href="https://github.com/alshedivat/al-folio">Autonomous Drywall Installation Robot</a>
+      institution: Rebuild Robotics
+      year: 2023 - 2024
+      description: Electrical component selection, programming, and interface development.
+
+      - title: <a href="https://github.com/alshedivat/al-folio">Conveyor Belt Monitoring System</a>
+      institution: Durali System Design and Automation
+      year: 2022 - 2023
+      description: A R&D project, implemented defect detection via image processing and segmentation techniques using artificialintelligence. This project had been leaded to production.
+
+
+      - title: <a href="https://github.com/alshedivat/al-folio">parkinsons spoon</a>
+      institution: Human and Robot Interaction Laboratory
+      year: 2018
+      description: Made the feeding process become more manageable and less frustrating by prototyping Parkinson’s spoons that could remain stable even as the hand shakes with tremors.
+
+
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2024
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - Best International Invention Award, ISIF'24 (Istanbul International Inventions Fair), Turkey
+        
+    - year: 2020
       items:
-        - Max Planck Medal
+        - Direct Admission Offer to M.Sc. Programs in Mechatronics, Sharif and Amir Kabir Universities
+
 
