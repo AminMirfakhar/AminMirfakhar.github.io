@@ -2,7 +2,7 @@
 layout: page
 title: Six Degree of Freedom Motion Simulator
 description: with background image
-img: assets/img/publication_preview/brownian-motion.gif
+img: assets/img/projects/AxisXtreme-8.jpg
 importance: 1
 category: work
 related_publications: true
