@@ -17,14 +17,14 @@ github_username: https://github.com/AminMirfakhar # your GitHub user name
 # gitlab_username: # your GitLab user name
 # hal_id: # your HAL id (https://hal.science/)
 # ieee_id: # your ieeexplore.ieee.org/author/id
-inspirehep_id: https://www.linkedin.com/in/amin-mirfakhar-aa7398aa/ # Inspire HEP author ID
+# inspirehep_id: # Inspire HEP author ID
 # instagram_id: # your instagram id
 # kaggle_id: # your kaggle id
 # keybase_username: # your keybase user name
 # lastfm_id: # your lastfm id
 # lattes_id: # your ID on Lattes (Brazilian Lattes CV)
 # leetcode_id: # your LeetCode id
-linkedin_username: Amin Mirfakhar # your LinkedIn user name
+linkedin_username: aminmirfakhar # your LinkedIn user name
 # mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 # medium_username: # your Medium username
 # orcid_id: # your ORCID ID
@@ -34,7 +34,7 @@ linkedin_username: Amin Mirfakhar # your LinkedIn user name
 # quora_username: # your Quora username
 # research_gate_profile: # your profile on ResearchGate
 rss_icon: true # comment this line to hide the RSS icon
-scholar_userid: https://scholar.google.com/citations?user=RZwyq8IAAAAJ&hl=en&oi=ao # your Google Scholar ID
+scholar_userid: RZwyq8IAAAAJ # your Google Scholar ID
 # scopus_id: # your profile on Scopus
 # semanticscholar_id: # your Semantic Scholar ID
 # spotify_id: # your spotify id
