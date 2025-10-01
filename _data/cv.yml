@@ -9,8 +9,7 @@
 
 - title: Academic Interests
   type: nested_list
-  contents:
-    items:
+  items:
       - Slicing and path planning optimization
       - Robotic and Automation
       - Real time Decision Making
@@ -63,15 +62,15 @@
   type: time_table
   contents:
     - title: TA - Intro to Machine Learning
-      institution: Prof. Jihun Hamm
+      institution: Tulane University, Prof. Jihun Hamm
       year: Fall 2025
         
     - title: TA - Intro to Data Science
-      institution:  Prof. Saad Hassan
+      institution:  Tulane University, Prof. Saad Hassan
       year: Spring 2025
 
     - title: TA - Machine Component Design 2
-      institution:  Prof. Roohollah Talebitooti
+      institution:  IUST, Prof. Roohollah Talebitooti
       year: Spring 2019
 
 
@@ -94,7 +93,7 @@
       description: A R&D project, implemented defect detection via image processing and segmentation techniques using artificialintelligence. This project had been leaded to production.
 
 
-    - title: <a href="https://github.com/alshedivat/al-folio">Parkinsons spoon</a>
+    - title: <a href="https://github.com/alshedivat/al-folio">Parkinsons Spoon</a>
       institution: Human and Robot Interaction Laboratory
       year: 2018
       description: Made the feeding process become more manageable and less frustrating by prototyping Parkinson’s spoons that could remain stable even as the hand shakes with tremors.
