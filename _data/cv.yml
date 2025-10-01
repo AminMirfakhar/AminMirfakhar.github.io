@@ -1,10 +1,23 @@
 - title: General Information
   type: map
   contents:
-    - name: Full Name
+    - name: Full Name:
       value: Amin Mirfakhar
-    - name: Email
+    - name: Email:
       value: smirfakhar@tulane.edu
+
+
+- title: Academic Interests
+  type: nested_list
+  contents:
+    - title: Topic 1.
+      items:
+        - Description 1.
+        - Description 2.
+    - title: Topic 2.
+      items:
+        - Description 1.
+        - Description 2.
 
 
 - title: Education
@@ -32,7 +45,7 @@
   type: time_table
   contents:
     - title: Automation Engineer
-      institution: Durali System Design and Automation <a href="https://www.dsdaco.com/en/">(DSDA)</a>
+      institution: Durali System Design and Automation <a href="https://www.dsdaco.com/en/">(DSDAco)</a>
       year: 2022 - 2025
       description:
         - Contributed to multiple R&D and production projects in automation, image processing,robotics, and dynamic system modeling.
@@ -48,17 +61,18 @@
 - title: Academic Experience
   type: time_table
   contents:
-    - title: Automation Engineer
-      institution: Durali System Design and Automation <a href="https://www.dsdaco.com/en/">(DSDA)</a>
-      year: 2022 - 2025
-      description:
-        - Contributed to multiple R&D and production projects in automation, image processing,robotics, and dynamic system modeling.
+    - title: TA - Intro to Machine Learning
+      institution: Prof. Jihun Hamm
+      year: Fall 2025
         
-    - title: Research Assistant
-      institution: Human and Robot Interaction Laboratory <a href="https://taarlab.com/">(Taarlab)</a>
-      year: 2018 - 2020
-      description:
-        - Worked on simulation and control of robotics systems, including a 2-DOF parallel robot and a multi-rotor drone.
+    - title: TA - Intro to Data Science
+      institution:  Prof. Saad Hassan
+      year: Spring 2025
+
+    - title: TA - Machine Component Design 2
+      institution:  Prof. Roohollah Talebitooti
+      year: Spring 2019
+
 
 - title: Projects
   type: time_table
@@ -78,15 +92,4 @@
       items:
         - Max Planck Medal
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
 
