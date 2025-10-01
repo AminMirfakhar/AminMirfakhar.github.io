@@ -99,18 +99,11 @@ ninja.data = [{
           window.open("https://github.com/https://github.com/AminMirfakhar", "_blank");
         },
       },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://inspirehep.net/authors/https://www.linkedin.com/in/amin-mirfakhar-aa7398aa/", "_blank");
-        },
-      },{
         id: 'social-linkedin',
         title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.linkedin.com/in/Amin Mirfakhar", "_blank");
+          window.open("https://www.linkedin.com/in/aminmirfakhar", "_blank");
         },
       },{
         id: 'social-rss',
@@ -124,7 +117,7 @@ ninja.data = [{
         title: 'Google Scholar',
         section: 'Socials',
         handler: () => {
-          window.open("https://scholar.google.com/citations?user=https://scholar.google.com/citations?user=RZwyq8IAAAAJ&hl=en&oi=ao", "_blank");
+          window.open("https://scholar.google.com/citations?user=RZwyq8IAAAAJ", "_blank");
         },
       },{
       id: 'light-theme',
