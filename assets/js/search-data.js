@@ -53,7 +53,7 @@ ninja.data = [{
               window.location.href = "/projects/1_project.html";
             },},{id: "projects-six-degree-of-freedom-racing-car-motion-simulator-hexapod",
           title: 'Six Degree of Freedom Racing Car Motion Simulator (Hexapod)',
-          description: "a project with a background image and giscus comments",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project.html";
             },},{
