@@ -48,7 +48,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-six-degree-of-freedom-motion-simulator",
           title: 'Six Degree of Freedom Motion Simulator',
-          description: "with background image",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project.html";
             },},{id: "projects-six-degree-of-freedom-racing-car-motion-simulator-hexapod",
