@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Six Degree of Freedom Motion Simulator
-description: with background image
+description:
 img: assets/img/projects/AxisXtreme-8.jpg
 importance: 1
 category: work
