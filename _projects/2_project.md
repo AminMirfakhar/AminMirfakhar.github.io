@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Six Degree of Freedom Racing Car Motion Simulator (Hexapod)
-description: a project with a background image and giscus comments
+description:
 img: assets/img/projects/Racing.jpg
 importance: 2
 category: work
