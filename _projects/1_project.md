@@ -5,6 +5,6 @@ description:
 img: assets/img/projects/AxisXtreme-8.jpg
 importance: 1
 category: work
-related_publications: true
+related_publications: False
 ---
 
