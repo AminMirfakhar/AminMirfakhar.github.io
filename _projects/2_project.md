@@ -5,6 +5,6 @@ description:
 img: assets/img/projects/Racing.jpg
 importance: 2
 category: work
-giscus_comments: true
+related_publications: False
 ---
 
