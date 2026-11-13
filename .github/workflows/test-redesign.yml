@@ -1,0 +1,33 @@
+
+name: Test Engineering Redesign
+
+on:
+  push:
+    branches:
+      - engineering-redesign
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build Jekyll Website
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Build website
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build
