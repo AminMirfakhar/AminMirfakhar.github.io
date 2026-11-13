@@ -1,0 +1,12 @@
+- id: industrial
+  label: Industrial Project
+  description: Industry and company engineering work
+- id: academic-research
+  label: Academic Research
+  description: Research work conducted in a laboratory
+- id: academic-project
+  label: Academic Project
+  description: University engineering design and build
+- id: personal
+  label: Personal Project
+  description: Self-initiated engineering exploration

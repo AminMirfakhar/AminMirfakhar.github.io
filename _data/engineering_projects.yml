@@ -1,0 +1,272 @@
+# Canonical project directory: exactly twelve unique projects.
+# Technical categories are multi-select; project_type is a separate classification.
+- id: hexapod
+  title: 6-DOF Motion Simulator — 2.2-Ton Payload
+  period: 2023–2024
+  organization: DSDA
+  project_type: industrial
+  categories:
+  - robotics
+  - automation
+  - mechanical-design
+  - dynamic-modeling
+  technologies:
+  - Siemens S7-1517 PLC
+  - Lenze i950
+  - Kinematics
+  - Dynamics
+  - HMI
+  image: hexapod.svg
+  summary: Kinematic and dynamic modeling, PLC programming, servo integration, and HMI design for an
+    industrial six-degree-of-freedom motion simulator with a 2.2-ton payload capacity.
+  challenge: Integrating mechanical modeling with real-time control of a high-payload parallel motion
+    platform.
+  contributions:
+  - Kinematic and dynamic modeling
+  - Siemens S7-1517 PLC programming
+  - Lenze i950 servo-drive integration
+  - Human-machine interface (HMI) design
+  outcome: Industrial motion simulator development; performance measurements can be added when documented.
+  url: /projects/hexapod/
+- id: drywall
+  title: Autonomous Drywall Installation Robot
+  period: '2024'
+  organization: Rebuild Robotics
+  project_type: industrial
+  categories:
+  - robotics
+  - automation
+  technologies:
+  - Electrical integration
+  - Programming
+  - Human-machine interfaces
+  image: drywall.svg
+  summary: Electrical component selection, programming, and interface development for an autonomous
+    drywall installation robot.
+  challenge: Coordinating electrical components and software interfaces for a construction-robotics
+    application.
+  contributions:
+  - Electrical component selection
+  - Programming
+  - Interface development
+  outcome: Engineering development contributions; operational performance information has not been provided.
+  url: /projects/drywall/
+- id: dm45-drill
+  title: DM45 Blasthole Drill Renovation
+  period: '2024'
+  organization: DSDA
+  project_type: industrial
+  categories:
+  - automation
+  technologies:
+  - GPS-based navigation
+  - HMI
+  - Industrial equipment
+  image: ''
+  summary: Designed a GPS-based HMI navigation system to support drilling precision and monitoring on
+    a DM45 blasthole drill.
+  challenge: Providing operators with navigation and monitoring information for a blasthole drilling
+    system.
+  contributions:
+  - Designed the GPS-based HMI navigation system
+  - Supported drilling precision and monitoring through the interface
+  outcome: Industrial renovation project; measured accuracy and deployment results are not documented
+    here.
+  url: /projects/dm45-drill/
+- id: pipeline-inspection
+  title: Pipeline Inspection Robot
+  period: '2023'
+  organization: DSDA
+  project_type: industrial
+  categories:
+  - robotics
+  - mechanical-design
+  technologies:
+  - Mechanical design
+  - Simulation
+  - Prototyping
+  image: ''
+  summary: Involved in the design, simulation, and prototyping of a pipeline inspection robot.
+  challenge: Developing a robotic inspection system suitable for constrained pipe environments.
+  contributions:
+  - Design contributions
+  - Simulation
+  - Prototyping
+  outcome: Prototype development is documented in the project summary; detailed testing results can
+    be added later.
+  url: /projects/pipeline-inspection/
+- id: pellet-sizing
+  title: Pellet Size Monitoring System
+  period: '2022'
+  organization: DSDA
+  project_type: industrial
+  categories:
+  - image-processing
+  - automation
+  technologies:
+  - Image processing
+  - Industrial vision
+  - Pellet detection
+  image: ''
+  summary: Developed image-processing algorithms for iron ore pellet detection in an R&D project that
+    progressed to production.
+  challenge: Detecting iron ore pellets from industrial images to support process monitoring.
+  contributions:
+  - Developed image-processing algorithms for pellet detection
+  - Contributed during R&D and progression toward production
+  outcome: The project progressed to production, as described in the supplied project list. Specific
+    detection metrics have not been supplied.
+  url: /projects/pellet-sizing/
+- id: conveyor
+  title: Conveyor Belt Monitoring System
+  period: '2022'
+  organization: DSDA
+  project_type: industrial
+  categories:
+  - image-processing
+  - automation
+  technologies:
+  - Artificial intelligence
+  - Image segmentation
+  - Defect detection
+  image: conveyor.svg
+  summary: Implemented defect detection using image processing and segmentation techniques with artificial
+    intelligence; the project progressed to production.
+  challenge: Identifying conveyor belt defects using industrial image data.
+  contributions:
+  - Implemented image-based defect detection
+  - Applied segmentation techniques and AI methods
+  outcome: The project progressed to production, as described in the supplied project list; accuracy
+    measurements have not been supplied.
+  url: /projects/conveyor/
+- id: parallel-robot
+  title: 2-DOF Parallel Robot Control
+  period: '2018'
+  organization: Taarlab
+  project_type: academic-research
+  categories:
+  - robotics
+  - automation
+  - dynamic-modeling
+  technologies:
+  - Control algorithms
+  - Parallel robotics
+  - Programming
+  image: ''
+  summary: Developed control algorithms and programming for a two-degree-of-freedom parallel robot at
+    Taarlab.
+  challenge: Controlling a parallel robotic mechanism with two degrees of freedom.
+  contributions:
+  - Control algorithm development
+  - Programming
+  outcome: Research work at Taarlab; specific algorithm performance and its relationship to published
+    work should be verified before adding.
+  url: /projects/parallel-robot/
+- id: continuum-arm
+  title: Multi-Continuum Robotic Arm
+  period: '2021'
+  organization: Self-initiated
+  project_type: personal
+  categories:
+  - robotics
+  - mechanical-design
+  - automation
+  technologies:
+  - Robotic arm
+  - Design
+  - Control
+  image: ''
+  summary: Self-initiated robotic arm project involving design and control.
+  challenge: Exploring the design and control of a multi-continuum robotic arm.
+  contributions:
+  - Project concept and design
+  - Control development
+  outcome: Personal exploration; validated performance data has not been provided.
+  url: /projects/continuum-arm/
+- id: rock-breaker
+  title: Stationary Rock Breaker System
+  period: '2024'
+  organization: DSDA
+  project_type: industrial
+  categories:
+  - dynamic-modeling
+  - mechanical-design
+  technologies:
+  - MATLAB
+  - ADAMS
+  - Kinematics
+  - Dynamics
+  image: ''
+  summary: Kinematic and dynamic modeling of a four-link, four-degree-of-freedom stationary rock breaker
+    using MATLAB and ADAMS.
+  challenge: Modeling articulated motion and dynamics for an industrial rock breaker mechanism.
+  contributions:
+  - Modeled four-link, four-DOF mechanism kinematics and dynamics
+  - Used MATLAB and ADAMS
+  outcome: Completed modeling work is described in the project list; results and validation plots can
+    be added later.
+  url: /projects/rock-breaker/
+- id: racing-simulator
+  title: 6-DOF Racing Car Motion Simulator — 150 kg
+  period: '2024'
+  organization: DSDA
+  project_type: industrial
+  categories:
+  - mechanical-design
+  - dynamic-modeling
+  technologies:
+  - SolidWorks
+  - 3D CAD
+  - Mathematical modeling
+  image: ''
+  summary: Mathematical modeling and SolidWorks 3D CAD design of a six-degree-of-freedom racing motion
+    simulator with a 150 kg payload capacity.
+  challenge: Designing the mechanical geometry of a compact six-axis motion simulator.
+  contributions:
+  - Mathematical modeling
+  - SolidWorks 3D CAD design
+  outcome: Design work documented; experimental payload and motion metrics have not been supplied.
+  url: /projects/racing-simulator/
+- id: camera-housing
+  title: Camera and Illumination Housing for Harsh Environments
+  period: '2024'
+  organization: DSDA
+  project_type: industrial
+  categories:
+  - mechanical-design
+  technologies:
+  - Stainless steel
+  - CAD design
+  - Industrial imaging enclosures
+  image: ''
+  summary: Designed stainless-steel housings for industrial camera and illumination systems in mining
+    environments; designs were used in the pellet monitoring and conveyor monitoring projects.
+  challenge: Protecting imaging equipment in harsh mining environments while supporting illumination
+    and imaging needs.
+  contributions:
+  - Designed stainless-steel camera and illumination enclosures
+  - Developed housings used in two industrial monitoring projects
+  outcome: Designs used in the company’s pellet size and conveyor belt monitoring systems, as described
+    in the supplied project list.
+  url: /projects/camera-housing/
+- id: fdm-printers
+  title: FDM 3D Printers — Cartesian and Core-XY
+  period: '2019'
+  organization: IUST
+  project_type: academic-project
+  categories:
+  - mechanical-design
+  - additive-manufacturing
+  technologies:
+  - Cartesian FDM
+  - Core-XY FDM
+  - 3D printing
+  image: ''
+  summary: Designed and built Cartesian and Core-XY FDM 3D printers at IUST.
+  challenge: Designing and building working fused-deposition modeling printer mechanisms.
+  contributions:
+  - Designed Cartesian and Core-XY printer systems
+  - Built the printers
+  outcome: Design and build documented in the supplied project list; print-quality measurements can
+    be added later.
+  url: /projects/fdm-printers/
