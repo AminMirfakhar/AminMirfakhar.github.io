@@ -5,10 +5,10 @@ permalink: /
 nav: false
 ---
 <link rel="stylesheet" href="{{ '/assets/css/engineering.css' | relative_url }}">
-{% include am-theme-control.html %}
-
 <div class="am-site">
-  <section class="am-hero" aria-labelledby="am-hero-title">
+  <section class="am-robot-hero am-hero" aria-labelledby="am-hero-title">
+    {% include am-ur5e-hero.html %}
+
     <div class="am-hero-copy">
       <p class="am-eyebrow"><span class="am-dot"></span> ROBOTICS · AUTOMATION · INTELLIGENT MANUFACTURING</p>
       <h1 id="am-hero-title">Engineering intelligent systems <em>for the real world.</em></h1>
@@ -21,7 +21,8 @@ nav: false
     </div>
     <div class="am-hero-visual">
       <img class="am-portrait" src="{{ '/assets/img/IMG_3972_Croped.jpg' | relative_url }}" alt="Portrait of Amin Mirfakhar" loading="eager">
-      <div class="am-image-label"><span>AM / 01</span><span>DESIGN · CONTROL · RESEARCH</span></div>
+      <!-- <div class="am-image-label"><span>AM / 01</span><span>DESIGN · CONTROL · RESEARCH</span></div> -->
+      <div class="am-image-label"></div>
     </div>
   </section>
 

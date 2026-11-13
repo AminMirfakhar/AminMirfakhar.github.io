@@ -1,6 +1,5 @@
 {% assign project = site.data.engineering_projects | where: "id", page.project_id | first %}
 <link rel="stylesheet" href="{{ '/assets/css/engineering.css' | relative_url }}">
-{% include am-theme-control.html %}
 {% if project %}
 <article class="am-site am-detail">
   <nav class="am-breadcrumb" aria-label="Breadcrumb"><a href="{{ '/projects/' | relative_url }}">← All projects</a></nav>

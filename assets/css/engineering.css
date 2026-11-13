@@ -88,12 +88,91 @@ html[data-theme="dark"] .am-context-personal{background:#63411f;color:#ffe6c7}
 
 .am-feature-glyph{font-size:5rem;font-weight:900;letter-spacing:-.07em;color:#375168;line-height:1}
 
-/* Reliable local theme switcher and both page/background palettes */
-.am-theme-toolbar{max-width:1120px;margin:.75rem auto 0;display:flex;justify-content:flex-end}
-.am-theme-button{border:1px solid var(--am-line,#dce3e8);border-radius:999px;background:var(--am-paper,#f4f7f8);color:var(--am-ink,#152338);font-size:.82rem;font-weight:750;padding:.5rem .85rem;cursor:pointer;display:flex;align-items:center;gap:.35rem}
-.am-theme-button:hover,.am-theme-button:focus-visible{outline:2px solid #eb7047;outline-offset:2px}
-html[data-theme="dark"]{color-scheme:dark;--global-bg-color:#13202d;--global-text-color:#eef4f8}
-html[data-theme="dark"] body{background-color:var(--global-bg-color,#13202d);color:var(--global-text-color,#eef4f8)}
-html[data-theme="dark"] .am-theme-toolbar{--am-ink:#eef4f8;--am-line:#425463;--am-paper:#263847}
-html[data-theme="dark"] .am-catalog .am-project-card,html[data-theme="dark"] .am-detail .am-project-card{background:#1c2b37}
-html[data-theme="dark"] .am-site .am-chips span{background:#263847;color:#dae5ea}
+
+/* Sidebar directory: filters grouped like a professional catalog */
+.am-directory-layout{display:grid;grid-template-columns:250px minmax(0,1fr);gap:2rem;align-items:start;margin:1rem 0 5rem}
+.am-filter-sidebar{position:sticky;top:92px;border:1px solid var(--am-line);border-radius:9px;overflow:hidden;background:var(--am-paper);color:var(--am-ink)}
+.am-filter-sidebar-heading{display:flex;align-items:center;justify-content:space-between;gap:.35rem;padding:1rem .9rem;border-bottom:1px solid var(--am-line)}
+.am-filter-sidebar-heading>div{display:flex;align-items:center;gap:.4rem}.am-filter-sidebar-heading strong{font-size:.94rem;letter-spacing:-.01em}
+.am-filter-icon{font-size:1.05rem;color:var(--am-orange)}
+.am-sidebar-clear{border:none;background:none;color:#b74728;cursor:pointer;font-weight:750;font-size:.75rem;text-decoration:underline;text-underline-offset:3px;white-space:nowrap;padding:.25rem}
+.am-sidebar-clear:disabled{opacity:.4;cursor:default;text-decoration:none}
+.am-filter-group{margin:0;border-bottom:1px solid var(--am-line)}
+.am-filter-group>summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:.7rem;padding:.88rem 1rem;font-size:.9rem;font-weight:800;background:rgba(127,150,172,.07)}
+.am-filter-group>summary::-webkit-details-marker{display:none}
+.am-accordion-indicator:after{content:'+';font-size:1.4rem;line-height:.7;font-weight:400;color:var(--am-muted)}
+.am-filter-group[open] .am-accordion-indicator:after{content:'−'}
+.am-filter-options{padding:.45rem .8rem .65rem;margin:0;border:0;min-width:0}
+.am-filter-option{display:flex;align-items:center;gap:.58rem;min-height:39px;padding:.3rem .12rem;cursor:pointer;color:var(--am-ink);font-size:.84rem;font-weight:500;margin:0}
+.am-filter-option+.am-filter-option{border-top:1px solid var(--am-line)}
+.am-filter-option input{accent-color:var(--am-orange);width:17px;height:17px;flex:0 0 17px;cursor:pointer;margin:0}
+.am-filter-option-name{flex:1;min-width:0;line-height:1.3}
+.am-option-count{background:#dbe9f6;color:#1d4b72;border-radius:7px;padding:.15rem .42rem;min-width:1.75rem;text-align:center;font-size:.75rem;font-weight:800}
+.am-filter-help{font-size:.75rem;color:var(--am-muted);line-height:1.5;margin:0;padding:.9rem 1rem}
+.am-visually-hidden{position:absolute!important;clip:rect(0,0,0,0);width:1px;height:1px;overflow:hidden;white-space:nowrap}
+.am-directory-layout .am-filter-section{padding:0;min-width:0}
+.am-directory-layout .am-filter-section .am-section-top{margin-bottom:1rem}
+.am-directory-layout .am-filter-section .am-section-top h2{margin:.25rem 0 0}
+.am-directory-layout .am-filter-tools{margin-bottom:1.25rem}
+.am-directory-layout #am-result-count{margin:0;font-size:.82rem;white-space:nowrap}
+.am-directory-layout .am-project-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.am-filter-group>summary:focus-visible,.am-sidebar-clear:focus-visible,.am-filter-option input:focus-visible{outline:2px solid var(--am-orange);outline-offset:2px}
+html[data-theme="dark"] .am-filter-sidebar{background:var(--am-paper)}
+html[data-theme="dark"] .am-option-count{background:#294a61;color:#e5f2ff}
+@media(max-width:990px){.am-directory-layout{grid-template-columns:225px minmax(0,1fr);gap:1.15rem}.am-directory-layout .am-project-grid{grid-template-columns:1fr}}
+@media(max-width:680px){.am-directory-layout{grid-template-columns:1fr;gap:1.5rem}.am-filter-sidebar{position:static}.am-directory-layout .am-project-grid{grid-template-columns:1fr}.am-directory-layout .am-filter-section .am-section-top{align-items:center}}
+
+
+/* Widen ONLY the Projects page */
+@media (min-width: 992px) {
+  .am-site.am-inner.am-catalog {
+    width: min(1400px, calc(100vw - 48px)) !important;
+    max-width: none !important;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Sidebar + project cards */
+  .am-catalog .am-directory-layout {
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1fr);
+    gap: 32px;
+  }
+
+  /* Two project cards per row */
+  .am-catalog .am-project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+
+/* Project card image proportions */
+.am-catalog .am-project-art {
+  display: block;
+  width: 100%;
+  height: auto !important;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.am-catalog .am-project-art img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* Hide automatic page headings on custom engineering pages */
+body:has(.am-site) .post-header {
+  display: none !important;
+}
+
+body:has(.am-site)  .post {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}

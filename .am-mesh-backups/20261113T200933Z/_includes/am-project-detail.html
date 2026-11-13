@@ -1,0 +1,27 @@
+{% assign project = site.data.engineering_projects | where: "id", page.project_id | first %}
+<link rel="stylesheet" href="{{ '/assets/css/engineering.css' | relative_url }}">
+{% include am-theme-control.html %}
+{% if project %}
+<article class="am-site am-detail">
+  <nav class="am-breadcrumb" aria-label="Breadcrumb"><a href="{{ '/projects/' | relative_url }}">← All projects</a></nav>
+  <header class="am-page-header">
+    <div class="am-project-meta">{% for type in site.data.engineering_project_types %}{% if type.id == project.project_type %}<span class="am-context-badge am-context-{{ type.id }}">{{ type.label | escape }}</span>{% endif %}{% endfor %}<span class="am-project-tags">{{ project.organization | escape }} · {{ project.period | escape }}</span></div>
+    <h1>{{ project.title | escape }}<span class="am-orange">.</span></h1>
+    <p>{{ project.summary | escape }}</p>
+    <div class="am-chips" aria-label="Project categories">{% for cat in site.data.engineering_categories %}{% if project.categories contains cat.id %}<a href="{{ '/projects/' | relative_url }}?category={{ cat.id | url_encode }}" class="am-category-chip">{{ cat.label | escape }}</a>{% endif %}{% endfor %}</div>
+  </header>
+  {% if project.image != empty and project.image %}
+    <div class="am-detail-visual"><img src="{{ '/assets/img/engineering/' | append: project.image | relative_url }}" alt="Conceptual illustration for {{ project.title | escape }}" loading="eager"><small>Conceptual illustration — replace with photographs or CAD images of the actual project.</small></div>
+  {% endif %}
+  <div class="am-detail-layout">
+    <div>
+      <section><h2>Engineering challenge</h2><p>{{ project.challenge | escape }}</p></section>
+      <section><h2>My contributions</h2><ul>{% for item in project.contributions %}<li>{{ item | escape }}</li>{% endfor %}</ul></section>
+      <section><h2>Results & current status</h2><p>{{ project.outcome | escape }}</p></section>
+      <section><h2>Media & documentation</h2><p class="am-muted">Additional project photographs, CAD renders, code, and demonstration videos will be added when available.</p></section>
+    </div>
+    <aside class="am-detail-aside"><h2>Project at a glance</h2><dl><dt>Project type</dt><dd>{% for type in site.data.engineering_project_types %}{% if type.id == project.project_type %}{{ type.label | escape }}{% endif %}{% endfor %}</dd><dt>Organization</dt><dd>{{ project.organization | escape }}</dd><dt>Period</dt><dd>{{ project.period | escape }}</dd><dt>Technologies</dt><dd><div class="am-chips">{% for tech in project.technologies %}<span>{{ tech | escape }}</span>{% endfor %}</div></dd></dl></aside>
+  </div>
+  <a class="am-back" href="{{ '/projects/' | relative_url }}">← Browse all projects</a>
+</article>
+{% else %}<p>Project information not found. <a href="{{ '/projects/' | relative_url }}">Back to projects</a></p>{% endif %}
