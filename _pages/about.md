@@ -5,6 +5,7 @@ permalink: /
 nav: false
 ---
 <link rel="stylesheet" href="{{ '/assets/css/engineering.css' | relative_url }}">
+{% include am-theme-control.html %}
 
 <div class="am-site">
   <section class="am-hero" aria-labelledby="am-hero-title">

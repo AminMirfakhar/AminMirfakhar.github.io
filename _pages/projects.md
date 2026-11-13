@@ -7,6 +7,7 @@ nav: true
 nav_order: 3
 ---
 <link rel="stylesheet" href="{{ '/assets/css/engineering.css' | relative_url }}">
+{% include am-theme-control.html %}
 <div class="am-site am-inner am-catalog">
   <header class="am-page-header">
     <p class="am-kicker">ENGINEERING PORTFOLIO</p>

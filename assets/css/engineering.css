@@ -87,3 +87,13 @@ html[data-theme="dark"] .am-context-personal{background:#63411f;color:#ffe6c7}
 @media(prefers-reduced-motion:reduce){.am-type-tile{transition:none}}
 
 .am-feature-glyph{font-size:5rem;font-weight:900;letter-spacing:-.07em;color:#375168;line-height:1}
+
+/* Reliable local theme switcher and both page/background palettes */
+.am-theme-toolbar{max-width:1120px;margin:.75rem auto 0;display:flex;justify-content:flex-end}
+.am-theme-button{border:1px solid var(--am-line,#dce3e8);border-radius:999px;background:var(--am-paper,#f4f7f8);color:var(--am-ink,#152338);font-size:.82rem;font-weight:750;padding:.5rem .85rem;cursor:pointer;display:flex;align-items:center;gap:.35rem}
+.am-theme-button:hover,.am-theme-button:focus-visible{outline:2px solid #eb7047;outline-offset:2px}
+html[data-theme="dark"]{color-scheme:dark;--global-bg-color:#13202d;--global-text-color:#eef4f8}
+html[data-theme="dark"] body{background-color:var(--global-bg-color,#13202d);color:var(--global-text-color,#eef4f8)}
+html[data-theme="dark"] .am-theme-toolbar{--am-ink:#eef4f8;--am-line:#425463;--am-paper:#263847}
+html[data-theme="dark"] .am-catalog .am-project-card,html[data-theme="dark"] .am-detail .am-project-card{background:#1c2b37}
+html[data-theme="dark"] .am-site .am-chips span{background:#263847;color:#dae5ea}
