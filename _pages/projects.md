@@ -2,64 +2,17 @@
 layout: page
 title: projects
 permalink: /projects/
-description: An overview of some of my projects.
+description: Engineering and robotics projects by Amin Mirfakhar.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
-horizontal: false
 ---
-
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-  {% endfor %}
-
-{% else %}
-
-<!-- Display projects without categories -->
-
-{% assign sorted_projects = site.projects | sort: "importance" %}
-
-  <!-- Generate cards for each project -->
-
-{% if page.horizontal %}
-
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
+<link rel="stylesheet" href="{{ '/assets/css/engineering.css' | relative_url }}">
+<div class="am-site am-inner"><header class="am-page-header"><p class="am-kicker">ENGINEERING PORTFOLIO</p><h1>Selected projects<span class="am-orange">.</span></h1><p>Selected work in industrial control, construction robotics, computer vision, and research. Descriptions reflect publicly documented contributions; illustrations are conceptual, not project photos.</p></header>
+<div class="am-project-grid">
+<article id="hexapod" class="am-project-card"><div class="am-project-art"><img src="{{ '/assets/img/engineering/hexapod.svg' | relative_url }}" alt="Concept diagram of a six-axis motion platform"></div><div class="am-project-body"><div class="am-project-tags">DSDAco · 2023–2024</div><h2>6-DOF Motion Simulator (2.2-Ton Payload)</h2><p>Modeled kinematics and dynamics, programmed Siemens S7-1517 PLCs, integrated Lenze i950 servo drives, and developed an HMI for a high-payload hexapod.</p><div class="am-chips"><span>Siemens S7-1517</span><span>Lenze i950</span><span>Kinematics</span><span>HMI</span></div></div></article>
+<article id="drywall" class="am-project-card"><div class="am-project-art"><img src="{{ '/assets/img/engineering/drywall.svg' | relative_url }}" alt="Concept diagram of a construction robot"></div><div class="am-project-body"><div class="am-project-tags">REBUILD ROBOTICS · 2023–2024</div><h2>Autonomous Drywall Installation Robot</h2><p>Worked on electrical component selection, programming, and interface development toward robotic construction automation.</p><div class="am-chips"><span>Construction robotics</span><span>System integration</span><span>Interfaces</span></div></div></article>
+<article id="conveyor" class="am-project-card"><div class="am-project-art"><img src="{{ '/assets/img/engineering/conveyor.svg' | relative_url }}" alt="Concept diagram of camera-based conveyor monitoring"></div><div class="am-project-body"><div class="am-project-tags">DSDAco · 2022–2023</div><h2>Conveyor Belt Condition Monitoring</h2><p>Developed AI-assisted defect detection using image processing and segmentation in an R&amp;D effort that progressed to production.</p><div class="am-chips"><span>Machine vision</span><span>Image segmentation</span><span>Industrial monitoring</span></div></div></article>
+<article id="nonplanar" class="am-project-card"><div class="am-project-art"><img src="{{ '/assets/img/engineering/nonplanar.svg' | relative_url }}" alt="Concept diagram of curved 3D printing paths"></div><div class="am-project-body"><div class="am-project-tags">TULANE UNIVERSITY · CURRENT RESEARCH</div><h2>Multi-Objective Non-Planar 3D Printing</h2><p>Exploring optimization-based generation of toolpaths that move beyond traditional planar slicing, supervised by Prof. Ramgopal Mettu. Ongoing research; no unpublished results are claimed here.</p><div class="am-chips"><span>Additive manufacturing</span><span>Optimization</span><span>Toolpath generation</span></div></div></article>
+</div>
+<section class="am-more"><p class="am-kicker">ADDITIONAL EXPERIENCE</p><h2>Other engineering work</h2><div class="am-mini-grid"><div><h3>6-DOF Racing Car Motion Simulator</h3><p>Mechanical design of a multi-axis racing simulator.</p></div><div><h3>Camera &amp; Illumination Housing</h3><p>Design for harsh industrial environments.</p></div><div><h3>Iron Ore Pellet Sizing &amp; Control</h3><p>Industrial imaging and process control project.</p></div><div><h3>Pipe Crawler Robot</h3><p>Robotic inspection concept and development work.</p></div><div><h3>Parkinson's Spoon</h3><p>Prototyped a stabilizing spoon to assist people experiencing hand tremors.</p></div></div></section>
 </div>
