@@ -27,6 +27,25 @@ jobs:
           ruby-version: '3.2'
           bundler-cache: true
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install ImageMagick
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
+
+      - name: Install Jupyter
+        run: |
+          python -m pip install jupyter nbconvert
+
+      - name: Verify tools
+        run: |
+          convert -version
+          jupyter --version
+
       - name: Build website
         env:
           JEKYLL_ENV: production
