@@ -11,7 +11,7 @@ nav_order: 3
   <header class="am-page-header">
     <p class="am-kicker">ENGINEERING PORTFOLIO</p>
     <h1>Engineering projects<span class="am-orange">.</span></h1>
-    <p>Explore 12 distinct projects across industry, academic research, university engineering, and self-initiated work. Select multiple disciplines and project types; every project appears <strong>only once</strong>.</p>
+    <p>Explore my distinct projects across industry, academic research, university engineering, and self-initiated work. Select multiple disciplines and project types.</p>
   </header>
   <div class="am-directory-layout">
     <aside class="am-filter-sidebar" aria-label="Project filters">
@@ -47,7 +47,7 @@ nav_order: 3
           {% endfor %}
         </fieldset>
       </details>
-      <p class="am-filter-help">Select multiple options. Projects are never duplicated in the results.</p>
+      <p class="am-filter-help">You can select multiple options!</p>
     </aside>
     <section class="am-filter-section" aria-labelledby="am-results-title">
       <div class="am-section-top">
@@ -62,7 +62,7 @@ nav_order: 3
       {% for project in site.data.engineering_projects %}
       <article class="am-project-card" data-project-card data-categories="{{ project.categories | join: ' ' }}" data-project-type="{{ project.project_type }}" data-search="{{ project.title | append: ' ' | append: project.summary | append: ' ' | append: project.technologies | downcase | escape }}">
         {% if project.image != empty and project.image %}
-          <a href="{{ project.url | relative_url }}" class="am-project-art"><img src="{{ '/assets/img/engineering/' | append: project.image | relative_url }}" alt="Conceptual illustration for {{ project.title | escape }}" loading="lazy"></a>
+          <a href="{{ project.url | relative_url }}" class="am-project-art"><img src="{{ project.image | relative_url }}" alt="{{ project.title | escape }}" loading="lazy"></a>
         {% else %}
           <a href="{{ project.url | relative_url }}" class="am-project-art am-project-placeholder"><span aria-hidden="true">{{ project.title | slice: 0, 1 | escape }}</span><span class="am-placeholder-caption">Engineering project</span></a>
         {% endif %}

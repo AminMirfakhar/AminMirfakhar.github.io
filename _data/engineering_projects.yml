@@ -16,7 +16,7 @@
   - Kinematics
   - Dynamics
   - HMI
-  image: hexapod.svg
+  image: /assets/img/projects/Hexapod/AxisXtreme-1.jpg
   summary: Kinematic and dynamic modeling, PLC programming, servo integration, and HMI design for an
     industrial six-degree-of-freedom motion simulator with a 2.2-ton payload capacity.
   challenge: Integrating mechanical modeling with real-time control of a high-payload parallel motion
@@ -40,7 +40,7 @@
   - Electrical integration
   - Programming
   - Human-machine interfaces
-  image: drywall.svg
+  image: /assets/img/projects/Drywall Panel Robot/Clean Robotic Construction Site.png
   summary: Electrical component selection, programming, and interface development for an autonomous
     drywall installation robot.
   challenge: Coordinating electrical components and software interfaces for a construction-robotics
@@ -107,7 +107,7 @@
   - Image processing
   - Industrial vision
   - Pellet detection
-  image: ''
+  image: '/assets/img/projects/Pellet Size Monitoring/Cleaned Industrial Pellet Detection System.png'
   summary: Developed image-processing algorithms for iron ore pellet detection in an R&D project that
     progressed to production.
   challenge: Detecting iron ore pellets from industrial images to support process monitoring.
@@ -129,7 +129,7 @@
   - Artificial intelligence
   - Image segmentation
   - Defect detection
-  image: conveyor.svg
+  image: /assets/img/projects/Belt Condition Monitoring/Industrial Conveyor with BELTSENSE Monitor.png
   summary: Implemented defect detection using image processing and segmentation techniques with artificial
     intelligence; the project progressed to production.
   challenge: Identifying conveyor belt defects using industrial image data.
@@ -218,7 +218,7 @@
   - SolidWorks
   - 3D CAD
   - Mathematical modeling
-  image: ''
+  image: '/assets/img/projects/Racing Hexapod/AXISPRO-5.png'
   summary: Mathematical modeling and SolidWorks 3D CAD design of a six-degree-of-freedom racing motion
     simulator with a 150 kg payload capacity.
   challenge: Designing the mechanical geometry of a compact six-axis motion simulator.
@@ -238,7 +238,7 @@
   - Stainless steel
   - CAD design
   - Industrial imaging enclosures
-  image: ''
+  image: '/assets/img/projects/Camera Housing/photo_2026-11-11_08-55-52.jpg'
   summary: Designed stainless-steel housings for industrial camera and illumination systems in mining
     environments; designs were used in the pellet monitoring and conveyor monitoring projects.
   challenge: Protecting imaging equipment in harsh mining environments while supporting illumination
