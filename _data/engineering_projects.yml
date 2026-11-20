@@ -218,6 +218,25 @@
   - SolidWorks
   - 3D CAD
   - Mathematical modeling
+  skills:
+    - matlab
+    - solidworks
+    - keyshot
+    - stewart-gough
+    - kinematic-modeling
+    - dynamic-modeling
+    - collision-optimization
+    - motion-simulation
+    - actuator-sizing
+    - ball-screw-systems
+    - sheet-metal-design
+    - tolerance-management
+    - laser-cutting
+    - cnc-press-brake
+    - cnc-machining
+    - chrome-plating
+    - quality-inspection
+    - hands-on-assembly
   image: '/assets/img/projects/Racing Hexapod/AXISPRO-5.png'
   summary: Mathematical modeling and SolidWorks 3D CAD design of a six-degree-of-freedom racing motion
     simulator with a 150 kg payload capacity.

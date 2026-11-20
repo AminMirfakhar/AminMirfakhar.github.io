@@ -35,6 +35,7 @@ nav: false
     </div>
   </section>
 
+
   <section class="am-section am-feature-section" id="featured-projects" aria-labelledby="featured-title">
     <div class="am-section-top"><div><p class="am-kicker">02 / SELECTED WORK</p><h2 id="featured-title">Built to solve hard problems.</h2></div><a class="am-text-link" href="{{ '/projects/' | relative_url }}">All projects ↗</a></div>
     <div class="am-project-grid">
@@ -51,6 +52,60 @@ nav: false
     <div class="am-pub-list"><article class="am-pub-item"><span class="am-pub-year">2021</span><div><h3>Control of a two-DOF parallel robot with unknown parameters using a novel robust adaptive approach</h3><p>ISA Transactions · Vol. 117, pp. 70–84</p><div class="am-inline-links"><a href="https://doi.org/10.1016/j.isatra.2021.02.001">DOI ↗</a><a href="{{ '/assets/pdf/Controlofatwo-DOFparallelrobotwithunknownparameters.pdf' | relative_url }}">PDF ↗</a></div></div></article>
     <article class="am-pub-item"><span class="am-pub-year">2020</span><div><h3>Control a Drone Using Hand Movement in ROS Based on Single Shot Detector Approach</h3><p>28th Iranian Conference on Electrical Engineering (ICEE)</p><div class="am-inline-links"><a href="https://doi.org/10.1109/ICEE50131.2020.9260864">DOI ↗</a><a href="{{ '/assets/pdf/ControlaDroneUsingHandMovementinROS.pdf' | relative_url }}">PDF ↗</a></div></div></article></div>
   </section>
+
+  
+  <!-- SOFTWARE & ENGINEERING SKILLS -->
+  <section
+    class="am-section am-skills-section"
+    id="skills"
+    aria-labelledby="am-skills-title">
+
+  <div class="am-section-heading">
+    <p class="am-kicker">ENGINEERING TOOLKIT</p>
+
+    <h2 id="am-skills-title">
+      Software &amp; Engineering Skills
+      <span class="am-orange">.</span>
+    </h2>
+
+    <p>
+      Explore the software, engineering methods,
+      and manufacturing skills I've applied
+      in real projects. Select a skill to see
+      examples of my work.
+    </p>
+  </div>
+
+  <div class="am-skills-list">
+
+    {% for skill in site.data.engineering_skills %}
+
+      {% assign project_count = 0 %}
+
+      {% for project in site.data.engineering_projects %}
+        {% if project.skills contains skill.id %}
+          {% assign project_count = project_count | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+
+      {% if project_count > 0 %}
+        <a
+          class="am-skill-link"
+          href="{{ '/projects/' | relative_url }}?skill={{ skill.id | url_encode }}">
+
+          {{ skill.label | escape }}
+
+          <span class="am-skill-count">
+            {{ project_count }}
+          </span>
+        </a>
+      {% endif %}
+
+    {% endfor %}
+
+  </div>
+
+</section>
 
   <section class="am-contact" id="contact"><p class="am-kicker">05 / GET IN TOUCH</p><h2>Have a challenging robotics problem?</h2><p>I'm interested in research collaborations and engineering conversations around robotics, intelligent manufacturing, and automation.</p><div class="am-actions"><a class="am-btn am-btn-primary" href="mailto:smirfakhar@tulane.edu">Get in touch ↗</a><a class="am-btn am-btn-secondary" href="{{ '/cv/' | relative_url }}">View CV ↗</a><a class="am-btn am-btn-secondary" href="https://github.com/AminMirfakhar">GitHub ↗</a></div></section>
 </div>

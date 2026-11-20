@@ -1,0 +1,720 @@
+
+/* ============================================
+   AXISPRO — RACING SIMULATOR PROJECT PAGE
+   ============================================ */
+
+.am-site.am-racing {
+  --racing-orange: #eb7047;
+  --racing-dark: #162c3d;
+
+  width: min(1500px, calc(100vw - 48px));
+  max-width: none;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ============================================
+   1. BREADCRUMB
+   ============================================ */
+
+.am-racing .am-breadcrumb {
+  padding: 1rem 0;
+}
+
+/* ============================================
+   2. HERO CONTAINER
+   ============================================ */
+
+.am-racing-hero {
+  position: relative;
+  isolation: isolate;
+
+  /* Keep text and gallery layout unchanged */
+  width: 100%;
+  max-width: none;
+
+  min-height: clamp(610px, 60vw, 860px);
+
+  background: transparent;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 0;
+
+  /* Allow the background to extend past the hero */
+  overflow: visible;
+}
+
+/* Full-browser-width BACKGROUND ONLY */
+.am-racing-backdrop {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+
+  width: 100vw;
+  left: 50%;
+  right: auto;
+
+  transform: translateX(-50%);
+
+  z-index: -2;
+  pointer-events: none;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  filter: saturate(0.87);
+}
+
+/* Dark overlay follows the background image */
+.am-racing-hero::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+
+  width: 100vw;
+  left: 50%;
+  right: auto;
+
+  transform: translateX(-50%);
+
+  z-index: -1;
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8, 21, 32, 0.90) 0%,
+      rgba(8, 21, 32, 0.65) 45%,
+      rgba(8, 21, 32, 0.35) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(7, 17, 27, 0.6),
+      transparent 65%
+    );
+}
+
+/* ============================================
+   3. HERO CONTENT
+   ============================================ */
+
+.am-racing-hero-content {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  z-index: 1;
+
+  min-height: clamp(610px, 60vw, 860px);
+
+  padding: clamp(24px, 4.5vw, 70px);
+}
+
+/* Small heading */
+.am-racing-eyebrow,
+.am-racing-kicker {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.am-racing-eyebrow {
+  color: var(--racing-orange);
+}
+
+.am-racing-eyebrow span {
+  padding: 0 0.45rem;
+  color: #aebcc6;
+}
+
+/* Main title */
+.am-racing-hero h1 {
+  max-width: 850px;
+
+  font-size: clamp(2.3rem, 4.4vw, 4.9rem);
+  font-weight: 800;
+  line-height: 1.06;
+  letter-spacing: -0.045em;
+
+  margin: 0.75rem 0 0.5rem;
+
+  color: #ffffff;
+}
+
+.am-racing-hero h1 span {
+  color: var(--racing-orange);
+}
+
+/* Subtitle */
+.am-racing-subtitle {
+  color: #e4eaf0;
+  font-size: clamp(0.95rem, 1.3vw, 1.13rem);
+  margin: 0 0 2.5rem;
+}
+
+/* ============================================
+   4. LEFT TEXT + RIGHT GALLERY
+   ============================================ */
+
+.am-racing-hero-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.88fr)
+    minmax(0, 1.12fr);
+
+  gap: clamp(22px, 4vw, 64px);
+
+  align-items: center;
+  margin-top: auto;
+
+  width: 100%;
+  min-width: 0;
+}
+
+/* Completely transparent panels */
+.am-racing-intro,
+.am-racing-media {
+  min-width: 0;
+
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+
+  padding: 0;
+
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+/* ============================================
+   5. SHORT INTRODUCTION — LEFT
+   ============================================ */
+
+.am-racing-intro h2 {
+  color: #ffffff;
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+  font-weight: 800;
+
+  margin: 0 0 1.2rem;
+  text-align: left;
+}
+
+.am-racing-intro p {
+  color: #e3edf3;
+
+  font-size: clamp(0.95rem, 1.1vw, 1.07rem);
+  line-height: 1.73;
+
+  margin: 0 0 0.95rem;
+  max-width: 57ch;
+
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
+.am-racing-intro p:last-child {
+  margin-bottom: 0;
+}
+
+.am-racing-intro strong {
+  color: #ffffff;
+}
+
+/* ============================================
+   6. MEDIA GALLERY — RIGHT
+   ============================================ */
+
+/* Control the gallery's maximum width here */
+.am-racing-hero-grid .am-racing-media {
+  width: 100%;
+  max-width: 800px;
+
+  min-width: 0;
+  justify-self: end;
+}
+
+/* Main selected image */
+.am-racing-featured {
+  position: relative;
+
+  width: 100%;
+  max-width: 800px;
+
+  aspect-ratio: 16 / 9;
+
+  background: rgba(5, 17, 25, 0.40);
+
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+/* Image fills gallery without distortion */
+.am-racing-featured > img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  object-position: center;
+}
+
+/* ============================================
+   7. CIRCULAR GALLERY BUTTONS
+   ============================================ */
+
+.am-racing-featured .am-racing-nav {
+  appearance: none;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  min-width: 42px;
+  min-height: 42px;
+
+  padding: 0;
+  margin: 0;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 50%;
+
+  background: rgba(16, 25, 35, 0.82);
+
+  color: #ffffff;
+
+  font-size: 28px;
+  line-height: 1;
+
+  cursor: pointer;
+  z-index: 5;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    opacity 0.2s ease,
+    background 0.2s ease,
+    visibility 0.2s ease;
+}
+
+/* Left arrow inside image */
+.am-racing-featured .am-racing-prev {
+  left: 14px;
+  right: auto;
+}
+
+/* Right arrow inside image */
+.am-racing-featured .am-racing-next {
+  right: 14px;
+  left: auto;
+}
+
+/* Show arrows when hovering over main image */
+.am-racing-featured:hover .am-racing-nav,
+.am-racing-featured:focus-within .am-racing-nav {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Orange on button hover */
+.am-racing-featured .am-racing-nav:hover,
+.am-racing-featured .am-racing-nav:focus-visible {
+  background: var(--racing-orange);
+  color: #ffffff;
+}
+
+/* ============================================
+   8. THUMBNAIL STRIP
+   ============================================ */
+
+.am-racing-thumbnails {
+  display: flex;
+  gap: 8px;
+
+  width: 100%;
+
+  margin-top: 10px;
+  padding-bottom: 3px;
+
+  overflow-x: auto;
+}
+
+/* Small selectable images */
+.am-racing-thumbnails .am-racing-thumb {
+  appearance: none;
+
+  flex: 0 0 90px;
+
+  width: 90px;
+  height: 60px;
+
+  padding: 0;
+  margin: 0;
+
+  aspect-ratio: auto;
+
+  border: 2px solid transparent;
+  border-radius: 5px;
+
+  overflow: hidden;
+  background: rgba(8, 20, 30, 0.45);
+
+  cursor: pointer;
+  opacity: 0.78;
+
+  transition:
+    opacity 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.am-racing-thumbnails .am-racing-thumb img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+/* Active and hovered thumbnail */
+.am-racing-thumbnails .am-racing-thumb:hover,
+.am-racing-thumbnails .am-racing-thumb:focus-visible,
+.am-racing-thumbnails .am-racing-thumb.is-active {
+  opacity: 1;
+  border-color: var(--racing-orange);
+}
+
+/* Image description */
+.am-racing-media-note {
+  font-size: 0.78rem;
+  color: #d8e2e9;
+
+  margin: 8px 0 0;
+
+  text-align: left;
+}
+
+/* ============================================
+   9. TECHNICAL CONTENT BELOW HERO
+   ============================================ */
+
+
+/* =========================================
+   MAIN CONTENT WIDTH — SECTIONS 01 TO 03
+   ========================================= */
+
+/* Overall content container */
+.am-racing-content {
+  width: 100%;
+  max-width: 840px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 60px 0 0;
+}
+
+/* Make all three sections the same width */
+.am-racing-section {
+  width: 100%;
+  max-width: none;
+
+  margin: 0 0 2.8rem;
+  padding: 0 0 2.5rem;
+
+  border-bottom: 1px solid var(--am-line, #d7dfe3);
+}
+
+
+/* Section labels */
+.am-racing-kicker {
+  color: var(--racing-orange);
+  margin: 0 0 0.7rem;
+}
+
+/* Section headings */
+.am-racing-section h2 {
+  font-size: clamp(1.65rem, 2.7vw, 2.5rem);
+  letter-spacing: -0.035em;
+
+  margin: 0 0 1.4rem;
+
+  text-align: left;
+}
+
+/* Equal width for Sections 01, 02 and 03 */
+
+/* Section 01 — justified technical overview */
+.am-racing-section > p:not(.am-racing-kicker) {
+  width: 100%;
+  max-width: none;
+
+  font-size: 1rem;
+  line-height: 1.85;
+
+  text-align: justify;
+  text-align-last: left;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
+
+/* ============================================
+   10. MY ROLE & CONTRIBUTIONS
+   ============================================ */
+/* 
+.am-racing-roles {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 20px 35px;
+
+  margin-top: 2rem;
+}
+
+.am-racing-roles > div {
+  padding-top: 1rem;
+
+  border-top: 2px solid
+    var(--am-line, #d7dfe3);
+}
+
+.am-racing-roles h3 {
+  font-size: 1.1rem;
+  font-weight: 800;
+
+  margin: 0 0 0.6rem;
+
+  text-align: left;
+}
+
+.am-racing-roles p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+
+  margin: 0;
+
+  color: var(--am-muted, #5d6b76);
+
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+} */
+
+/* My Role & Contributions — single-column layout */
+.am-racing-roles {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-top: 1.5rem;
+}
+
+/* Remove divider lines and card styling */
+
+.am-racing-roles > div {
+  border: none;
+  padding: 0;
+}
+
+.am-racing-roles p {
+  margin-left: 4px;
+  text-align: justify;
+}
+
+
+/* Contribution headings */
+.am-racing-roles h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 6px;
+  text-align: left;
+}
+
+/* Contribution descriptions */
+/* .am-racing-roles p {
+  font-size: 1rem;
+  line-height: 1.75;
+  margin: 0;
+  text-align: justify;
+  hyphens: auto;
+} */
+
+
+/* ============================================
+   11. SOFTWARE, TOOLS & SKILLS TAGS
+   ============================================ */
+
+.am-racing-tag-group {
+  margin: 1.4rem 0;
+}
+
+.am-racing-tag-group h3 {
+  font-size: 0.85rem;
+  font-weight: 800;
+
+  margin: 0 0 0.7rem;
+
+  text-align: left;
+}
+
+.am-racing-tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 9px;
+}
+
+
+/* Fully rounded skill tags */
+/* Smaller, rounded software and skill tags */
+/* .am-racing-tags span {
+  display: inline-block;
+
+  background: transparent;
+  color: var(--am-ink, #172331);
+
+  border: 1px solid var(--am-line, #d7dfe3);
+  border-radius: 999px;
+
+  padding: 5px 11px;
+  font-size: 0.76rem;
+  line-height: 1.25;
+
+  white-space: nowrap;
+} */
+
+
+/* Clickable skill tags on AXISPRO */
+
+.am-racing-tags a {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 5px 11px;
+
+  background: transparent;
+  color: var(--am-ink, #152338);
+
+  border: 1px solid var(--am-line, #dce3e8);
+  border-radius: 999px;
+
+  font-size: 0.76rem;
+  font-weight: 500;
+  line-height: 1.25;
+
+  text-decoration: none;
+  white-space: nowrap;
+
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.am-racing-tags a:hover,
+.am-racing-tags a:focus-visible {
+  color: #eb7047;
+  border-color: #eb7047;
+  background: rgba(235, 112, 71, 0.06);
+  text-decoration: none;
+}
+
+
+
+/* ============================================
+   12. RESPONSIVE DESIGN
+   ============================================ */
+
+/* Tablets and narrow screens */
+@media (max-width: 850px) {
+
+  .am-racing-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .am-racing-hero,
+  .am-racing-hero-content {
+    min-height: 0;
+  }
+
+  .am-racing-subtitle {
+    margin-bottom: 2rem;
+  }
+
+  .am-racing-hero-grid .am-racing-media {
+    max-width: 520px;
+    justify-self: center;
+  }
+
+  .am-racing-roles {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 580px) {
+
+  .am-site.am-racing {
+    width: calc(100vw - 24px);
+  }
+
+  .am-racing-hero-content {
+    padding: 20px;
+  }
+
+  .am-racing-featured {
+    aspect-ratio: 4 / 3;
+  }
+
+  .am-racing-intro p {
+    font-size: 0.92rem;
+  }
+
+  .am-racing-featured .am-racing-nav {
+    width: 36px;
+    height: 36px;
+
+    min-width: 36px;
+    min-height: 36px;
+
+    font-size: 24px;
+  }
+}
+
+/* Touchscreens: keep arrow buttons visible */
+@media (hover: none) {
+
+  .am-racing-featured .am-racing-nav {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+
+  .am-racing-nav,
+  .am-racing-thumb {
+    transition: none;
+  }
+}

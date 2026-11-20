@@ -1,0 +1,72 @@
+
+- id: matlab
+  label: MATLAB
+  group: software
+
+- id: solidworks
+  label: SolidWorks
+  group: software
+
+- id: keyshot
+  label: KeyShot
+  group: software
+
+- id: stewart-gough
+  label: Stewart–Gough Platform
+  group: modeling
+
+- id: kinematic-modeling
+  label: Kinematic Modeling
+  group: modeling
+
+- id: dynamic-modeling
+  label: Dynamic Modeling
+  group: modeling
+
+- id: collision-optimization
+  label: Collision-Aware Optimization
+  group: modeling
+
+- id: motion-simulation
+  label: Motion Simulation
+  group: modeling
+
+- id: actuator-sizing
+  label: Actuator Sizing
+  group: modeling
+
+- id: ball-screw-systems
+  label: Ball-Screw Systems
+  group: modeling
+
+- id: sheet-metal-design
+  label: Sheet-Metal Design
+  group: modeling
+
+- id: tolerance-management
+  label: Tolerance Management
+  group: modeling
+
+- id: laser-cutting
+  label: Laser Cutting
+  group: manufacturing
+
+- id: cnc-press-brake
+  label: CNC Press-Brake Forming
+  group: manufacturing
+
+- id: cnc-machining
+  label: CNC Machining
+  group: manufacturing
+
+- id: chrome-plating
+  label: Chrome Plating
+  group: manufacturing
+
+- id: quality-inspection
+  label: Quality Inspection
+  group: manufacturing
+
+- id: hands-on-assembly
+  label: Hands-on Assembly
+  group: manufacturing

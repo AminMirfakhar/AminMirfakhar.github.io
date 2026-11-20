@@ -60,7 +60,7 @@ nav_order: 3
       </div>
     <div id="am-results" class="am-project-grid">
       {% for project in site.data.engineering_projects %}
-      <article class="am-project-card" data-project-card data-categories="{{ project.categories | join: ' ' }}" data-project-type="{{ project.project_type }}" data-search="{{ project.title | append: ' ' | append: project.summary | append: ' ' | append: project.technologies | downcase | escape }}">
+      <article class="am-project-card" data-project-card data-categories="{{ project.categories | join: ' ' }}" data-project-type="{{ project.project_type }}" data-skills="{{ project.skills | join: ' ' | escape }}" data-search="{{ project.title | append: ' ' | append: project.summary | append: ' ' | append: project.technologies | downcase | escape }}">
         {% if project.image != empty and project.image %}
           <a href="{{ project.url | relative_url }}" class="am-project-art"><img src="{{ project.image | relative_url }}" alt="{{ project.title | escape }}" loading="lazy"></a>
         {% else %}

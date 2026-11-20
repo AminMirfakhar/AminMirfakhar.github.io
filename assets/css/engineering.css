@@ -176,3 +176,52 @@ body:has(.am-site)  .post {
   padding-top: 0 !important;
   margin-top: 0 !important;
 }
+
+
+
+/* =====================================
+   ABOUT PAGE — CLICKABLE SKILLS
+   ===================================== */
+
+.am-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 26px;
+}
+
+.am-site .am-skill-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 7px 14px;
+
+  border: 1px solid var(--am-line, #dce3e8);
+  border-radius: 999px;
+
+  background: transparent;
+  color: var(--am-ink, #152338);
+
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.4;
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.am-site .am-skill-link:hover,
+.am-site .am-skill-link:focus-visible {
+  color: var(--am-orange, #eb7047);
+  border-color: var(--am-orange, #eb7047);
+  background: rgba(235, 112, 71, 0.06);
+}
+
+.am-skill-count {
+  font-size: 0.72rem;
+  opacity: 0.65;
+}

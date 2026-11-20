@@ -1,0 +1,450 @@
+
+{% assign project = site.data.engineering_projects | where: "id", "racing-simulator" | first %}
+
+{% assign hero_image = '/assets/img/projects/Racing Hexapod/AXISPRO-5.png' | relative_url %}
+{% assign secondary_image = '/assets/img/projects/Racing Hexapod/Racing.jpg' | relative_url %}
+
+<link rel="stylesheet" href="{{ '/assets/css/engineering.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/am-racing-simulator-detail.css' | relative_url }}">
+
+<article class="am-site am-racing" data-am-racing>
+
+  <!-- =====================================
+       BACK TO PROJECTS
+       ===================================== -->
+
+  <nav class="am-breadcrumb" aria-label="Breadcrumb">
+    <a href="{{ '/projects/' | relative_url }}">
+      ← All projects
+    </a>
+  </nav>
+
+  <!-- =====================================
+       PROJECT HERO
+       ===================================== -->
+
+  <section class="am-racing-hero"
+           aria-labelledby="am-racing-title">
+
+    <!-- Background stays fixed when gallery changes -->
+    <div
+      class="am-racing-backdrop"
+      style="background-image: url('{{ hero_image }}')"
+      aria-hidden="true">
+    </div>
+
+    <div class="am-racing-hero-content">
+
+      <p class="am-racing-eyebrow">
+        INDUSTRIAL PROJECT
+        <span aria-hidden="true">/</span>
+        DSDA · 2024
+      </p>
+
+      <h1 id="am-racing-title">
+        6-DOF Racing Car
+        <span>Motion Simulator</span>
+      </h1>
+
+      <p class="am-racing-subtitle">
+        Stewart–Gough Parallel Platform · 150 kg Payload
+      </p>
+
+      <!-- LEFT INTRODUCTION + RIGHT GALLERY -->
+      <div class="am-racing-hero-grid">
+
+        <!-- LEFT: Short project overview -->
+        <section class="am-racing-intro"
+                 aria-labelledby="am-racing-short-heading">
+
+          <!-- <h2 id="am-racing-short-heading">
+            At a glance
+          </h2> -->
+
+          <p style="font-size: 18px;">
+            <strong>AXISPRO</strong> is a six-degree-of-freedom motion
+            simulator based on a Stewart–Gough parallel
+            mechanism, developed for immersive racing
+            and flight simulation.
+
+            Its six servo-driven linear actuators reproduce
+            surge, sway, heave, roll, pitch, and yaw to
+            provide physical motion feedback synchronized
+            with a virtual environment.
+          </p>
+          <p style="font-size: 18px;">
+            Designed for a 150 kg payload,
+            the compact platform combines coordinated
+            multi-axis motion with an integrated
+            mechanical structure.
+          </p>
+
+        </section>
+
+        <!-- RIGHT: Independent image gallery -->
+        <section class="am-racing-media"
+                 aria-label="Project media gallery">
+
+          <!-- Large selected image -->
+          <div class="am-racing-featured"
+               data-am-racing-gallery>
+
+            <img
+              src="{{ hero_image }}"
+              alt="AXISPRO mechanical design rendering"
+              data-am-racing-featured
+              loading="eager"
+            >
+
+            <!-- Circular arrows appear on hover -->
+            <button
+              type="button"
+              class="am-racing-nav am-racing-prev"
+              data-am-racing-prev
+              aria-label="Previous project image">
+              &#8249;
+            </button>
+
+            <button
+              type="button"
+              class="am-racing-nav am-racing-next"
+              data-am-racing-next
+              aria-label="Next project image">
+              &#8250;
+            </button>
+
+          </div>
+
+          <!-- Selectable thumbnails -->
+          <div class="am-racing-thumbnails"
+               aria-label="Choose project image">
+
+            <button
+              class="am-racing-thumb is-active"
+              type="button"
+              data-racing-image="{{ hero_image }}"
+              data-racing-label="CAD rendering of the AXISPRO racing simulator"
+              data-racing-alt="AXISPRO mechanical design rendering"
+              aria-label="Show CAD rendering"
+              aria-pressed="true">
+
+              <img
+                src="{{ hero_image }}"
+                alt=""
+                loading="eager">
+            </button>
+
+            <button
+              class="am-racing-thumb"
+              type="button"
+              data-racing-image="{{ secondary_image }}"
+              data-racing-label="AXISPRO racing simulator photograph"
+              data-racing-alt="AXISPRO racing simulator photograph"
+              aria-label="Show racing simulator photograph"
+              aria-pressed="false">
+
+              <img
+                src="{{ secondary_image }}"
+                alt=""
+                loading="lazy">
+            </button>
+
+          </div>
+
+          <!-- <p class="am-racing-media-note"
+             data-am-racing-caption
+             aria-live="polite">
+            CAD rendering of the AXISPRO racing simulator
+          </p> -->
+
+        </section>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================
+       CONTENT BELOW HERO
+       ===================================== -->
+
+  <div class="am-racing-content">
+
+    <!-- 01: PROJECT OVERVIEW -->
+
+    <section class="am-racing-section"
+             aria-labelledby="am-racing-overview">
+
+      <p class="am-racing-kicker">
+        01 / PROJECT CONTEXT
+      </p>
+
+      <h2 id="am-racing-overview">
+        Project Overview &amp; Technical Details
+      </h2>
+
+      <p>
+        The project involved developing a compact
+        6-DOF motion platform capable of reproducing
+        vehicle motion for racing and flight simulation
+        applications. Its Stewart–Gough architecture
+        uses six independently actuated legs between a
+        fixed base and a moving platform, enabling
+        coordinated translation and rotation while
+        introducing coupled kinematics, actuator loads,
+        workspace constraints, and potential mechanical
+        interference.
+      </p>
+
+      <p>
+        MATLAB-based kinematic and dynamic modeling,
+        simulation, and geometric optimization informed
+        the platform dimensions, reachable motions,
+        collision clearances, and actuator requirements
+        for the specified payload.
+
+        The resulting system was detailed in SolidWorks
+        with a focus on manufacturable sheet-metal
+        structures, machined actuator components,
+        tolerances, and assembly fit.
+      </p>
+
+      <p>
+        Manufacturing incorporated laser cutting,
+        CNC press-brake bending and forming,
+        precision machining, rod chrome plating,
+        and oven-cured finishing, followed by
+        mechanical assembly and fit verification.
+      </p>
+
+    </section>
+
+    <!-- 02: PERSONAL CONTRIBUTIONS -->
+
+    <section class="am-racing-section"
+             aria-labelledby="am-racing-role">
+
+      <p class="am-racing-kicker">
+        02 / PERSONAL CONTRIBUTIONS
+      </p>
+
+      <h2 id="am-racing-role">
+        My Role &amp; Contributions
+      </h2>
+
+      <p>
+        I was responsible for the mathematical modeling,
+        mechanical development, and manufacturing oversight
+        of the six-degree-of-freedom motion platform,
+        working from initial engineering requirements
+        through detailed design and mechanical assembly.
+        <!-- I contributed across the full mechanical
+        development process, from mathematical models
+        and component sizing to CAD, manufacturing
+        quality, and hands-on assembly. -->
+      </p>
+
+      <div class="am-racing-roles">
+
+        <div>
+          <h3>Modeling &amp; Optimization:</h3>
+          <p>
+            Developed the Stewart–Gough platform's
+            kinematic and dynamic models in MATLAB,
+            and simulated and optimized its geometry
+            with attention to workspace, desired
+            motion, and collision avoidance between
+            components.
+          </p>
+        </div>
+
+        <div>
+          <h3>System &amp; Actuator Sizing:</h3>
+          <p>
+            Determined the platform geometry and
+            overall dimensions from payload, weight,
+            and motion requirements. Sized and
+            selected servo actuators and
+            ball-screw-and-nut mechanisms for the
+            required travel and mechanical loads.
+          </p>
+        </div>
+
+        <div>
+          <h3>Mechanical Design &amp; Visualization:</h3>
+          <p>
+            Designed the mechanical system and detailed
+            assembly in SolidWorks, applying sheet-metal
+            design experience, tolerances, and
+            design-for-manufacturing principles.
+            Produced project renderings with KeyShot.
+          </p>
+        </div>
+
+        <div>
+          <h3>Manufacturing &amp; Quality:</h3>
+          <p>
+            Monitored the quality and dimensional
+            accuracy of laser cutting, CNC press-brake
+            forming, CNC machining, chrome plating,
+            and oven-cured finishing; checked
+            manufactured parts against intended
+            fit and tolerances.
+          </p>
+        </div>
+
+        <div>
+          <h3>Hands-on Assembly &amp; Integration:</h3>
+          <p>
+            Actively helped assemble the simulator,
+            installing and fitting components,
+            checking alignment and clearances, and
+            resolving fabrication and tolerance
+            issues as the mechanical system
+            came together.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- 03: SOFTWARE, TOOLS AND SKILLS -->
+
+    <!-- <section
+      class="am-racing-section am-racing-skills"
+      aria-labelledby="am-racing-skills">
+
+      <p class="am-racing-kicker">
+        03 / TECHNICAL TOOLKIT
+      </p>
+
+      <h2 id="am-racing-skills">
+        Software, Tools &amp; Skills
+      </h2>
+
+      <div class="am-racing-tag-group">
+        <h3>Software</h3>
+        <div class="am-racing-tags">
+          <span>MATLAB</span>
+          <span>SolidWorks</span>
+          <span>KeyShot</span>
+        </div>
+      </div>
+
+      <div class="am-racing-tag-group">
+        <h3>Modeling &amp; Design</h3>
+        <div class="am-racing-tags">
+          <span>Stewart–Gough Platform</span>
+          <span>Kinematic &amp; Dynamic Modeling</span>
+          <span>Collision-Aware Optimization</span>
+          <span>6-DOF Motion Simulation</span>
+          <span>Actuator Sizing</span>
+          <span>Ball-Screw Systems</span>
+          <span>Sheet-Metal Design</span>
+          <span>Tolerance Management</span>
+        </div>
+      </div>
+
+      <div class="am-racing-tag-group">
+        <h3>Manufacturing &amp; Integration</h3>
+        <div class="am-racing-tags">
+          <span>Laser Cutting</span>
+          <span>CNC Press-Brake Forming</span>
+          <span>CNC Machining</span>
+          <span>Chrome Plating</span>
+          <span>Quality Inspection</span>
+          <span>Hands-on Assembly</span>
+        </div>
+      </div>
+
+    </section> -->
+
+<!-- 03: SOFTWARE, TOOLS AND SKILLS -->
+
+<section
+  class="am-racing-section am-racing-skills"
+  aria-labelledby="am-racing-skills">
+
+  <p class="am-racing-kicker">
+    03 / TECHNICAL TOOLKIT
+  </p>
+
+  <h2 id="am-racing-skills">
+    Software, Tools &amp; Skills
+  </h2>
+
+  <!-- Software -->
+  <div class="am-racing-tag-group">
+    <h3>Software</h3>
+
+    <div class="am-racing-tags">
+      {% for skill in site.data.engineering_skills %}
+        {% if skill.group == 'software' %}
+          {% if project.skills contains skill.id %}
+
+            <a href="{{ '/projects/' | relative_url }}?skill={{ skill.id | url_encode }}">
+              {{ skill.label | escape }}
+            </a>
+
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- Modeling & Design -->
+  <div class="am-racing-tag-group">
+    <h3>Modeling &amp; Design</h3>
+
+    <div class="am-racing-tags">
+      {% for skill in site.data.engineering_skills %}
+        {% if skill.group == 'modeling' %}
+          {% if project.skills contains skill.id %}
+
+            <a href="{{ '/projects/' | relative_url }}?skill={{ skill.id | url_encode }}">
+              {{ skill.label | escape }}
+            </a>
+
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- Manufacturing & Integration -->
+  <div class="am-racing-tag-group">
+    <h3>Manufacturing &amp; Integration</h3>
+
+    <div class="am-racing-tags">
+      {% for skill in site.data.engineering_skills %}
+        {% if skill.group == 'manufacturing' %}
+          {% if project.skills contains skill.id %}
+
+            <a href="{{ '/projects/' | relative_url }}?skill={{ skill.id | url_encode }}">
+              {{ skill.label | escape }}
+            </a>
+
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+</section>
+
+
+    <!-- BACK TO PROJECT DIRECTORY -->
+
+    <a class="am-back"
+       href="{{ '/projects/' | relative_url }}">
+      ← Browse all projects
+    </a>
+
+  </div>
+</article>
+
+<!-- Project gallery JavaScript -->
+<script
+  src="{{ '/assets/js/am-racing-simulator-detail.js' | relative_url }}"
+  defer>
+</script>

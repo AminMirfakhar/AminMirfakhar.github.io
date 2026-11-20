@@ -5,4 +5,4 @@ permalink: /projects/racing-simulator/
 nav: false
 project_id: racing-simulator
 ---
-{% include am-project-detail.html %}
+{% include am-racing-simulator-detail.html %}
