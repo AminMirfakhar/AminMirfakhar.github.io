@@ -1,0 +1,55 @@
+# Replace ONLY the existing "- id: parallel-robot" block in engineering_projects.yml.
+- id: parallel-robot
+  title: 2-DOF Spherical Parallel Robot — Control & Programming
+  period: '2018'
+  organization: Taarlab — University of Tehran
+  project_type: academic-research
+  categories:
+    - robotics
+    - automation
+    - dynamic-modeling
+  technologies:
+    - OpenCM9.04
+    - Arduino C/C++
+    - Dynamixel MX-64AR
+    - OpenCM 485 Expansion Board
+    - IMU (GY-521)
+    - I²C
+  image: /assets/img/projects/Parallel Robot/Parallel-Robot-Overview.webp
+  summary: >-
+    Embedded implementation of experimental stabilization control for a
+    2-DOF spherical parallel robot, including OpenCM9.04 programming,
+    Dynamixel servo configuration, dual-IMU data acquisition, and testing.
+  challenge: >-
+    Supporting robust stabilization research on a coupled parallel mechanism
+    through reliable actuator communication and measurement of base
+    disturbances and end-effector motion.
+  contributions:
+    - OpenCM9.04 embedded programming and algorithm implementation
+    - Dynamixel MX-64AR configuration and feedback integration
+    - Base and moving-platform IMU wiring and data acquisition
+    - Embedded control interface and experimental test support
+    - Electrical wiring and hardware integration
+  outcome: >-
+    Supported physical validation of graduate research on robust adaptive
+    stabilization; coauthored the related ISA Transactions publication.
+  skills:
+    - arduino-cpp
+    - arduino-ide
+    - opencm-904
+    - opencm-485
+    - dynamixel-mx64
+    - dynamixel-workbench
+    - spherical-parallel-robotics
+    - servo-motor-control
+    - embedded-motion-control
+    - imu-integration
+    - i2c
+    - data-acquisition
+    - feedback-control
+    - disturbance-rejection
+    - control-algorithm-implementation
+    - experimental-robotics
+    - sensor-integration
+    - electrical-wiring
+  url: /projects/parallel-robot/

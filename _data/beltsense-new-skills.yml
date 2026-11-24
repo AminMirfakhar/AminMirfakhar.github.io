@@ -1,0 +1,33 @@
+# Append these only if the IDs are not already in engineering_skills.yml
+- id: opencv
+  label: OpenCV
+  group: software
+
+- id: laser-triangulation
+  label: Laser Triangulation (R&D Prototype)
+  group: modeling
+
+- id: surface-defect-detection
+  label: Surface Defect Detection
+  group: modeling
+
+- id: conveyor-inspection
+  label: Conveyor Belt Inspection
+  group: modeling
+
+- id: optical-configuration
+  label: Optical Configuration
+  group: modeling
+
+- id: technology-benchmarking
+  label: Technology Benchmarking
+  group: manufacturing
+
+- id: condition-monitoring
+  label: Industrial Condition Monitoring
+  group: manufacturing
+
+- id: hardware-integration
+  label: Industrial Hardware Integration
+  group: manufacturing
+

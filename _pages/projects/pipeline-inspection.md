@@ -5,4 +5,4 @@ permalink: /projects/pipeline-inspection/
 nav: false
 project_id: pipeline-inspection
 ---
-{% include am-project-detail.html %}
+{% include am-pipeline-inspection-detail.html %}

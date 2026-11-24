@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "Pellet Size Monitoring System"
+title: "PelletSense — Industrial Pellet Size Monitoring & Control System"
 permalink: /projects/pellet-sizing/
 nav: false
 project_id: pellet-sizing
 ---
-{% include am-project-detail.html %}
+{% include am-pelletsense-detail.html %}

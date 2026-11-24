@@ -1,0 +1,56 @@
+- id: pipeline-inspection
+  title: Pipeline Inspection Robot
+  period: '2023'
+  organization: DSDA
+  project_type: industrial
+  categories:
+  - robotics
+  - mechanical-design
+  - automation
+  technologies:
+  - SolidWorks
+  - Arduino Mega
+  - ESP32-CAM
+  - Python
+  - Streamlit
+  - DC Motor Control
+  image: /assets/img/projects/Pipeline Inspection Robot/Pipeline-Robot-Side.webp
+  summary: Designed a six-wheel radially expandable in-pipe inspection robot, selected motors and mechanical
+    hardware, and developed Arduino/ESP32 control and a Streamlit interface for remote driving and visual
+    inspection.
+  challenge: Fit an adjustable six-wheel locomotion mechanism into confined pipes while generating enough
+    wheel-to-wall traction for vertical movement and providing remote camera inspection.
+  contributions:
+  - Complete mechanical design in SolidWorks
+  - DC motors, geared expansion motor, gears, bearings and screw-nut hardware selection
+  - Arduino Mega programming and ESP32-CAM wireless integration
+  - Streamlit interface for driving, expansion, live video, image/video capture and flashlight control
+  - Hands-on wiring, assembly and prototype integration
+  outcome: R&D prototype developed with mechanical design, embedded control and remote visual inspection;
+    modeling, MATLAB/ADAMS simulation and FEA were performed by a collaborating undergraduate student.
+  skills:
+  - arduino-cpp
+  - python
+  - streamlit
+  - solidworks
+  - pipeline-robotics
+  - confined-space-robotics
+  - mechanical-design
+  - expandable-mechanisms
+  - dc-motor-control
+  - servo-motor-control
+  - geared-motor-selection
+  - screw-nut-mechanisms
+  - bearing-selection
+  - robot-control-interface
+  - wireless-robot-communication
+  - esp32-cam
+  - arduino-mega
+  - remote-visual-inspection
+  - live-video-streaming
+  - image-video-capture
+  - electrical-wiring
+  - hands-on-assembly
+  - rd-prototyping
+  - electromechanical-integration
+  url: /projects/pipeline-inspection/

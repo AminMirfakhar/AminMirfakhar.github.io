@@ -1,0 +1,56 @@
+# Add ONLY IDs that are missing from your current engineering_skills.yml.
+# Existing IDs in other projects (e.g. arduino-cpp) must NOT be duplicated.
+- id: arduino-cpp
+  label: Arduino C/C++
+  group: software
+- id: arduino-ide
+  label: Arduino IDE
+  group: software
+- id: opencm-904
+  label: OpenCM9.04
+  group: software
+- id: opencm-485
+  label: OpenCM 485 Expansion Board
+  group: software
+- id: dynamixel-mx64
+  label: Dynamixel MX-64AR
+  group: software
+- id: dynamixel-workbench
+  label: Dynamixel Workbench
+  group: software
+- id: i2c
+  label: I²C Communication
+  group: software
+- id: spherical-parallel-robotics
+  label: Spherical Parallel Robotics
+  group: modeling
+- id: servo-motor-control
+  label: Servo Motor Control
+  group: modeling
+- id: embedded-motion-control
+  label: Embedded Motion Control
+  group: modeling
+- id: imu-integration
+  label: IMU Integration
+  group: modeling
+- id: data-acquisition
+  label: Data Acquisition
+  group: modeling
+- id: feedback-control
+  label: Feedback Control
+  group: modeling
+- id: disturbance-rejection
+  label: Disturbance Rejection
+  group: modeling
+- id: control-algorithm-implementation
+  label: Control Algorithm Implementation
+  group: modeling
+- id: experimental-robotics
+  label: Experimental Robotics
+  group: modeling
+- id: sensor-integration
+  label: Sensor Integration
+  group: manufacturing
+- id: electrical-wiring
+  label: Electrical Wiring
+  group: manufacturing

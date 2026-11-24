@@ -1,0 +1,42 @@
+- id: cad-modeling
+  label: 3D CAD Modeling
+  group: modeling
+- id: mechanical-assembly-design
+  label: Mechanical Assembly Design
+  group: modeling
+- id: enclosure-design
+  label: Industrial Enclosure Design
+  group: modeling
+- id: ip66-enclosure-design
+  label: IP66-Oriented Enclosure Design
+  group: modeling
+- id: gasket-seal-design
+  label: Gasket & Seal Design
+  group: modeling
+- id: optical-window-integration
+  label: Optical Window Integration
+  group: modeling
+- id: thermal-management
+  label: Thermal Management
+  group: modeling
+- id: air-cooling
+  label: Air Cooling
+  group: modeling
+- id: water-cooling
+  label: Water Cooling
+  group: modeling
+- id: adjustable-mount-design
+  label: Adjustable Mounting Design
+  group: modeling
+- id: welding
+  label: Welding
+  group: manufacturing
+- id: design-for-manufacturing
+  label: Design for Manufacturing
+  group: manufacturing
+- id: manufacturing-oversight
+  label: Manufacturing Oversight
+  group: manufacturing
+- id: onsite-installation
+  label: On-Site Installation
+  group: manufacturing

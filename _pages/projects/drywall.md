@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "Autonomous Drywall Installation Robot"
+title: "Wall-bot — Autonomous Drywall Installation Robot"
 permalink: /projects/drywall/
 nav: false
 project_id: drywall
 ---
-{% include am-project-detail.html %}
+{% include am-wallbot-detail.html %}

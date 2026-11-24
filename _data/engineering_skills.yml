@@ -1,4 +1,5 @@
-
+# -------------------------------------------------------------------------------------------------------------------------------
+# Software:
 - id: matlab
   label: MATLAB
   group: software
@@ -11,9 +12,55 @@
   label: KeyShot
   group: software
 
-- id: stewart-gough
-  label: Stewart–Gough Platform
-  group: modeling
+- id: simulink
+  label: Simulink
+  group: software
+
+- id: adams
+  label: ADAMS
+  group: software
+
+- id: tia-portal
+  label: Siemens TIA Portal
+  group: software
+
+- id: labview
+  label: LabVIEW
+  group: software
+
+- id: arduino
+  label: Arduino
+  group: software
+
+- id: eplan
+  label: Eplan
+  group: software
+
+- id: grasshopper
+  label: Grasshopper
+  group: software
+
+- id: microsoftOffice
+  label: Microsoft Offic
+  group: software
+
+# -------------------------------------------------------------------------------------------------------------------------------
+# prgramming language:
+
+- id: python
+  label: Python
+  group: programming-language
+
+- id: arduino-cpp
+  label: Arduino C/C++
+  group: programming-language
+
+
+
+# -------------------------------------------------------------------------------------------------------------------------------
+# Mechanical Engineering Skills:
+
+# modeling:
 
 - id: kinematic-modeling
   label: Kinematic Modeling
@@ -23,50 +70,602 @@
   label: Dynamic Modeling
   group: modeling
 
-- id: collision-optimization
-  label: Collision-Aware Optimization
-  group: modeling
-
 - id: motion-simulation
   label: Motion Simulation
   group: modeling
 
-- id: actuator-sizing
-  label: Actuator Sizing
-  group: modeling
 
-- id: ball-screw-systems
-  label: Ball-Screw Systems
-  group: modeling
+
+# design:
 
 - id: sheet-metal-design
   label: Sheet-Metal Design
-  group: modeling
+  group: design
 
 - id: tolerance-management
   label: Tolerance Management
-  group: modeling
+  group: design
 
-- id: laser-cutting
+- id: laser-cutting-design
   label: Laser Cutting
-  group: manufacturing
+  group: design
 
-- id: cnc-press-brake
+- id: cnc-press-brake-design
   label: CNC Press-Brake Forming
-  group: manufacturing
+  group: design
 
 - id: cnc-machining
   label: CNC Machining
+  group: design
+
+
+# manufacturing:
+
+- id: sheet-metal-manufacturing
+  label: Sheet-Metal Design
   group: manufacturing
 
-- id: chrome-plating
-  label: Chrome Plating
+- id: laser-cutting-manufacturing
+  label: Laser Cutting
   group: manufacturing
 
-- id: quality-inspection
-  label: Quality Inspection
+- id: cnc-press-brake-manufacturing
+  label: CNC Press-Brake Forming
   group: manufacturing
+
+
+
+# general
 
 - id: hands-on-assembly
   label: Hands-on Assembly
-  group: manufacturing
+  group: general-mechanical
+
+- id: quality-inspection
+  label: Quality Inspection
+  group: general-mechanical
+
+
+
+# other
+
+- id: stewart-gough
+  label: Stewart–Gough Platform
+  group: modeling
+
+
+
+# - id: collision-optimization
+#   label: Collision-Aware Optimization
+#   group: modeling
+
+
+
+# - id: actuator-sizing
+#   label: Actuator Sizing
+#   group: modeling
+
+# - id: ball-screw-systems
+#   label: Ball-Screw Systems
+#   group: modeling
+
+
+
+
+
+
+
+# - id: chrome-plating
+#   label: Chrome Plating
+#   group: manufacturing
+
+
+
+
+
+
+
+
+# AXISXTREME — Software & Automation
+
+
+
+# - id: siemens-s7-1517
+#   label: Siemens S7-1517 PLC
+#   group: software
+
+# - id: lenze-i950
+#   label: Lenze i950
+#   group: software
+
+# - id: structured-text
+#   label: Structured Text
+#   group: software
+
+# - id: ladder-logic
+#   label: Ladder Logic
+#   group: software
+
+
+# AXISXTREME — Modeling & Control
+
+# - id: system-sizing
+#   label: System Sizing
+#   group: modeling
+
+# - id: payload-inertia-analysis
+#   label: Payload & Inertia Analysis
+#   group: modeling
+
+# - id: constrained-optimization
+#   label: Constrained Optimization
+#   group: modeling
+
+# - id: servo-motor-selection
+#   label: Servo Motor Selection
+#   group: modeling
+
+# - id: belt-pulley-transmission
+#   label: Belt & Pulley Transmission
+#   group: modeling
+
+# - id: multi-axis-motion-control
+#   label: Multi-Axis Motion Control
+#   group: modeling
+
+# - id: plc-programming
+#   label: PLC Programming
+#   group: modeling
+
+# - id: hmi-development
+#   label: HMI Development
+#   group: modeling
+
+
+# AXISXTREME — Engineering & Integration
+
+# - id: electromechanical-integration
+#   label: Electromechanical Integration
+#   group: manufacturing
+
+# - id: electrical-checks
+#   label: Electrical Wiring Checks
+#   group: manufacturing
+
+
+
+
+  # Append ONLY skills not already in engineering_skills.yml.
+
+# - id: yolo
+#   label: YOLO
+#   group: software
+# - id: instance-segmentation
+#   label: Instance Segmentation
+#   group: software
+# - id: streamlit
+#   label: Streamlit
+#   group: software
+
+# - id: camera-calibration
+#   label: Camera Calibration
+#   group: modeling
+# - id: circle-fitting
+#   label: Circle Fitting
+#   group: modeling
+# - id: optical-system-design
+#   label: Optical System Design
+#   group: modeling
+# - id: industrial-camera-integration
+#   label: Industrial Camera Integration
+#   group: modeling
+# - id: ip66-enclosure-design
+#   label: IP66-Oriented Enclosure Design
+#   group: modeling
+# - id: thermal-management
+#   label: Thermal Management
+#   group: modeling
+# - id: requirements-engineering
+#   label: Requirements Engineering
+#   group: manufacturing
+# - id: feasibility-study
+#   label: Technical Feasibility Studies
+#   group: manufacturing
+# - id: rd-prototyping
+#   label: R&D Prototyping
+#   group: manufacturing
+# - id: client-presentations
+#   label: Client Presentations & Technical Alignment
+#   group: manufacturing
+# - id: technical-proposals
+#   label: Technical & Financial Proposals
+#   group: manufacturing
+# - id: manufacturing-oversight
+#   label: Manufacturing Oversight
+#   group: manufacturing
+# - id: onsite-installation
+#   label: On-Site Installation
+#   group: manufacturing
+
+
+
+# - id: cad-modeling
+#   label: 3D CAD Modeling
+#   group: modeling
+# - id: mechanical-assembly-design
+#   label: Mechanical Assembly Design
+#   group: modeling
+# - id: enclosure-design
+#   label: Industrial Enclosure Design
+#   group: modeling
+# - id: ip66-enclosure-design
+#   label: IP66-Oriented Enclosure Design
+#   group: modeling
+# - id: gasket-seal-design
+#   label: Gasket & Seal Design
+#   group: modeling
+# - id: optical-window-integration
+#   label: Optical Window Integration
+#   group: modeling
+# - id: thermal-management
+#   label: Thermal Management
+#   group: modeling
+# - id: air-cooling
+#   label: Air Cooling
+#   group: modeling
+# - id: water-cooling
+#   label: Water Cooling
+#   group: modeling
+# - id: adjustable-mount-design
+#   label: Adjustable Mounting Design
+#   group: modeling
+# - id: welding
+#   label: Welding
+#   group: manufacturing
+# - id: design-for-manufacturing
+#   label: Design for Manufacturing
+#   group: manufacturing
+# - id: manufacturing-oversight
+#   label: Manufacturing Oversight
+#   group: manufacturing
+# - id: onsite-installation
+#   label: On-Site Installation
+#   group: manufacturing
+
+
+
+# # # Append these only if the IDs are not already in engineering_skills.yml
+# # - id: opencv
+# #   label: OpenCV
+# #   group: software
+
+# - id: laser-triangulation
+#   label: Laser Triangulation (R&D Prototype)
+#   group: modeling
+
+# - id: surface-defect-detection
+#   label: Surface Defect Detection
+#   group: modeling
+
+# - id: conveyor-inspection
+#   label: Conveyor Belt Inspection
+#   group: modeling
+
+# - id: optical-configuration
+#   label: Optical Configuration
+#   group: modeling
+
+# - id: technology-benchmarking
+#   label: Technology Benchmarking
+#   group: manufacturing
+
+# - id: condition-monitoring
+#   label: Industrial Condition Monitoring
+#   group: manufacturing
+
+# - id: hardware-integration
+#   label: Industrial Hardware Integration
+#   group: manufacturing
+
+
+
+
+
+
+
+# - id: accelstepper
+#   label: AccelStepper
+#   group: software
+# - id: arduino-mega
+#   label: Arduino Mega
+#   group: software
+# - id: ethernet-w5100
+#   label: W5100 Ethernet Shield
+#   group: software
+# - id: udp-communication
+#   label: UDP Communication
+#   group: software
+# - id: i2c
+#   label: I²C
+#   group: software
+# - id: tca9548a
+#   label: TCA9548A Multiplexer
+#   group: software
+# - id: as5600
+#   label: AS5600 Magnetic Encoder
+#   group: software
+# - id: interrupt-handling
+#   label: Interrupt Handling
+#   group: modeling
+# - id: mobile-robotics
+#   label: Mobile Robotics
+#   group: modeling
+# - id: closed-loop-steering
+#   label: Closed-Loop Steering
+#   group: modeling
+# - id: encoder-feedback
+#   label: Encoder Feedback
+#   group: modeling
+# - id: pwm-motor-control
+#   label: PWM Motor Control
+#   group: modeling
+# - id: stepper-motor-control
+#   label: Stepper Motor Control
+#   group: modeling
+# - id: multi-axis-motion-control
+#   label: Multi-Axis Motion Control
+#   group: modeling
+# - id: acceleration-ramping
+#   label: Velocity & Acceleration Ramping
+#   group: modeling
+# - id: homing-systems
+#   label: Homing Systems
+#   group: modeling
+# - id: motion-limits
+#   label: Motion Constraints
+#   group: modeling
+# - id: automated-sequences
+#   label: Automated Motion Sequences
+#   group: modeling
+# - id: electronic-component-selection
+#   label: Electronic Component Selection
+#   group: manufacturing
+# - id: electrical-wiring
+#   label: Electrical Wiring
+#   group: manufacturing
+# - id: motor-driver-integration
+#   label: Motor Driver Integration
+#   group: manufacturing
+# - id: sensor-integration
+#   label: Sensor Integration
+#   group: manufacturing
+# - id: embedded-control-architecture
+#   label: Embedded Control Architecture
+#   group: manufacturing
+# - id: hmi-development
+#   label: HMI Development
+#   group: manufacturing
+# - id: electromechanical-integration
+#   label: Electromechanical Integration
+#   group: manufacturing
+
+
+
+
+# - id: arduino-cpp
+#   label: Arduino C/C++
+#   group: software
+# - id: python
+#   label: Python
+#   group: software
+# - id: streamlit
+#   label: Streamlit
+#   group: software
+# - id: pipeline-robotics
+#   label: Pipeline Robotics
+#   group: modeling
+# - id: confined-space-robotics
+#   label: Confined-Space Robotics
+#   group: modeling
+# - id: mechanical-design
+#   label: Mechanical Design
+#   group: modeling
+# - id: expandable-mechanisms
+#   label: Expandable Mechanisms
+#   group: modeling
+# - id: dc-motor-control
+#   label: DC Motor Control
+#   group: modeling
+# - id: servo-motor-control
+#   label: Servo Motor Control
+#   group: modeling
+# - id: geared-motor-selection
+#   label: Geared Motor Selection
+#   group: modeling
+# - id: screw-nut-mechanisms
+#   label: Screw & Nut Mechanisms
+#   group: modeling
+# - id: bearing-selection
+#   label: Bearing Selection
+#   group: modeling
+# - id: robot-control-interface
+#   label: Robot Control Interface
+#   group: modeling
+# - id: wireless-robot-communication
+#   label: Wireless Robot Communication
+#   group: modeling
+# - id: esp32-cam
+#   label: ESP32-CAM
+#   group: modeling
+# - id: arduino-mega
+#   label: Arduino Mega
+#   group: modeling
+# - id: remote-visual-inspection
+#   label: Remote Visual Inspection
+#   group: modeling
+# - id: live-video-streaming
+#   label: Live Video Streaming
+#   group: modeling
+# - id: image-video-capture
+#   label: Image & Video Capture
+#   group: modeling
+# - id: electrical-wiring
+#   label: Electrical Wiring
+#   group: manufacturing
+# - id: rd-prototyping
+#   label: R&D Prototyping
+#   group: manufacturing
+# - id: electromechanical-integration
+#   label: Electromechanical Integration
+#   group: manufacturing
+
+
+
+
+# - id: arduino-cpp
+#   label: Arduino C/C++
+#   group: software
+# - id: arduino-ide
+#   label: Arduino IDE
+#   group: software
+# - id: opencm-904
+#   label: OpenCM9.04
+#   group: software
+# - id: opencm-485
+#   label: OpenCM 485 Expansion Board
+#   group: software
+# - id: dynamixel-mx64
+#   label: Dynamixel MX-64AR
+#   group: software
+# - id: dynamixel-workbench
+#   label: Dynamixel Workbench
+#   group: software
+# - id: i2c
+#   label: I²C Communication
+#   group: software
+# - id: spherical-parallel-robotics
+#   label: Spherical Parallel Robotics
+#   group: modeling
+# - id: servo-motor-control
+#   label: Servo Motor Control
+#   group: modeling
+# - id: embedded-motion-control
+#   label: Embedded Motion Control
+#   group: modeling
+# - id: imu-integration
+#   label: IMU Integration
+#   group: modeling
+# - id: data-acquisition
+#   label: Data Acquisition
+#   group: modeling
+# - id: feedback-control
+#   label: Feedback Control
+#   group: modeling
+# - id: disturbance-rejection
+#   label: Disturbance Rejection
+#   group: modeling
+# - id: control-algorithm-implementation
+#   label: Control Algorithm Implementation
+#   group: modeling
+# - id: experimental-robotics
+#   label: Experimental Robotics
+#   group: modeling
+# - id: sensor-integration
+#   label: Sensor Integration
+#   group: manufacturing
+# - id: electrical-wiring
+#   label: Electrical Wiring
+#   group: manufacturing
+
+
+
+#   # Add only IDs missing from your current engineering_skills.yml.
+# - id: simulink
+#   label: Simulink
+#   group: software
+# - id: msc-adams
+#   label: MSC ADAMS
+#   group: software
+# - id: newton-euler-dynamics
+#   label: Newton–Euler Dynamics
+#   group: modeling
+# - id: inverse-kinematics
+#   label: Inverse Kinematics
+#   group: modeling
+# - id: workspace-analysis
+#   label: Workspace Analysis
+#   group: modeling
+# - id: hydraulic-actuator-modeling
+#   label: Hydraulic Actuator Modeling
+#   group: modeling
+# - id: nsga-ii
+#   label: NSGA-II
+#   group: modeling
+# - id: multi-objective-optimization
+#   label: Multi-Objective Optimization
+#   group: modeling
+# - id: pareto-front-analysis
+#   label: Pareto-Front Analysis
+#   group: modeling
+# - id: actuator-mounting-optimization
+#   label: Actuator Mounting Optimization
+#   group: modeling
+
+
+
+
+# # AXISPRO skills used in engineering_projects.yml. Add only missing IDs to engineering_skills.yml.
+# - id: matlab
+#   label: MATLAB
+#   group: software
+# - id: solidworks
+#   label: SolidWorks
+#   group: software
+# - id: keyshot
+#   label: KeyShot
+#   group: software
+# - id: stewart-gough
+#   label: Stewart–Gough Platform
+#   group: modeling
+# - id: kinematic-modeling
+#   label: Kinematic Modeling
+#   group: modeling
+# - id: dynamic-modeling
+#   label: Dynamic Modeling
+#   group: modeling
+# - id: collision-optimization
+#   label: Collision-Aware Optimization
+#   group: modeling
+# - id: motion-simulation
+#   label: Motion Simulation
+#   group: modeling
+# - id: actuator-sizing
+#   label: Actuator Sizing
+#   group: modeling
+# - id: ball-screw-systems
+#   label: Ball-Screw Systems
+#   group: modeling
+# - id: sheet-metal-design
+#   label: Sheet-Metal Design
+#   group: modeling
+# - id: tolerance-management
+#   label: Tolerance Management
+#   group: modeling
+# - id: laser-cutting
+#   label: Laser Cutting
+#   group: manufacturing
+# - id: cnc-press-brake
+#   label: CNC Press-Brake Forming
+#   group: manufacturing
+# - id: cnc-machining
+#   label: CNC Machining
+#   group: manufacturing
+# - id: chrome-plating
+#   label: Chrome Plating
+#   group: manufacturing
+# - id: quality-inspection
+#   label: Quality Inspection
+#   group: manufacturing
+# - id: hands-on-assembly
+#   label: Hands-on Assembly
+#   group: manufacturing

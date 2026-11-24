@@ -1,0 +1,59 @@
+
+/* ==========================================
+   AXISXTREME — PROJECT-SPECIFIC STYLING
+
+   Shared layout:
+   am-racing-simulator-detail.css
+   ========================================== */
+
+/* Match the About Me orange */
+.am-axisxtreme {
+  --racing-orange: #eb7047;
+}
+
+/* Adjust the AXISXTREME background framing */
+.am-axisxtreme .am-racing-backdrop {
+  background-position: center center;
+  background-size: cover;
+}
+
+/* Match the compact main-content width */
+.am-axisxtreme .am-racing-content {
+  width: 100%;
+  max-width: 840px;
+}
+
+/* Justified project paragraphs */
+.am-axisxtreme .am-racing-section > p:not(.am-racing-kicker),
+.am-axisxtreme .am-racing-roles p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
+/* Keep role contributions as vertical text */
+.am-axisxtreme .am-racing-roles {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.am-axisxtreme .am-racing-roles > div {
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+/* Keep skill tags small and rounded */
+.am-axisxtreme .am-racing-tags a {
+  border-radius: 999px;
+  padding: 5px 11px;
+  font-size: 0.76rem;
+}
+
+/* Responsive content width */
+@media (max-width: 850px) {
+  .am-axisxtreme .am-racing-content {
+    width: 100%;
+  }
+}

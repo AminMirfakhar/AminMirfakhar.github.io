@@ -1,0 +1,116 @@
+{% assign project = site.data.engineering_projects | where: "id", "parallel-robot" | first %}
+{% assign hero_image = '/assets/img/projects/Parallel Robot/Parallel-Robot-Overview.webp' | relative_url %}
+
+<link rel="stylesheet" href="{{ '/assets/css/engineering.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/am-racing-simulator-detail.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/am-parallel-robot-detail.css' | relative_url }}">
+
+<article class="am-site am-racing am-parallel-robot">
+  <nav class="am-breadcrumb" aria-label="Breadcrumb">
+    <a href="{{ '/projects/' | relative_url }}">&larr; All projects</a>
+  </nav>
+
+  <section class="am-racing-hero" aria-labelledby="am-parallel-title">
+    <div class="am-racing-backdrop" style="background-image: url('{{ hero_image }}')" aria-hidden="true"></div>
+    <div class="am-racing-hero-content">
+      <p class="am-racing-eyebrow">ACADEMIC RESEARCH <span aria-hidden="true">/</span> TAARLAB · UNIVERSITY OF TEHRAN</p>
+      <h1 id="am-parallel-title">2-DOF Spherical <span>Parallel Robot</span></h1>
+      <p class="am-racing-subtitle">Embedded Control · Inertial Sensing · Experimental Stabilization</p>
+
+      <div class="am-racing-hero-grid">
+        <section class="am-racing-intro" aria-label="Short project overview">
+          <p>A two-degree-of-freedom spherical parallel robot developed for experimental research into platform stabilization and adaptive motion control. The mechanism uses two servo-driven kinematic chains to adjust its end-effector orientation.</p>
+          <p>I supported graduate researchers by programming the <strong>OpenCM9.04</strong> controller, configuring Dynamixel actuators, integrating <strong>two IMUs</strong> mounted on the base and moving platform, and implementing control and data-acquisition routines for physical experiments.</p>
+        </section>
+        <figure class="am-racing-media am-parallel-media">
+          <div class="am-racing-featured am-parallel-featured">
+            <img src="{{ hero_image }}" alt="Realistic studio visualization of the 2-DOF spherical parallel robot with a machined aluminum base and articulated platform" loading="eager" fetchpriority="high">
+          </div>
+          <figcaption class="am-parallel-image-caption">Conceptual studio visualization based on the physical prototype.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <div class="am-racing-content">
+    <section class="am-racing-section" aria-labelledby="am-parallel-overview">
+      <p class="am-racing-kicker">01 / PROJECT CONTEXT</p>
+      <h2 id="am-parallel-overview">Project Overview &amp; Technical Details</h2>
+      <p>The experimental platform is a two-degree-of-freedom spherical parallel manipulator whose closed-loop kinematic structure controls the angular orientation of a moving end-effector. Coordinated actuation of two joints provides platform orientation control, while external base motion introduces disturbances that a stabilizing controller must reject.</p>
+      <p>Two Dynamixel MX-64AR servo actuators drive the robot, with an OpenCM9.04 controller and OpenCM 485 expansion board providing the embedded command and communication interface. The experimental setup used two inertial measurement units: one installed on the base to measure disturbances and another on the moving platform to measure its response. The sensor readings supported evaluation of orientation feedback and disturbance attenuation.</p>
+      <p>The research team developed a robust adaptive control approach to identify uncertain system parameters and stabilize the end-effector without requiring complete prior knowledge of the mechanism's Jacobian. The controller was investigated through simulation and practical testing, including responses to base disturbances and end-effector orientation tracking.</p>
+      <p>My focus was the experimental implementation: configuring actuator communication, collecting inertial data, integrating the embedded controller, and helping translate the researchers' algorithms into functioning physical experiments.</p>
+    </section>
+
+    <section class="am-racing-section" aria-labelledby="am-parallel-contributions">
+      <p class="am-racing-kicker">02 / PERSONAL CONTRIBUTIONS</p>
+      <h2 id="am-parallel-contributions">My Role &amp; Contributions</h2>
+      <p>I worked with PhD and master's researchers to implement and test their control algorithms on the robot. My responsibilities focused on the embedded controller, Dynamixel motors, wiring, and the two-IMU measurement setup rather than developing the theoretical adaptive-control method.</p>
+      <div class="am-racing-roles">
+        <div>
+          <h3>OpenCM9.04 Embedded Programming:</h3>
+          <p>I programmed the OpenCM9.04 board to run control and data-acquisition routines for the experimental robot, linking feedback measurements with the actuator commands required by the researchers' algorithms.</p>
+        </div>
+        <div>
+          <h3>Dynamixel Servo Configuration &amp; Control:</h3>
+          <p>I configured and communicated with the two Dynamixel MX-64AR actuators, including their operating settings, command interfaces, and available motor feedback. I supported execution of coordinated servo motion during experimental tests.</p>
+        </div>
+        <div>
+          <h3>Dual-IMU Integration &amp; Data Acquisition:</h3>
+          <p>I wired and programmed two inertial measurement units, one on the moving base and the other on the end-effector. I implemented routines to read and record their measurements so the team could compare the applied base disturbance with the response of the controlled platform.</p>
+        </div>
+        <div>
+          <h3>Feedback-Control Algorithm Implementation:</h3>
+          <p>I assisted the graduate researchers in implementing their stabilization algorithms on the embedded hardware. This included integrating the IMU measurements into the control workflow and delivering the resulting actuator commands to the robot.</p>
+        </div>
+        <div>
+          <h3>Electrical Wiring &amp; Hardware Integration:</h3>
+          <p>I connected the microcontroller, actuator communication hardware, servos, and inertial sensors, resolving practical integration needs to establish a working experimental setup.</p>
+        </div>
+        <div>
+          <h3>Experimental Measurements &amp; Testing:</h3>
+          <p>I supported physical trials by recording base and platform motion data, assisting with embedded-system operation, and providing the measurements needed to evaluate stabilization and disturbance rejection.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="am-racing-section" aria-labelledby="am-parallel-skills">
+      <p class="am-racing-kicker">03 / TECHNICAL TOOLKIT</p>
+      <h2 id="am-parallel-skills">Software, Tools &amp; Skills</h2>
+      {% if project and project.skills %}
+        {% assign software_skills = site.data.engineering_skills | where: 'group', 'software' %}
+        {% assign modeling_skills = site.data.engineering_skills | where: 'group', 'modeling' %}
+        {% assign manufacturing_skills = site.data.engineering_skills | where: 'group', 'manufacturing' %}
+        <div class="am-racing-tag-group">
+          <h3>Programming &amp; Embedded Hardware</h3>
+          <div class="am-racing-tags">
+            {% for skill in software_skills %}{% if project.skills contains skill.id %}<a href="{{ '/projects/' | relative_url }}?skill={{ skill.id | url_encode }}">{{ skill.label | escape }}</a>{% endif %}{% endfor %}
+          </div>
+        </div>
+        <div class="am-racing-tag-group">
+          <h3>Robotics, Control &amp; Sensing</h3>
+          <div class="am-racing-tags">
+            {% for skill in modeling_skills %}{% if project.skills contains skill.id %}<a href="{{ '/projects/' | relative_url }}?skill={{ skill.id | url_encode }}">{{ skill.label | escape }}</a>{% endif %}{% endfor %}
+          </div>
+        </div>
+        <div class="am-racing-tag-group">
+          <h3>Experimental Integration</h3>
+          <div class="am-racing-tags">
+            {% for skill in manufacturing_skills %}{% if project.skills contains skill.id %}<a href="{{ '/projects/' | relative_url }}?skill={{ skill.id | url_encode }}">{{ skill.label | escape }}</a>{% endif %}{% endfor %}
+          </div>
+        </div>
+      {% endif %}
+    </section>
+
+    <section class="am-racing-section am-parallel-publication" aria-labelledby="am-parallel-publication">
+      <p class="am-racing-kicker">04 / RELATED RESEARCH</p>
+      <h2 id="am-parallel-publication">Related Publication</h2>
+      <h3>Control of a Two-DOF Parallel Robot with Unknown Parameters Using a Novel Robust Adaptive Approach</h3>
+      <p>S. Ansari Rad, M. Ghafarian Tamizi, A. Mirfakhar, M. Tale Masouleh, and A. Kalhor. <em>ISA Transactions</em>, 2021.</p>
+      <p>This coauthored publication describes the robust adaptive method investigated by the research team and its experimental validation on a 2-DOF spherical parallel robot.</p>
+      <a class="am-parallel-paper-link" href="https://doi.org/10.1016/j.isatra.2021.02.001" target="_blank" rel="noopener noreferrer">Read the published paper &rarr;</a>
+    </section>
+
+    <a class="am-back" href="{{ '/projects/' | relative_url }}">&larr; Browse all projects</a>
+  </div>
+</article>

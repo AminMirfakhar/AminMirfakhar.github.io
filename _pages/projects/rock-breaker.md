@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "Stationary Rock Breaker System"
+title: "Gyratory Crusher De-Clogging Robot — Modeling & Optimization"
 permalink: /projects/rock-breaker/
 nav: false
 project_id: rock-breaker
 ---
-{% include am-project-detail.html %}
+{% include am-rock-breaker-detail.html %}

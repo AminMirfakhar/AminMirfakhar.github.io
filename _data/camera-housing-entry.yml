@@ -1,0 +1,50 @@
+- id: camera-housing
+  title: Industrial Camera & Illumination Housing
+  period: '2024'
+  organization: DSDA
+  project_type: industrial
+  categories:
+  - mechanical-design
+  technologies:
+  - SolidWorks
+  - KeyShot
+  - IP66-oriented enclosures
+  - Air/water cooling
+  - CNC machining
+  - Laser cutting
+  - Welding
+  image: /assets/img/projects/Camera Housing/photo_2026-11-19_09-59-52.jpg
+  summary: Independently designed industrial camera and illumination housings, including sealed optical
+    windows, air- and water-cooled variants, adjustable mounts, and manufacturing-ready details.
+  challenge: Protecting machine-vision equipment in harsh mining environments while preserving optical
+    performance, thermal management, serviceability, and adjustable installation.
+  contributions:
+  - Designed complete camera and illumination housing assemblies and adjustable mounting systems
+  - Developed gasket and optical-window interfaces for IP66-oriented protection
+  - Designed separate air- and water-cooled configurations
+  - Created machined tube, laser-cut plate, welded, and CNC-machined component designs
+  - Oversaw manufacturing and supported assembly and installation
+  outcome: Housing designs supported the PelletSense and Conveyor Belt Monitoring industrial machine-vision
+    systems.
+  skills:
+  - solidworks
+  - keyshot
+  - cad-modeling
+  - mechanical-assembly-design
+  - enclosure-design
+  - ip66-enclosure-design
+  - gasket-seal-design
+  - optical-window-integration
+  - thermal-management
+  - air-cooling
+  - water-cooling
+  - adjustable-mount-design
+  - tolerance-management
+  - cnc-machining
+  - laser-cutting
+  - welding
+  - design-for-manufacturing
+  - manufacturing-oversight
+  - hands-on-assembly
+  - onsite-installation
+  url: /projects/camera-housing/

@@ -225,3 +225,9 @@ body:has(.am-site)  .post {
   font-size: 0.72rem;
   opacity: 0.65;
 }
+
+
+/* Capitalize the first letter of navbar tabs */
+#navbar .nav-link {
+  text-transform: capitalize;
+}

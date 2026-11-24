@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "Camera and Illumination Housing for Harsh Environments"
+title: "Industrial Camera & Illumination Housing"
 permalink: /projects/camera-housing/
 nav: false
 project_id: camera-housing
 ---
-{% include am-project-detail.html %}
+{% include am-camera-housing-detail.html %}

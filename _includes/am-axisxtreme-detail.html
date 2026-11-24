@@ -1,0 +1,403 @@
+
+{% assign project = site.data.engineering_projects
+  | where: "id", "hexapod" | first %}
+
+{% assign hero_image = '/assets/img/projects/Hexapod/AxisXtreme-1.jpg' | relative_url %}
+{% assign secondary_image = '/assets/img/projects/Hexapod/AxisXtreme-8.jpg' | relative_url %}
+
+<!-- Reuse the racing simulator design -->
+<link rel="stylesheet"
+      href="{{ '/assets/css/engineering.css' | relative_url }}">
+<link rel="stylesheet"
+      href="{{ '/assets/css/am-racing-simulator-detail.css' | relative_url }}">
+<link rel="stylesheet"
+      href="{{ '/assets/css/am-axisxtreme-detail.css' | relative_url }}">
+
+<article class="am-site am-racing am-axisxtreme"
+         data-am-racing>
+
+  <!-- BREADCRUMB -->
+  <nav class="am-breadcrumb" aria-label="Breadcrumb">
+    <a href="{{ '/projects/' | relative_url }}">
+      &larr; All projects
+    </a>
+  </nav>
+
+  <!-- ======================================
+       HERO / BACKGROUND / IMAGE GALLERY
+       ====================================== -->
+
+  <section class="am-racing-hero"
+           aria-labelledby="axisxtreme-title">
+
+    <!-- Background remains independent -->
+    <div class="am-racing-backdrop"
+         style="background-image: url('{{ hero_image }}')"
+         aria-hidden="true">
+    </div>
+
+    <div class="am-racing-hero-content">
+
+      <p class="am-racing-eyebrow">
+        INDUSTRIAL PROJECT
+        <span aria-hidden="true">/</span>
+        DSDA · 2023–2024
+      </p>
+
+      <h1 id="axisxtreme-title">
+        6-DOF Industrial
+        <span>Motion Simulator</span>
+      </h1>
+
+      <p class="am-racing-subtitle">
+        Stewart–Gough Platform · 2.2-Ton Payload ·
+        Industrial Motion Control
+      </p>
+
+      <div class="am-racing-hero-grid">
+
+        <!-- LEFT: SHORT OVERVIEW -->
+        <section class="am-racing-intro"
+                 aria-label="Project introduction">
+
+          <p style="font-size: 18px;">
+            <strong>AXISXTREME</strong> is a high-capacity,
+            six-degree-of-freedom (6-DOF) motion simulator
+            based on a Stewart–Gough parallel mechanism,
+            developed for advanced simulation, research,
+            and motion-testing applications.
+          </p>
+
+          <p style="font-size: 18px;">
+            The platform uses six servo-driven linear
+            actuators to reproduce coordinated translational
+            and rotational movements—surge, sway, heave,
+            roll, pitch, and yaw. Designed for a
+            <strong>2.2-ton payload</strong> and acceleration
+            capabilities up to <strong>1 g</strong>,
+            the system integrates heavy-load actuation,
+            precision motion control, and industrial
+            automation.
+          </p>
+
+        </section>
+
+        <!-- RIGHT: SELECTABLE IMAGE GALLERY -->
+        <section class="am-racing-media"
+                 aria-label="AXISXTREME project gallery">
+
+          <div class="am-racing-featured"
+               data-am-racing-gallery>
+
+            <img
+              src="{{ hero_image }}"
+              alt="AXISXTREME industrial motion simulator"
+              data-am-racing-featured
+              loading="eager">
+
+            <button type="button"
+                    class="am-racing-nav am-racing-prev"
+                    data-am-racing-prev
+                    aria-label="Previous image">
+              &#8249;
+            </button>
+
+            <button type="button"
+                    class="am-racing-nav am-racing-next"
+                    data-am-racing-next
+                    aria-label="Next image">
+              &#8250;
+            </button>
+
+          </div>
+
+          <div class="am-racing-thumbnails"
+               aria-label="Select project image">
+
+            <button
+              type="button"
+              class="am-racing-thumb is-active"
+              data-racing-image="{{ hero_image }}"
+              data-racing-label="AXISXTREME overview"
+              aria-label="Show AXISXTREME overview"
+              aria-pressed="true">
+
+              <img src="{{ hero_image }}"
+                   alt=""
+                   loading="eager">
+            </button>
+
+            <button
+              type="button"
+              class="am-racing-thumb"
+              data-racing-image="{{ secondary_image }}"
+              data-racing-label="AXISXTREME project image"
+              aria-label="Show second project image"
+              aria-pressed="false">
+
+              <img src="{{ secondary_image }}"
+                   alt=""
+                   loading="lazy">
+            </button>
+
+          </div>
+
+        </section>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================
+       MAIN PROJECT CONTENT
+       ====================================== -->
+
+  <div class="am-racing-content">
+
+    <!-- 01 / PROJECT OVERVIEW -->
+
+    <section class="am-racing-section"
+             aria-labelledby="axisxtreme-overview">
+
+      <p class="am-racing-kicker">
+        01 / PROJECT CONTEXT
+      </p>
+
+      <h2 id="axisxtreme-overview">
+        Project Overview &amp; Technical Details
+      </h2>
+
+      <p>
+        AXISXTREME is an industrial-scale hexapod
+        motion platform designed to reproduce complex
+        motion profiles under high payload and dynamic
+        loading conditions. Its Stewart–Gough
+        configuration uses six actuated legs connecting
+        a fixed base to a moving platform, enabling
+        motion in six degrees of freedom.
+      </p>
+
+      <p>
+        Developing such a system requires balancing
+        payload weight, rotational inertia, center-of-mass
+        location, workspace, and motion requirements
+        against actuator force, velocity, and mechanical
+        transmission limitations. The platform geometry
+        must accommodate the desired displacement,
+        velocity, and acceleration in each axis while
+        supporting different operating scenarios.
+      </p>
+
+      <p>
+        The engineering development involved deriving
+        the platform's kinematic and dynamic equations
+        and using MATLAB and Simulink to model, simulate,
+        and optimize the system. These analyses guided
+        the selection of platform dimensions, ball-screw
+        assemblies, transmission ratios, pulley and belt
+        configurations, and servo motor specifications.
+      </p>
+
+      <p>
+        The control system was developed around a
+        Siemens S7-1517 PLC and Lenze i950 servo drives.
+        Motion sequences were evaluated in MATLAB before
+        implementation in PLC control logic. Two
+        operator-interface solutions were developed:
+        a Siemens TIA Portal-based HMI for panel operation
+        and a LabVIEW-based interface for PC-to-PLC
+        communication and control.
+      </p>
+
+      <p>
+        The project integrates parallel-robot modeling,
+        constrained mechanical optimization,
+        electromechanical transmission design,
+        PLC-based motion control, and operator-interface
+        development into a high-capacity industrial
+        automation system.
+      </p>
+
+    </section>
+
+    <!-- 02 / MY ROLE -->
+
+    <section class="am-racing-section"
+             aria-labelledby="axisxtreme-role">
+
+      <p class="am-racing-kicker">
+        02 / PERSONAL CONTRIBUTIONS
+      </p>
+
+      <h2 id="axisxtreme-role">
+        My Role &amp; Contributions
+      </h2>
+
+      <p>
+        I contributed to the system-level engineering
+        and control development of AXISXTREME, from
+        mathematical modeling and mechanical sizing
+        to actuator selection, PLC programming,
+        HMI development, and physical integration.
+      </p>
+
+      <div class="am-racing-roles">
+
+        <div>
+          <h3>Kinematic &amp; Dynamic Modeling:</h3>
+          <p>
+            I derived the kinematic and dynamic
+            equations of the Stewart–Gough platform
+            and developed MATLAB models to evaluate
+            its motion and loading characteristics.
+            I also used Simulink to cross-check
+            simulation results and assess the
+            validity of the mathematical models.
+          </p>
+        </div>
+
+        <div>
+          <h3>System Sizing &amp; Optimization:</h3>
+          <p>
+            I optimized the dimensions and geometry
+            of the fixed base and moving platform
+            based on payload mass, inertia, center-of-mass
+            position, and required displacement,
+            velocity, and acceleration in each axis.
+            I evaluated motion scenarios while
+            accounting for actuator force and velocity
+            constraints and component availability.
+          </p>
+        </div>
+
+        <div>
+          <h3>Actuator &amp; Transmission Selection:</h3>
+          <p>
+            Based on modeling results, I sized and
+            selected ball-screw-and-nut mechanisms,
+            transmission ratios, belt and pulley
+            configurations, and servo motor requirements.
+            The calculations considered actuator loads,
+            travel, speed, motor torque, and power.
+          </p>
+        </div>
+
+        <div>
+          <h3>Motion Control &amp; PLC Programming:</h3>
+          <p>
+            I developed and simulated motion-control
+            strategies, including point-to-point
+            movements, in MATLAB before translating
+            them into PLC control logic using
+            Structured Text and Ladder Logic. I worked
+            with the Siemens S7-1517 PLC and Lenze i950
+            servo drives to implement coordinated
+            motion control.
+          </p>
+        </div>
+
+        <div>
+          <h3>HMI Development &amp; Communication:</h3>
+          <p>
+            I developed two operator-interface solutions:
+            a TIA Portal-based HMI for controlling the
+            platform through the PLC and a LabVIEW
+            interface for PC-to-PLC communication,
+            monitoring, and control.
+          </p>
+        </div>
+
+        <div>
+          <h3>Electrical Checks &amp; Mechanical Assembly:</h3>
+          <p>
+            I assisted with electrical wiring checks
+            and the mechanical assembly of the
+            actuator systems, contributing to
+            the verification of connections,
+            component integration, and assembly quality.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- 03 / SKILLS -->
+
+    <section class="am-racing-section am-racing-skills"
+             aria-labelledby="axisxtreme-skills">
+
+      <p class="am-racing-kicker">
+        03 / TECHNICAL TOOLKIT
+      </p>
+
+      <h2 id="axisxtreme-skills">
+        Software, Tools &amp; Skills
+      </h2>
+
+      <!-- SOFTWARE -->
+      <div class="am-racing-tag-group">
+        <h3>Software &amp; Automation</h3>
+
+        <div class="am-racing-tags">
+          {% for skill in site.data.engineering_skills %}
+            {% if skill.group == 'software' %}
+              {% if project.skills contains skill.id %}
+                <a href="{{ '/projects/' | relative_url }}?skill={{ skill.id | url_encode }}">
+                  {{ skill.label | escape }}
+                </a>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- MODELING & CONTROL -->
+      <div class="am-racing-tag-group">
+        <h3>Modeling &amp; Control</h3>
+
+        <div class="am-racing-tags">
+          {% for skill in site.data.engineering_skills %}
+            {% if skill.group == 'modeling' %}
+              {% if project.skills contains skill.id %}
+                <a href="{{ '/projects/' | relative_url }}?skill={{ skill.id | url_encode }}">
+                  {{ skill.label | escape }}
+                </a>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- INTEGRATION -->
+      <div class="am-racing-tag-group">
+        <h3>Engineering &amp; Integration</h3>
+
+        <div class="am-racing-tags">
+          {% for skill in site.data.engineering_skills %}
+            {% if skill.group == 'manufacturing' %}
+              {% if project.skills contains skill.id %}
+                <a href="{{ '/projects/' | relative_url }}?skill={{ skill.id | url_encode }}">
+                  {{ skill.label | escape }}
+                </a>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+
+    </section>
+
+    <a class="am-back"
+       href="{{ '/projects/' | relative_url }}">
+      &larr; Browse all projects
+    </a>
+
+  </div>
+</article>
+
+<!-- Use the EXISTING gallery JavaScript -->
+<script
+  src="{{ '/assets/js/am-racing-simulator-detail.js' | relative_url }}"
+  defer>
+</script>

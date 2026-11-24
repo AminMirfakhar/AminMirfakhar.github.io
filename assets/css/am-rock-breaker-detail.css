@@ -1,0 +1,25 @@
+/* Project-only refinements; existing AXISPRO layout styles are loaded first. */
+.am-site.am-rock-breaker { --racing-orange: #eb7047; }
+.am-rock-breaker .am-racing-backdrop { background-position: center 45%; }
+/* Keep readable type over a busy industrial photograph. */
+.am-rock-breaker .am-racing-hero::before {
+  background: linear-gradient(90deg, rgba(8,21,32,.94) 0%, rgba(8,21,32,.76) 48%, rgba(8,21,32,.52) 100%),
+              linear-gradient(0deg, rgba(7,17,27,.52), transparent 70%);
+}
+.am-rock-breaker .am-racing-hero-grid { align-items: end; }
+.am-rock-breaker .am-racing-hero h1 { max-width: 960px; }
+.am-rock-breaker .am-racing-featured { aspect-ratio: 1 / 1; max-width: 600px; margin-left: auto; }
+.am-rock-breaker .am-racing-featured > img { object-fit: cover; }
+.am-rock-breaker-media { margin: 0; }
+.am-rock-breaker-photo-caption { color: #e1e8ee; font-size: .73rem; line-height: 1.5; text-align: right; margin-top: 9px; max-width: 600px; margin-left: auto; }
+.am-rock-breaker .am-racing-intro p { font-size: clamp(.96rem, 1.08vw, 1.1rem); }
+.am-rock-breaker .am-racing-roles > div { margin-bottom: 2px; }
+@media (max-width: 850px) {
+ .am-rock-breaker .am-racing-featured { max-width: 520px; margin: 0 auto; }
+ .am-rock-breaker-photo-caption { text-align: center; margin-right: auto; }
+}
+@media (max-width: 580px) {
+ .am-rock-breaker .am-racing-featured { aspect-ratio: 1 / 1; }
+ .am-rock-breaker .am-racing-hero-content { padding: 20px; }
+ .am-rock-breaker .am-racing-hero::before { background: rgba(8,21,32,.82); }
+}

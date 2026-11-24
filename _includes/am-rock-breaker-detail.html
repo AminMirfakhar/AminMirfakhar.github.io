@@ -1,0 +1,80 @@
+{% assign project = site.data.engineering_projects | where: "id", "rock-breaker" | first %}
+{% assign rock_image = '/assets/img/projects/Rock Breaker/rock-breaker-reference-enhanced.webp' | relative_url %}
+<link rel="stylesheet" href="{{ '/assets/css/engineering.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/am-racing-simulator-detail.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/am-rock-breaker-detail.css' | relative_url }}">
+
+<article class="am-site am-racing am-rock-breaker">
+  <nav class="am-breadcrumb" aria-label="Breadcrumb">
+    <a href="{{ '/projects/' | relative_url }}">← All projects</a>
+  </nav>
+
+  <header class="am-racing-hero" aria-labelledby="rock-breaker-title">
+    <div class="am-racing-backdrop" style="background-image: url('{{ rock_image }}')" aria-hidden="true"></div>
+    <div class="am-racing-hero-content">
+      <p class="am-racing-eyebrow">RESEARCH &amp; DEVELOPMENT <span aria-hidden="true">/</span> DSDACO · 2024</p>
+      <h1 id="rock-breaker-title">Gyratory Crusher <span>De-Clogging Robot</span></h1>
+      <p class="am-racing-subtitle">Kinematic &amp; Dynamic Modeling · Hydraulic Actuator Optimization · NSGA-II</p>
+
+      <div class="am-racing-hero-grid">
+        <section class="am-racing-intro" aria-label="Short project overview">
+          <p>An R&amp;D study of an excavator-mounted articulated robotic system for clearing blockages deep inside gyratory crusher feed openings. The proposed mechanism was designed around a working depth of approximately <strong>17 meters</strong>, with interchangeable tools for rock breaking and material handling.</p>
+          <p>Working with a graduate student, I contributed to the robot's kinematic and dynamic models in MATLAB, Simulink, and MSC ADAMS, and to optimizing link lengths and hydraulic-actuator mounting locations.</p>
+        </section>
+        <figure class="am-racing-media am-rock-breaker-media">
+          <div class="am-racing-featured">
+            <img src="{{ rock_image }}" alt="Enhanced reference photograph of an articulated hydraulic rock breaker at a crusher feed opening" loading="eager" fetchpriority="high" width="1024" height="1024">
+          </div>
+          <figcaption class="am-rock-breaker-photo-caption">Industrial rock-breaker reference image, digitally enhanced. Illustrative of the application, not a photograph of the R&amp;D prototype.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </header>
+
+  <div class="am-racing-content">
+    <section class="am-racing-section" aria-labelledby="rock-overview">
+      <p class="am-racing-kicker">01 / PROJECT OVERVIEW &amp; TECHNICAL DETAILS</p>
+      <h2 id="rock-overview">Project Overview &amp; Technical Details</h2>
+      <p>Oversized rocks and accumulated material can obstruct the feed openings of large gyratory crushers, interrupting mining production. Clearing such blockages deep inside the opening can be hazardous and expensive when personnel or heavy machinery must enter the work area.</p>
+      <p>This DSDACO research project investigated a mobile, excavator-mounted articulated robot intended to access crusher openings to depths of approximately 17 meters. The proposed system would position specialized interchangeable tools for rock breaking, excavation, and grasping or relocating material. The excavator provides mobility, while hydraulically actuated links provide the reach and positioning required inside the crusher.</p>
+      <p>The engineering study included forward and inverse kinematics, hydraulic-actuator kinematics, and inverse dynamics formulated using the Newton–Euler method. MATLAB, Simulink, and MSC ADAMS were used to study mechanism motion, joint loads, actuator forces, and operating configurations.</p>
+      <p>Multi-objective optimization using the NSGA-II algorithm investigated the lengths of three articulated links and the attachment locations of the hydraulic cylinders. The principal objectives were to reduce link lengths while increasing reachable workspace, subject to geometric and actuator constraints such as cylinder stroke, extended and retracted lengths, and force requirements. Pareto-front solutions and their associated workspaces were analyzed to compare design trade-offs.</p>
+      <p>The broader graduate research also covered detailed component design, hydraulic cylinders and joints, interchangeable tools and quick-connect mechanisms, and finite element analysis of critical components. My personal work centered on mathematical modeling, simulation, and mechanism optimization rather than claiming ownership of all subsequent component design activities.</p>
+    </section>
+
+    <section class="am-racing-section" aria-labelledby="rock-role">
+      <p class="am-racing-kicker">02 / MY ROLE &amp; CONTRIBUTIONS</p>
+      <h2 id="rock-role">My Role &amp; Contributions</h2>
+      <p>I supported a graduate student on this R&amp;D project, contributing to the numerical and simulation work used to investigate the robot's reach, motion, mechanical loading, and actuator installation geometry.</p>
+      <div class="am-racing-roles">
+        <div><h3>Forward &amp; Inverse Kinematic Modeling</h3><p>I contributed to deriving and programming the relationships between articulated joint configurations and the breaker's end-effector position in MATLAB, supporting reachability and motion analysis.</p></div>
+        <div><h3>Newton–Euler Dynamic Modeling</h3><p>I worked on the robot's inverse-dynamics model, using the Newton–Euler formulation to examine joint torques and mechanical loads across different operating configurations.</p></div>
+        <div><h3>MATLAB, Simulink &amp; MSC ADAMS</h3><p>I implemented and investigated the mechanism's kinematic and dynamic behavior using MATLAB code, Simulink models, and multibody simulations in MSC ADAMS.</p></div>
+        <div><h3>Workspace &amp; Reachability Analysis</h3><p>I evaluated reachable end-effector positions across the operating region to understand how joint configurations and link dimensions affected coverage of the deep crusher opening.</p></div>
+        <div><h3>Hydraulic Actuator Geometry &amp; Force Analysis</h3><p>I modeled cylinder installation geometry, extension lengths, and mechanical leverage to evaluate how actuator attachment points influence required travel and forces.</p></div>
+        <div><h3>NSGA-II Multi-Objective Optimization</h3><p>I helped implement optimization of three link lengths and actuator mounting positions, balancing compact mechanism geometry with workspace coverage and considering hydraulic actuator constraints.</p></div>
+        <div><h3>Pareto-Front &amp; Design Evaluation</h3><p>I supported comparison of alternative optimized configurations and their workspaces to understand engineering trade-offs and identify promising candidate geometries.</p></div>
+      </div>
+    </section>
+
+    <section class="am-racing-section am-racing-skills" aria-labelledby="rock-skills">
+      <p class="am-racing-kicker">03 / SOFTWARE, TOOLS &amp; ENGINEERING SKILLS</p>
+      <h2 id="rock-skills">Software, Tools &amp; Engineering Skills</h2>
+      {% assign skill_groups = "software|Software,modeling|Modeling &amp; Optimization" | split: "," %}
+      {% for group_record in skill_groups %}
+        {% assign group_parts = group_record | split: "|" %}
+        <div class="am-racing-tag-group">
+          <h3>{{ group_parts[1] }}</h3>
+          <div class="am-racing-tags">
+            {% for skill in site.data.engineering_skills %}
+              {% if skill.group == group_parts[0] and project.skills contains skill.id %}
+                <a href="{{ '/projects/' | relative_url }}?skill={{ skill.id | url_encode }}">{{ skill.label | escape }}</a>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
+    </section>
+    <a class="am-back" href="{{ '/projects/' | relative_url }}">← Browse all projects</a>
+  </div>
+</article>

@@ -1,0 +1,40 @@
+# Add only IDs missing from your current engineering_skills.yml.
+- id: simulink
+  label: Simulink
+  group: software
+
+- id: msc-adams
+  label: MSC ADAMS
+  group: software
+
+- id: newton-euler-dynamics
+  label: Newton–Euler Dynamics
+  group: modeling
+
+- id: inverse-kinematics
+  label: Inverse Kinematics
+  group: modeling
+
+- id: workspace-analysis
+  label: Workspace Analysis
+  group: modeling
+
+- id: hydraulic-actuator-modeling
+  label: Hydraulic Actuator Modeling
+  group: modeling
+
+- id: nsga-ii
+  label: NSGA-II
+  group: modeling
+
+- id: multi-objective-optimization
+  label: Multi-Objective Optimization
+  group: modeling
+
+- id: pareto-front-analysis
+  label: Pareto-Front Analysis
+  group: modeling
+
+- id: actuator-mounting-optimization
+  label: Actuator Mounting Optimization
+  group: modeling

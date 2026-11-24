@@ -1,35 +1,79 @@
 # Canonical project directory: exactly twelve unique projects.
 # Technical categories are multi-select; project_type is a separate classification.
+
 - id: hexapod
   title: 6-DOF Motion Simulator — 2.2-Ton Payload
   period: 2023–2024
   organization: DSDA
   project_type: industrial
   categories:
-  - robotics
-  - automation
-  - mechanical-design
-  - dynamic-modeling
+    - robotics
+    - automation
+    - mechanical-design
+    - dynamic-modeling
   technologies:
-  - Siemens S7-1517 PLC
-  - Lenze i950
-  - Kinematics
-  - Dynamics
-  - HMI
+    - MATLAB
+    - Simulink
+    - Siemens TIA Portal
+    - Siemens S7-1517 PLC
+    - Lenze i950
+    - LabVIEW
+    - Motion Control
   image: /assets/img/projects/Hexapod/AxisXtreme-1.jpg
-  summary: Kinematic and dynamic modeling, PLC programming, servo integration, and HMI design for an
-    industrial six-degree-of-freedom motion simulator with a 2.2-ton payload capacity.
-  challenge: Integrating mechanical modeling with real-time control of a high-payload parallel motion
-    platform.
+  summary: >-
+    System-level modeling, constrained geometry optimization,
+    actuator and transmission sizing, PLC motion control,
+    and HMI development for a 2.2-ton six-degree-of-freedom
+    industrial motion simulator.
+  challenge: >-
+    Optimizing a high-payload Stewart–Gough platform for
+    demanding motion profiles while respecting actuator
+    force and velocity limits, then integrating the
+    resulting system with industrial motion control.
   contributions:
-  - Kinematic and dynamic modeling
-  - Siemens S7-1517 PLC programming
-  - Lenze i950 servo-drive integration
-  - Human-machine interface (HMI) design
-  outcome: Industrial motion simulator development; performance measurements can be added when documented.
+    - Kinematic and dynamic modeling in MATLAB and Simulink
+    - Platform geometry and motion-envelope optimization
+    - Ball-screw, transmission, and servo motor sizing
+    - Siemens PLC programming and motion control
+    - TIA Portal and LabVIEW HMI development
+    - Electrical wiring checks and actuator assembly assistance
+  outcome: >-
+    Engineering development of an industrial 6-DOF motion
+    simulator, including mechanical system sizing,
+    electromechanical component selection,
+    and PLC-based motion-control integration.
+  skills:
+    - matlab
+    - simulink
+    - tia-portal
+    - labview
+    - siemens-s7-1517
+    - lenze-i950
+    - structured-text
+    - ladder-logic
+    - stewart-gough
+    - kinematic-modeling
+    - dynamic-modeling
+    - motion-simulation
+    - system-sizing
+    - payload-inertia-analysis
+    - constrained-optimization
+    - actuator-sizing
+    - ball-screw-systems
+    - servo-motor-selection
+    - belt-pulley-transmission
+    - multi-axis-motion-control
+    - plc-programming
+    - hmi-development
+    - electromechanical-integration
+    - electrical-checks
+    - hands-on-assembly
   url: /projects/hexapod/
+
+# ---------------------------------------------------------------------------------------------------------------
+
 - id: drywall
-  title: Autonomous Drywall Installation Robot
+  title: Wall-bot — Autonomous Drywall Installation Robot
   period: '2024'
   organization: Rebuild Robotics
   project_type: industrial
@@ -37,175 +81,65 @@
   - robotics
   - automation
   technologies:
-  - Electrical integration
-  - Programming
-  - Human-machine interfaces
+  - Arduino Mega
+  - Arduino C/C++
+  - Python
+  - Streamlit
+  - AccelStepper
+  - Ethernet / UDP
+  - AS5600
+  - TCA9548A
   image: /assets/img/projects/Drywall Panel Robot/Clean Robotic Construction Site.png
-  summary: Electrical component selection, programming, and interface development for an autonomous
-    drywall installation robot.
-  challenge: Coordinating electrical components and software interfaces for a construction-robotics
-    application.
+  summary: Electrical architecture and embedded control for a mobile drywall installation robot, including
+    encoder-feedback steering, multi-axis stepper motion, network communication, and a Streamlit operator
+    interface.
+  challenge: Coordinate four-wheel mobile navigation and multi-axis panel manipulation through reliable
+    embedded controls, sensor feedback, motion limits, and networked operator commands.
   contributions:
-  - Electrical component selection
-  - Programming
-  - Interface development
-  outcome: Engineering development contributions; operational performance information has not been provided.
+  - Electronic component selection and electrical wiring
+  - Dual Arduino Mega control and W5100 Ethernet / UDP communication
+  - AS5600 steering encoder integration through TCA9548A I²C multiplexing
+  - Feedback-based steering and wheel speed / acceleration control
+  - AccelStepper-based eight-axis upper-platform motion and homing
+  - Streamlit operator interface and live camera controls
+  - Installation command sequencing and hardware integration
+  outcome: Contributed embedded-control, electrical, and operator-interface functionality to the Wall-bot
+    construction-robotics system documented in an ISARC 2025 publication.
+  skills:
+  - arduino-cpp
+  - python
+  - streamlit
+  - accelstepper
+  - arduino-mega
+  - ethernet-w5100
+  - udp-communication
+  - i2c
+  - tca9548a
+  - as5600
+  - interrupt-handling
+  - mobile-robotics
+  - closed-loop-steering
+  - encoder-feedback
+  - pwm-motor-control
+  - stepper-motor-control
+  - multi-axis-motion-control
+  - acceleration-ramping
+  - homing-systems
+  - motion-limits
+  - automated-sequences
+  - electronic-component-selection
+  - electrical-wiring
+  - motor-driver-integration
+  - sensor-integration
+  - embedded-control-architecture
+  - hmi-development
+  - electromechanical-integration
+  - hands-on-assembly
   url: /projects/drywall/
-- id: dm45-drill
-  title: DM45 Blasthole Drill Renovation
-  period: '2024'
-  organization: DSDA
-  project_type: industrial
-  categories:
-  - automation
-  technologies:
-  - GPS-based navigation
-  - HMI
-  - Industrial equipment
-  image: ''
-  summary: Designed a GPS-based HMI navigation system to support drilling precision and monitoring on
-    a DM45 blasthole drill.
-  challenge: Providing operators with navigation and monitoring information for a blasthole drilling
-    system.
-  contributions:
-  - Designed the GPS-based HMI navigation system
-  - Supported drilling precision and monitoring through the interface
-  outcome: Industrial renovation project; measured accuracy and deployment results are not documented
-    here.
-  url: /projects/dm45-drill/
-- id: pipeline-inspection
-  title: Pipeline Inspection Robot
-  period: '2023'
-  organization: DSDA
-  project_type: industrial
-  categories:
-  - robotics
-  - mechanical-design
-  technologies:
-  - Mechanical design
-  - Simulation
-  - Prototyping
-  image: ''
-  summary: Involved in the design, simulation, and prototyping of a pipeline inspection robot.
-  challenge: Developing a robotic inspection system suitable for constrained pipe environments.
-  contributions:
-  - Design contributions
-  - Simulation
-  - Prototyping
-  outcome: Prototype development is documented in the project summary; detailed testing results can
-    be added later.
-  url: /projects/pipeline-inspection/
-- id: pellet-sizing
-  title: Pellet Size Monitoring System
-  period: '2022'
-  organization: DSDA
-  project_type: industrial
-  categories:
-  - image-processing
-  - automation
-  technologies:
-  - Image processing
-  - Industrial vision
-  - Pellet detection
-  image: '/assets/img/projects/Pellet Size Monitoring/Cleaned Industrial Pellet Detection System.png'
-  summary: Developed image-processing algorithms for iron ore pellet detection in an R&D project that
-    progressed to production.
-  challenge: Detecting iron ore pellets from industrial images to support process monitoring.
-  contributions:
-  - Developed image-processing algorithms for pellet detection
-  - Contributed during R&D and progression toward production
-  outcome: The project progressed to production, as described in the supplied project list. Specific
-    detection metrics have not been supplied.
-  url: /projects/pellet-sizing/
-- id: conveyor
-  title: Conveyor Belt Monitoring System
-  period: '2022'
-  organization: DSDA
-  project_type: industrial
-  categories:
-  - image-processing
-  - automation
-  technologies:
-  - Artificial intelligence
-  - Image segmentation
-  - Defect detection
-  image: /assets/img/projects/Belt Condition Monitoring/Industrial Conveyor with BELTSENSE Monitor.png
-  summary: Implemented defect detection using image processing and segmentation techniques with artificial
-    intelligence; the project progressed to production.
-  challenge: Identifying conveyor belt defects using industrial image data.
-  contributions:
-  - Implemented image-based defect detection
-  - Applied segmentation techniques and AI methods
-  outcome: The project progressed to production, as described in the supplied project list; accuracy
-    measurements have not been supplied.
-  url: /projects/conveyor/
-- id: parallel-robot
-  title: 2-DOF Parallel Robot Control
-  period: '2018'
-  organization: Taarlab
-  project_type: academic-research
-  categories:
-  - robotics
-  - automation
-  - dynamic-modeling
-  technologies:
-  - Control algorithms
-  - Parallel robotics
-  - Programming
-  image: ''
-  summary: Developed control algorithms and programming for a two-degree-of-freedom parallel robot at
-    Taarlab.
-  challenge: Controlling a parallel robotic mechanism with two degrees of freedom.
-  contributions:
-  - Control algorithm development
-  - Programming
-  outcome: Research work at Taarlab; specific algorithm performance and its relationship to published
-    work should be verified before adding.
-  url: /projects/parallel-robot/
-- id: continuum-arm
-  title: Multi-Continuum Robotic Arm
-  period: '2021'
-  organization: Self-initiated
-  project_type: personal
-  categories:
-  - robotics
-  - mechanical-design
-  - automation
-  technologies:
-  - Robotic arm
-  - Design
-  - Control
-  image: ''
-  summary: Self-initiated robotic arm project involving design and control.
-  challenge: Exploring the design and control of a multi-continuum robotic arm.
-  contributions:
-  - Project concept and design
-  - Control development
-  outcome: Personal exploration; validated performance data has not been provided.
-  url: /projects/continuum-arm/
-- id: rock-breaker
-  title: Stationary Rock Breaker System
-  period: '2024'
-  organization: DSDA
-  project_type: industrial
-  categories:
-  - dynamic-modeling
-  - mechanical-design
-  technologies:
-  - MATLAB
-  - ADAMS
-  - Kinematics
-  - Dynamics
-  image: ''
-  summary: Kinematic and dynamic modeling of a four-link, four-degree-of-freedom stationary rock breaker
-    using MATLAB and ADAMS.
-  challenge: Modeling articulated motion and dynamics for an industrial rock breaker mechanism.
-  contributions:
-  - Modeled four-link, four-DOF mechanism kinematics and dynamics
-  - Used MATLAB and ADAMS
-  outcome: Completed modeling work is described in the project list; results and validation plots can
-    be added later.
-  url: /projects/rock-breaker/
+
+
+# ---------------------------------------------------------------------------------------------------------------
+
 - id: racing-simulator
   title: 6-DOF Racing Car Motion Simulator — 150 kg
   period: '2024'
@@ -219,55 +153,387 @@
   - 3D CAD
   - Mathematical modeling
   skills:
-    - matlab
-    - solidworks
-    - keyshot
-    - stewart-gough
-    - kinematic-modeling
-    - dynamic-modeling
-    - collision-optimization
-    - motion-simulation
-    - actuator-sizing
-    - ball-screw-systems
-    - sheet-metal-design
-    - tolerance-management
-    - laser-cutting
-    - cnc-press-brake
-    - cnc-machining
-    - chrome-plating
-    - quality-inspection
-    - hands-on-assembly
-  image: '/assets/img/projects/Racing Hexapod/AXISPRO-5.png'
-  summary: Mathematical modeling and SolidWorks 3D CAD design of a six-degree-of-freedom racing motion
-    simulator with a 150 kg payload capacity.
+  - matlab
+  - solidworks
+  - keyshot
+  - stewart-gough
+  - kinematic-modeling
+  - dynamic-modeling
+  - collision-optimization
+  - motion-simulation
+  - actuator-sizing
+  - ball-screw-systems
+  - sheet-metal-design
+  - tolerance-management
+  - laser-cutting
+  - cnc-press-brake
+  - cnc-machining
+  - chrome-plating
+  - quality-inspection
+  - hands-on-assembly
+  image: /assets/img/projects/Racing Hexapod/AXISPRO-5.png
+  summary: Mathematical modeling and SolidWorks 3D CAD design of a six-degree-of-freedom racing motion simulator
+    with a 150 kg payload capacity.
   challenge: Designing the mechanical geometry of a compact six-axis motion simulator.
   contributions:
   - Mathematical modeling
   - SolidWorks 3D CAD design
   outcome: Design work documented; experimental payload and motion metrics have not been supplied.
   url: /projects/racing-simulator/
+
+
+
+# ---------------------------------------------------------------------------------------------------------------
+
+
+- id: pipeline-inspection
+  title: Pipeline Inspection Robot
+  period: '2023'
+  organization: DSDA
+  project_type: industrial
+  categories:
+  - robotics
+  - mechanical-design
+  - automation
+  technologies:
+  - SolidWorks
+  - Arduino Mega
+  - ESP32-CAM
+  - Python
+  - Streamlit
+  - DC Motor Control
+  image: /assets/img/projects/Pipeline Inspection Robot/Pipeline-Robot-Side.webp
+  summary: Designed a six-wheel radially expandable in-pipe inspection robot, selected motors and mechanical
+    hardware, and developed Arduino/ESP32 control and a Streamlit interface for remote driving and visual
+    inspection.
+  challenge: Fit an adjustable six-wheel locomotion mechanism into confined pipes while generating enough
+    wheel-to-wall traction for vertical movement and providing remote camera inspection.
+  contributions:
+  - Complete mechanical design in SolidWorks
+  - DC motors, geared expansion motor, gears, bearings and screw-nut hardware selection
+  - Arduino Mega programming and ESP32-CAM wireless integration
+  - Streamlit interface for driving, expansion, live video, image/video capture and flashlight control
+  - Hands-on wiring, assembly and prototype integration
+  outcome: R&D prototype developed with mechanical design, embedded control and remote visual inspection;
+    modeling, MATLAB/ADAMS simulation and FEA were performed by a collaborating undergraduate student.
+  skills:
+  - arduino-cpp
+  - python
+  - streamlit
+  - solidworks
+  - pipeline-robotics
+  - confined-space-robotics
+  - mechanical-design
+  - expandable-mechanisms
+  - dc-motor-control
+  - servo-motor-control
+  - geared-motor-selection
+  - screw-nut-mechanisms
+  - bearing-selection
+  - robot-control-interface
+  - wireless-robot-communication
+  - esp32-cam
+  - arduino-mega
+  - remote-visual-inspection
+  - live-video-streaming
+  - image-video-capture
+  - electrical-wiring
+  - hands-on-assembly
+  - rd-prototyping
+  - electromechanical-integration
+  url: /projects/pipeline-inspection/
+
+
+
+# ---------------------------------------------------------------------------------------------------------------
+
+
+# Replace ONLY the existing `- id: pellet-sizing` entry in engineering_projects.yml.
+- id: pellet-sizing
+  title: PelletSense — Pellet Size Monitoring & Control System
+  period: '2022'
+  organization: DSDA
+  project_type: industrial
+  categories:
+    - image-processing
+    - automation
+    - mechanical-design
+  technologies:
+    - Python
+    - YOLO
+    - Instance Segmentation
+    - Streamlit
+    - SolidWorks
+    - KeyShot
+    - Industrial Machine Vision
+  image: '/assets/img/projects/Pellet Size Monitoring/Cleaned Industrial Pellet Detection System.png'
+  summary: >-
+    Developed a pellet-sizing system from requirements and client proposals
+    through computer-vision prototyping, industrial hardware design, and
+    on-site installation for Golgohar.
+  challenge: >-
+    Reliable camera-based pellet measurement under harsh industrial conditions,
+    with appropriate optical hardware and requirements aligned to plant needs.
+  contributions:
+    - Led feasibility and hardware/software requirements analysis
+    - Presented proposals and aligned requirements with Golgohar teams
+    - Built YOLO-based pellet detection prototype in Python and Streamlit
+    - Prepared the technical and financial proposal
+    - Reviewed later Detectron2 and SAM development by the software team
+    - Designed protective camera and illumination housings
+    - Supported manufacturing, assembly, and on-site installation
+  outcome: >-
+    Client-approved R&D concept advanced through industrial hardware
+    manufacturing and on-site installation.
+  skills:
+    - python
+    - yolo
+    - instance-segmentation
+    - streamlit
+    - camera-calibration
+    - circle-fitting
+    - solidworks
+    - keyshot
+    - optical-system-design
+    - industrial-camera-integration
+    - ip66-enclosure-design
+    - thermal-management
+    - tolerance-management
+    - requirements-engineering
+    - feasibility-study
+    - rd-prototyping
+    - client-presentations
+    - technical-proposals
+    - manufacturing-oversight
+    - hands-on-assembly
+    - onsite-installation
+  url: /projects/pellet-sizing/
+
+
+# ---------------------------------------------------------------------------------------------------------------
+
+
+
+# Replace ONLY the existing - id: conveyor entry in engineering_projects.yml
+- id: conveyor
+  title: BeltSense — Industrial Conveyor Belt Condition Monitoring System
+  period: '2022'
+  organization: DSDA
+  project_type: industrial
+  categories:
+  - image-processing
+  - automation
+  technologies:
+  - Python
+  - YOLO
+  - OpenCV
+  - Streamlit
+  - Laser triangulation (R&D prototype)
+  - Industrial computer vision
+  image: /assets/img/projects/Belt Condition Monitoring/Industrial Conveyor with BELTSENSE Monitor.png
+  summary: Researched conveyor belt inspection technologies and developed computer-vision and laser-triangulation R&D prototypes; contributed to manufacturing for the final vision-only monitoring system deployed for Golgohar.
+  challenge: Choosing a practical inspection architecture for conveyor damage and splice monitoring while evaluating a prototype laser-triangulation method and accommodating the industrial imaging environment.
+  contributions:
+  - Technology benchmarking and client requirements analysis
+  - Python, YOLO, and OpenCV defect-detection prototype with Streamlit interface
+  - Developed and tested a laser-triangulation algorithm in R&D only
+  - Camera placement and optical configuration evaluation
+  - Technical proposal and client coordination
+  - Participation in hardware manufacturing and integration
+  outcome: The final system deployed for Golgohar adopted camera-based defect inspection without laser triangulation. I participated in development and manufacturing, not on-site installation.
+  skills:
+  - python
+  - opencv
+  - yolo
+  - streamlit
+  - laser-triangulation
+  - surface-defect-detection
+  - conveyor-inspection
+  - optical-configuration
+  - industrial-camera-integration
+  - requirements-engineering
+  - feasibility-study
+  - rd-prototyping
+  - technical-proposals
+  - client-presentations
+  - technology-benchmarking
+  - condition-monitoring
+  - manufacturing-oversight
+  - hardware-integration
+  url: /projects/conveyor/
+
+
+# ---------------------------------------------------------------------------------------------------------------
+
+
+
+# Replace ONLY the existing "- id: parallel-robot" block in engineering_projects.yml.
+- id: parallel-robot
+  title: 2-DOF Spherical Parallel Robot — Control & Programming
+  period: '2018'
+  organization: Taarlab — University of Tehran
+  project_type: academic-research
+  categories:
+    - robotics
+    - automation
+    - dynamic-modeling
+  technologies:
+    - OpenCM9.04
+    - Arduino C/C++
+    - Dynamixel MX-64AR
+    - OpenCM 485 Expansion Board
+    - IMU (GY-521)
+    - I²C
+  image: /assets/img/projects/Parallel Robot/Parallel-Robot-Overview.webp
+  summary: >-
+    Embedded implementation of experimental stabilization control for a
+    2-DOF spherical parallel robot, including OpenCM9.04 programming,
+    Dynamixel servo configuration, dual-IMU data acquisition, and testing.
+  challenge: >-
+    Supporting robust stabilization research on a coupled parallel mechanism
+    through reliable actuator communication and measurement of base
+    disturbances and end-effector motion.
+  contributions:
+    - OpenCM9.04 embedded programming and algorithm implementation
+    - Dynamixel MX-64AR configuration and feedback integration
+    - Base and moving-platform IMU wiring and data acquisition
+    - Embedded control interface and experimental test support
+    - Electrical wiring and hardware integration
+  outcome: >-
+    Supported physical validation of graduate research on robust adaptive
+    stabilization; coauthored the related ISA Transactions publication.
+  skills:
+    - arduino-cpp
+    - arduino-ide
+    - opencm-904
+    - opencm-485
+    - dynamixel-mx64
+    - dynamixel-workbench
+    - spherical-parallel-robotics
+    - servo-motor-control
+    - embedded-motion-control
+    - imu-integration
+    - i2c
+    - data-acquisition
+    - feedback-control
+    - disturbance-rejection
+    - control-algorithm-implementation
+    - experimental-robotics
+    - sensor-integration
+    - electrical-wiring
+  url: /projects/parallel-robot/
+
+
+
+# ---------------------------------------------------------------------------------------------------------------
+
+
+# Replace ONLY the existing rock-breaker item in engineering_projects.yml.
+- id: rock-breaker
+  title: Gyratory Crusher De-Clogging Robot — Modeling & Optimization
+  period: '2024'
+  organization: DSDACO
+  project_type: industrial
+  categories:
+  - dynamic-modeling
+  - mechanical-design
+  technologies:
+  - MATLAB
+  - Simulink
+  - MSC ADAMS
+  - Newton–Euler inverse dynamics
+  - NSGA-II
+  - Hydraulic actuator optimization
+  skills:
+  - matlab
+  - simulink
+  - msc-adams
+  - kinematic-modeling
+  - inverse-kinematics
+  - dynamic-modeling
+  - newton-euler-dynamics
+  - workspace-analysis
+  - hydraulic-actuator-modeling
+  - nsga-ii
+  - multi-objective-optimization
+  - pareto-front-analysis
+  - actuator-mounting-optimization
+  image: /assets/img/projects/Rock Breaker/rock-breaker-reference-enhanced.webp
+  summary: R&D study of an excavator-mounted de-clogging robot for gyratory crushers; contributed to kinematic
+    and dynamic models, multibody simulation, and geometry/actuator optimization.
+  challenge: Developing a mechanism capable of accessing deep crusher feed openings while balancing reach,
+    hydraulic actuation requirements, and structural dimensions.
+  contributions:
+  - MATLAB forward and inverse kinematics
+  - Newton–Euler dynamic modeling
+  - Simulink and MSC ADAMS simulation
+  - Hydraulic actuator mounting and force calculations
+  - NSGA-II link-length and workspace optimization
+  outcome: Modeling and design optimization for a proposed excavator-mounted de-clogging robot; not presented
+    as a manufactured installation.
+  url: /projects/rock-breaker/
+
+
+# ---------------------------------------------------------------------------------------------------------------
+
+
+
 - id: camera-housing
-  title: Camera and Illumination Housing for Harsh Environments
+  title: Industrial Camera & Illumination Housing
   period: '2024'
   organization: DSDA
   project_type: industrial
   categories:
   - mechanical-design
   technologies:
-  - Stainless steel
-  - CAD design
-  - Industrial imaging enclosures
-  image: '/assets/img/projects/Camera Housing/photo_2026-11-11_08-55-52.jpg'
-  summary: Designed stainless-steel housings for industrial camera and illumination systems in mining
-    environments; designs were used in the pellet monitoring and conveyor monitoring projects.
-  challenge: Protecting imaging equipment in harsh mining environments while supporting illumination
-    and imaging needs.
+  - SolidWorks
+  - KeyShot
+  - IP66-oriented enclosures
+  - Air/water cooling
+  - CNC machining
+  - Laser cutting
+  - Welding
+  image: /assets/img/projects/Camera Housing/photo_2026-11-19_09-59-52.jpg
+  summary: Independently designed industrial camera and illumination housings, including sealed optical
+    windows, air- and water-cooled variants, adjustable mounts, and manufacturing-ready details.
+  challenge: Protecting machine-vision equipment in harsh mining environments while preserving optical
+    performance, thermal management, serviceability, and adjustable installation.
   contributions:
-  - Designed stainless-steel camera and illumination enclosures
-  - Developed housings used in two industrial monitoring projects
-  outcome: Designs used in the company’s pellet size and conveyor belt monitoring systems, as described
-    in the supplied project list.
+  - Designed complete camera and illumination housing assemblies and adjustable mounting systems
+  - Developed gasket and optical-window interfaces for IP66-oriented protection
+  - Designed separate air- and water-cooled configurations
+  - Created machined tube, laser-cut plate, welded, and CNC-machined component designs
+  - Oversaw manufacturing and supported assembly and installation
+  outcome: Housing designs supported the PelletSense and Conveyor Belt Monitoring industrial machine-vision
+    systems.
+  skills:
+  - solidworks
+  - keyshot
+  - cad-modeling
+  - mechanical-assembly-design
+  - enclosure-design
+  - ip66-enclosure-design
+  - gasket-seal-design
+  - optical-window-integration
+  - thermal-management
+  - air-cooling
+  - water-cooling
+  - adjustable-mount-design
+  - tolerance-management
+  - cnc-machining
+  - laser-cutting
+  - welding
+  - design-for-manufacturing
+  - manufacturing-oversight
+  - hands-on-assembly
+  - onsite-installation
   url: /projects/camera-housing/
+
+
+# ---------------------------------------------------------------------------------------------------------------
+
+
+
 - id: fdm-printers
   title: FDM 3D Printers — Cartesian and Core-XY
   period: '2019'
@@ -289,3 +555,7 @@
   outcome: Design and build documented in the supplied project list; print-quality measurements can
     be added later.
   url: /projects/fdm-printers/
+
+
+
+

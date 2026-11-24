@@ -5,4 +5,5 @@ permalink: /projects/hexapod/
 nav: false
 project_id: hexapod
 ---
-{% include am-project-detail.html %}
+
+{% include am-axisxtreme-detail.html %}
