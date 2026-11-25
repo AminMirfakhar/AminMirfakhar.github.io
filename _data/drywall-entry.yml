@@ -1,0 +1,64 @@
+- id: drywall
+  title: Wall-bot — Autonomous Drywall Installation Robot
+  period: '2024'
+  organization: Rebuild Robotics
+  project_type: industrial
+  categories:
+  - robotics
+  - automation
+  technologies:
+  - Arduino Mega
+  - Arduino C/C++
+  - Python
+  - Streamlit
+  - AccelStepper
+  - Ethernet / UDP
+  - AS5600
+  - TCA9548A
+  image: /assets/img/projects/Drywall Panel Robot/Clean Robotic Construction Site.png
+  summary: Electrical architecture and embedded control for a mobile drywall installation robot, including
+    encoder-feedback steering, multi-axis stepper motion, network communication, and a Streamlit operator
+    interface.
+  challenge: Coordinate four-wheel mobile navigation and multi-axis panel manipulation through reliable
+    embedded controls, sensor feedback, motion limits, and networked operator commands.
+  contributions:
+  - Electronic component selection and electrical wiring
+  - Dual Arduino Mega control and W5100 Ethernet / UDP communication
+  - AS5600 steering encoder integration through TCA9548A I²C multiplexing
+  - Feedback-based steering and wheel speed / acceleration control
+  - AccelStepper-based eight-axis upper-platform motion and homing
+  - Streamlit operator interface and live camera controls
+  - Installation command sequencing and hardware integration
+  outcome: Contributed embedded-control, electrical, and operator-interface functionality to the Wall-bot
+    construction-robotics system documented in an ISARC 2025 publication.
+  skills:
+  - arduino-cpp
+  - python
+  - streamlit
+  - accelstepper
+  - arduino-mega
+  - ethernet-w5100
+  - udp-communication
+  - i2c
+  - tca9548a
+  - as5600
+  - interrupt-handling
+  - mobile-robotics
+  - closed-loop-steering
+  - encoder-feedback
+  - pwm-motor-control
+  - stepper-motor-control
+  - multi-axis-motion-control
+  - acceleration-ramping
+  - homing-systems
+  - motion-limits
+  - automated-sequences
+  - electronic-component-selection
+  - electrical-wiring
+  - motor-driver-integration
+  - sensor-integration
+  - embedded-control-architecture
+  - hmi-development
+  - electromechanical-integration
+  - hands-on-assembly
+  url: /projects/drywall/

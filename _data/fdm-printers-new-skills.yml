@@ -1,0 +1,37 @@
+# Append only IDs missing from your current engineering_skills.yml.
+- id: arduino-mega
+  label: Arduino Mega
+  group: software
+- id: ramps-controller
+  label: RAMPS Controller
+  group: software
+- id: marlin-firmware
+  label: Marlin Firmware
+  group: software
+- id: cartesian-motion
+  label: Cartesian Motion Systems
+  group: modeling
+- id: corexy
+  label: CoreXY Motion Architecture
+  group: modeling
+- id: stepper-motor-control
+  label: Stepper Motor Control
+  group: modeling
+- id: belt-drive-systems
+  label: Belt-Drive Systems
+  group: modeling
+- id: linear-motion-systems
+  label: Linear Motion Systems
+  group: modeling
+- id: electrical-wiring
+  label: Electrical Wiring
+  group: manufacturing
+- id: fdm-printing
+  label: FDM 3D Printing
+  group: manufacturing
+- id: rapid-prototyping
+  label: Rapid Prototyping
+  group: manufacturing
+- id: machine-calibration
+  label: Machine Calibration
+  group: manufacturing

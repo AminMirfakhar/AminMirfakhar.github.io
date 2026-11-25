@@ -50,7 +50,7 @@ repo_trophies:
 
 navbar_fixed: true
 footer_fixed: False
-search_enabled: true
+search_enabled: False
 socials_in_search: true
 posts_in_search: False
 bib_search: true

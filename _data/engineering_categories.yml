@@ -1,0 +1,18 @@
+- id: image-processing
+  label: Image Processing
+  description: Industrial vision, segmentation, inspection and detection.
+- id: robotics
+  label: Robotics
+  description: Robotic mechanisms, construction systems and inspection.
+- id: automation
+  label: Automation
+  description: Industrial controls, monitoring and integrated systems.
+- id: mechanical-design
+  label: Mechanical Design
+  description: Mechanism design, enclosures and physical prototypes.
+- id: dynamic-modeling
+  label: Dynamic Modeling
+  description: Kinematics, dynamics and multi-axis motion.
+- id: additive-manufacturing
+  label: Additive Manufacturing
+  description: Toolpath generation and robotic fabrication research.

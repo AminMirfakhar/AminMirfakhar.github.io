@@ -1,0 +1,92 @@
+{% assign project = site.data.engineering_projects | where: "id", "conveyor" | first %}
+{% assign hero_image = '/assets/img/projects/Belt Condition Monitoring/Industrial Conveyor with BELTSENSE Monitor.png' | relative_url %}
+{% assign second_image = '/assets/img/projects/Belt Condition Monitoring/BeltSense-2-1.jpg' | relative_url %}
+
+<link rel="stylesheet" href="{{ '/assets/css/engineering.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/am-racing-simulator-detail.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/am-beltsense-detail.css' | relative_url }}">
+
+<article class="am-site am-racing am-beltsense" data-am-racing>
+  <nav class="am-breadcrumb" aria-label="Breadcrumb">
+    <a href="{{ '/projects/' | relative_url }}">&larr; All projects</a>
+  </nav>
+
+  <section class="am-racing-hero" aria-labelledby="am-beltsense-title">
+    <div class="am-racing-backdrop" style="background-image: url('{{ hero_image }}')" aria-hidden="true"></div>
+    <div class="am-racing-hero-content">
+      <p class="am-racing-eyebrow">INDUSTRIAL R&amp;D PROJECT <span aria-hidden="true">/</span> DSDA</p>
+      <h1 id="am-beltsense-title">BeltSense <span>Conveyor Belt Monitoring</span></h1>
+      <p class="am-racing-subtitle">Industrial Computer Vision · Defect Detection · Condition Monitoring</p>
+      <div class="am-racing-hero-grid">
+        <section class="am-racing-intro" aria-label="Short project introduction">
+          <p><strong>BeltSense</strong> is an industrial machine-vision system developed to monitor conveyor belt condition, detect surface damage, and support preventive maintenance in mining operations.</p>
+          <p>Developed for <strong>Golgohar Mining and Industrial Company</strong>, the project progressed from technology benchmarking and feasibility studies to computer-vision prototyping and industrial deployment. Laser triangulation was investigated in R&amp;D; the final installed system used <strong>camera-based inspection without laser scanning</strong>.</p>
+        </section>
+        <section class="am-racing-media" aria-label="BeltSense project gallery">
+          <div class="am-racing-featured" data-am-racing-gallery>
+            <img src="{{ hero_image }}" alt="Illustration of the BeltSense monitoring system at an industrial conveyor" data-am-racing-featured loading="eager">
+            <button type="button" class="am-racing-nav am-racing-prev" data-am-racing-prev aria-label="Previous project image">&#8249;</button>
+            <button type="button" class="am-racing-nav am-racing-next" data-am-racing-next aria-label="Next project image">&#8250;</button>
+          </div>
+          <div class="am-racing-thumbnails" aria-label="Choose project image">
+            <button type="button" class="am-racing-thumb is-active" data-racing-image="{{ hero_image }}" data-racing-label="BeltSense conveyor monitoring system" aria-label="Show BeltSense system overview" aria-pressed="true"><img src="{{ hero_image }}" alt="" loading="eager"></button>
+            <button type="button" class="am-racing-thumb" data-racing-image="{{ second_image }}" data-racing-label="BeltSense monitoring project" aria-label="Show second BeltSense image" aria-pressed="false"><img src="{{ second_image }}" alt="" loading="lazy"></button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <div class="am-racing-content">
+    <section class="am-racing-section" aria-labelledby="am-beltsense-overview">
+      <p class="am-racing-kicker">01 / PROJECT CONTEXT</p>
+      <h2 id="am-beltsense-overview">Project Overview &amp; Technical Details</h2>
+      <p>Conveyor belts are critical components of mining and bulk material-handling operations, where unexpected belt damage can cause costly production interruptions. Continuous condition monitoring helps identify developing defects and supports effective maintenance planning.</p>
+      <p>BeltSense was developed to inspect conveyor belt surfaces and monitor damage and splice conditions during operation. The project began with an investigation of existing belt-monitoring technologies, including industrial solutions from manufacturers such as ROXON. Different approaches were compared based on their capabilities, implementation requirements, and suitability for Golgohar's operating conditions.</p>
+      <p>During the R&amp;D phase, two approaches were explored. The first used <strong>line-laser projection and optical triangulation</strong> to estimate belt surface geometry and investigate surface-profile measurements. The second used <strong>camera-based computer vision</strong> to identify visible defects and monitor belt splices.</p>
+      <p>An initial Python-based image-inspection prototype was developed using YOLO and OpenCV, with a Streamlit web interface for demonstrating detections. A separate laser-triangulation algorithm was developed and tested during feasibility evaluation.</p>
+      <p>After technical assessment, the <strong>final system installed at Golgohar adopted vision-based inspection without laser triangulation</strong>. Its camera hardware used an imaging and protective-enclosure architecture similar to PelletSense, with a different lens configuration suited to the conveyor's field of view and working distance.</p>
+      <p>The project illustrates the progression from technology research and experimental inspection methods to an industrial machine-vision system for conveyor condition monitoring.</p>
+    </section>
+
+    <section class="am-racing-section" aria-labelledby="am-beltsense-role">
+      <p class="am-racing-kicker">02 / PERSONAL CONTRIBUTIONS</p>
+      <h2 id="am-beltsense-role">My Role &amp; Contributions</h2>
+      <p>I contributed to BeltSense through technology benchmarking, requirements analysis, laser-triangulation experiments, computer-vision prototyping, client coordination, and participation in the manufacturing process.</p>
+      <div class="am-racing-roles">
+        <div><h3>Technology Research &amp; Benchmarking:</h3><p>I researched established conveyor belt monitoring products, including ROXON solutions, and compared inspection technologies, measurement capabilities, installation requirements, and limitations to identify suitable methods for Golgohar's needs.</p></div>
+        <div><h3>System Requirements &amp; Inspection Concept:</h3><p>I evaluated the client's operational needs and investigated alternative monitoring architectures. The feasibility study considered line-laser triangulation for surface geometry measurement alongside image-based inspection for visible defects and belt splice monitoring.</p></div>
+        <div><h3>Laser Triangulation Algorithm Development — R&amp;D:</h3><p>I developed and tested a prototype algorithm using projected laser lines and optical triangulation to investigate conveyor belt surface profiling. This work was limited to R&amp;D: laser triangulation was <strong>not part of the final deployed system</strong>.</p></div>
+        <div><h3>Computer Vision Prototyping:</h3><p>I developed a Python prototype using YOLO and OpenCV to investigate image-based belt defect detection and built a Streamlit interface to demonstrate the concept and visualize results.</p></div>
+        <div><h3>Camera &amp; Optical Configuration:</h3><p>I evaluated working distance, camera placement, lens selection, and field-of-view requirements for conveyor belt inspection. The final camera-based configuration built on the imaging architecture used in PelletSense, with optics tailored to this application.</p></div>
+        <div><h3>Technical Proposal &amp; Client Coordination:</h3><p>I helped develop the technical solution and proposal for Golgohar and worked with its engineering team to refine inspection requirements and evaluate how different approaches matched site needs.</p></div>
+        <div><h3>Manufacturing &amp; Hardware Integration:</h3><p>I participated in manufacturing activities and preparation of the industrial imaging hardware, contributing to the project's transition from a prototype concept toward production. Related protective camera and illumination housings are detailed in the <a href="{{ '/projects/camera-housing/' | relative_url }}">Camera &amp; Illumination Housing</a> case study.</p></div>
+        <div><h3>R&amp;D to Industrial Implementation:</h3><p>I contributed from initial technical research through prototype evaluation and manufacturing. The installed BeltSense system used camera-based defect inspection, reflecting the selected practical approach rather than the experimental laser-triangulation configuration.</p></div>
+      </div>
+    </section>
+
+    <section class="am-racing-section am-racing-skills" aria-labelledby="am-beltsense-skills">
+      <p class="am-racing-kicker">03 / TECHNICAL TOOLKIT</p>
+      <h2 id="am-beltsense-skills">Software, Tools &amp; Skills</h2>
+      <div class="am-racing-tag-group"><h3>Software &amp; Computer Vision</h3><div class="am-racing-tags">
+        {% for skill in site.data.engineering_skills %}{% if skill.group == 'software' %}{% if project.skills contains skill.id %}<a href="{{ '/projects/' | relative_url }}?skill={{ skill.id | url_encode }}">{{ skill.label | escape }}</a>{% endif %}{% endif %}{% endfor %}
+      </div></div>
+      <div class="am-racing-tag-group"><h3>Measurement &amp; Inspection Methods</h3><div class="am-racing-tags">
+        {% for skill in site.data.engineering_skills %}{% if skill.group == 'modeling' %}{% if project.skills contains skill.id %}<a href="{{ '/projects/' | relative_url }}?skill={{ skill.id | url_encode }}">{{ skill.label | escape }}</a>{% endif %}{% endif %}{% endfor %}
+      </div></div>
+      <div class="am-racing-tag-group"><h3>Engineering &amp; Project Development</h3><div class="am-racing-tags">
+        {% for skill in site.data.engineering_skills %}{% if skill.group == 'manufacturing' %}{% if project.skills contains skill.id %}<a href="{{ '/projects/' | relative_url }}?skill={{ skill.id | url_encode }}">{{ skill.label | escape }}</a>{% endif %}{% endif %}{% endfor %}
+      </div></div>
+    </section>
+
+    <aside class="am-beltsense-related" aria-labelledby="am-beltsense-related-title">
+      <p class="am-racing-kicker">RELATED PROJECTS</p>
+      <h2 id="am-beltsense-related-title">Related Engineering Projects</h2>
+      <div class="am-beltsense-related-item"><h3>Camera &amp; Illumination Housing</h3><p>Protective imaging enclosures, cooling systems, optical interfaces, and adjustable mounting equipment developed for harsh industrial operating conditions.</p><a href="{{ '/projects/camera-housing/' | relative_url }}">View the housing case study &rarr;</a></div>
+      <!-- <div class="am-beltsense-related-item"><h3>PelletSense — Pellet Size Monitoring</h3><p>A related R&amp;D-to-deployment machine-vision project for measuring iron ore pellet dimensions, shape, and distribution using a similar camera hardware platform.</p><a href="{{ '/projects/pellet-sizing/' | relative_url }}">View the PelletSense case study &rarr;</a></div> -->
+    </aside>
+
+    <a class="am-back" href="{{ '/projects/' | relative_url }}">&larr; Browse all projects</a>
+  </div>
+</article>
+<script src="{{ '/assets/js/am-racing-simulator-detail.js' | relative_url }}" defer></script>

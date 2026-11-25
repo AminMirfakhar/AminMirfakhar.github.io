@@ -1,0 +1,134 @@
+{% assign project = site.data.engineering_projects | where: "id", "drywall" | first %}
+{% assign hero_image = '/assets/img/projects/Drywall Panel Robot/Clean Robotic Construction Site.png' | relative_url %}
+
+<link rel="stylesheet" href="{{ '/assets/css/engineering.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/am-racing-simulator-detail.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/am-wallbot-detail.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/am-pelletsense-detail.css' | relative_url }}">
+
+<article class="am-site am-racing am-wallbot" data-am-racing>
+  <nav class="am-breadcrumb" aria-label="Breadcrumb">
+    <a href="{{ '/projects/' | relative_url }}">&larr; All projects</a>
+  </nav>
+
+  <section class="am-racing-hero" aria-labelledby="am-wallbot-title">
+    <div class="am-racing-backdrop" style="background-image: url('{{ hero_image }}')" aria-hidden="true"></div>
+    <div class="am-racing-hero-content">
+      <p class="am-racing-eyebrow">CONSTRUCTION ROBOTICS <span aria-hidden="true">/</span> REBUILD ROBOTICS · 2024</p>
+      <h1 id="am-wallbot-title">Autonomous Drywall <span>Installation Robot</span></h1>
+      <p class="am-racing-subtitle">Wall-bot · Embedded Motion Control · Electrical &amp; Software Integration</p>
+      <div class="am-racing-hero-grid">
+        <section class="am-racing-intro" aria-label="Short project overview">
+<p><strong>Wall-bot</strong> is a construction robot developed at Rebuild Robotics to support drywall panel handling, positioning, and installation. A four-wheel mobile base works with a multi-axis telescopic upper platform to maneuver panels in construction environments.</p>
+<p>My contributions focused on electrical architecture and embedded control: component selection, wiring, encoder-feedback steering, multi-axis stepper motion, Ethernet/UDP communication, and a Python/Streamlit web control interface.</p>
+        </section>
+        <section class="am-racing-media" aria-label="Wall-bot project gallery">
+          <div class="am-racing-featured" data-am-racing-gallery>
+            <img src="{{ hero_image }}" alt="Wall-bot construction robot" data-am-racing-featured loading="eager" decoding="async">
+            <button type="button" class="am-racing-nav am-racing-prev" data-am-racing-prev aria-label="Previous gallery image">&#8249;</button>
+            <button type="button" class="am-racing-nav am-racing-next" data-am-racing-next aria-label="Next gallery image">&#8250;</button>
+          </div>
+          <div class="am-racing-thumbnails" aria-label="Choose gallery image">
+            <button type="button" class="am-racing-thumb is-active" data-racing-image="{{ '/assets/img/projects/Drywall Panel Robot/Clean Robotic Construction Site.png' | relative_url }}" data-racing-alt="Wall-bot robot at a construction site" data-racing-label="Project image from the website repository" aria-label="Show image 1: Wall-bot robot at a construction site" aria-pressed="true">
+              <img src="{{ '/assets/img/projects/Drywall Panel Robot/Clean Robotic Construction Site.png' | relative_url }}" alt="" loading="eager" decoding="async">
+            </button>
+            <!-- <button type="button" class="am-racing-thumb" data-racing-image="{{ '/assets/img/projects/Drywall Panel Robot/Wallbot-UI-Overview.webp' | relative_url }}" data-racing-alt="Conceptual rendering of the Wall-bot control interface" data-racing-label="Conceptual UI visualization — not an actual screenshot" aria-label="Show image 2: Conceptual rendering of the Wall-bot control interface" aria-pressed="false">
+              <img src="{{ '/assets/img/projects/Drywall Panel Robot/Wallbot-UI-Overview.webp' | relative_url }}" alt="" loading="lazy" decoding="async">
+            </button>
+            <button type="button" class="am-racing-thumb" data-racing-image="{{ '/assets/img/projects/Drywall Panel Robot/Wallbot-Mobile-Control.webp' | relative_url }}" data-racing-alt="Conceptual rendering of mobile platform control" data-racing-label="Conceptual UI visualization — not an actual screenshot" aria-label="Show image 3: Conceptual rendering of mobile platform control" aria-pressed="false">
+              <img src="{{ '/assets/img/projects/Drywall Panel Robot/Wallbot-Mobile-Control.webp' | relative_url }}" alt="" loading="lazy" decoding="async">
+            </button>
+            <button type="button" class="am-racing-thumb" data-racing-image="{{ '/assets/img/projects/Drywall Panel Robot/Wallbot-Panel-Control.webp' | relative_url }}" data-racing-alt="Conceptual rendering of the upper platform control" data-racing-label="Conceptual UI visualization — not an actual screenshot" aria-label="Show image 4: Conceptual rendering of the upper platform control" aria-pressed="false">
+              <img src="{{ '/assets/img/projects/Drywall Panel Robot/Wallbot-Panel-Control.webp' | relative_url }}" alt="" loading="lazy" decoding="async">
+            </button> -->
+          </div>
+          <!-- <p class="am-wallbot-gallery-note" data-am-racing-caption aria-live="polite">Project image from the website repository</p> -->
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <div class="am-racing-content">
+    <section class="am-racing-section" aria-labelledby="am-wallbot-overview">
+      <p class="am-racing-kicker">01 / PROJECT CONTEXT</p>
+      <h2 id="am-wallbot-overview">Project Overview &amp; Technical Details</h2>
+      <p>Automated drywall installation requires coordinated control of robot mobility, panel manipulation, and installation mechanisms. Wall-bot combines a four-wheel mobile base with a telescopic upper assembly for translating, positioning, and orienting drywall panels.</p>
+      <p>The control architecture employs two Arduino Mega microcontrollers, one for each subsystem, using W5100 Ethernet shields and UDP messages over a local network. This arrangement separates wheel-base motion from the upper platform’s stepper-driven positioning and tool functions.</p>
+      <p>The mobile platform controls wheel orientation and rotation. Four AS5600 magnetic encoders provide steering feedback through a TCA9548A I²C multiplexer; firmware uses encoder position error to drive steering motors toward commanded angles and applies wheel-speed limits and acceleration ramping during movement.</p>
+      <p>The upper platform uses AccelStepper for multiple independently configured stepper axes. The software maps commanded physical displacements to steps, handles position referencing with inductive homing sensors, and applies travel limits, stopping behavior, and collision-related inputs.</p>
+      <p>A Python/Streamlit interface enables operation of both subsystems, including wheel-angle presets, steering setpoints, mobility speed/position modes, homing controls, axis positioning, an installation-sequence command, and magnet, drill, and light controls. The development interface also included live camera viewing.</p>
+      <p>The research and development of Wall-bot was documented in the 2025 ISARC conference paper “Autonomous Construction Robot with Telescopic Arm for Drywall Panel Installation.”</p>
+    </section>
+
+    <section class="am-racing-section" aria-labelledby="am-wallbot-role">
+      <p class="am-racing-kicker">02 / PERSONAL CONTRIBUTIONS</p>
+      <h2 id="am-wallbot-role">My Role &amp; Contributions</h2>
+      <p>I worked primarily on electrical and embedded-control development across the mobile platform and upper telescopic mechanism, from hardware selection to motion-control programming and integration.</p>
+      <div class="am-racing-roles">
+        <div><h3>Electrical Architecture & Component Selection</h3><p>I selected electronic components for the mobile base and upper platform, including controllers, motor-drive hardware, sensors, networking components, and supporting electrical equipment. I established electrical connection requirements and contributed to wiring and physical assembly.</p></div>
+        <div><h3>Distributed Arduino Control & UDP Communication</h3><p>I programmed separate Arduino Mega controllers for the two robot subsystems and used W5100 Ethernet shields for network connectivity. The firmware receives and interprets UDP motion packets and actuator-control commands from the operator interface.</p></div>
+        <div><h3>Closed-Loop Steering & Magnetic Encoder Feedback</h3><p>I integrated four AS5600 magnetic encoders through a TCA9548A I²C multiplexer, allowing same-address sensors to share the microcontroller’s I²C bus. I implemented encoder reading, steering-error calculations, direction/PWM commands, and a deadband for wheel-angle positioning.</p></div>
+        <div><h3>Mobile Platform Motion & Speed Management</h3><p>I developed wheel-orientation presets and mobility-control functions for translation and turning, including coordinated wheel-speed commands, speed limiting, and acceleration ramping to manage movement transitions.</p></div>
+        <div><h3>Multi-Axis Stepper Control</h3><p>I used the AccelStepper library to configure and command eight stepper-controlled axes on the upper platform, with axis-specific step conversion, speed and acceleration settings, and travel constraints.</p></div>
+        <div><h3>Homing & Safety-Related Control Logic</h3><p>I integrated inductive homing sensors for reference positioning, implemented homing routines and interrupt-based handling, and worked on stop commands, travel boundaries, and collision-switch responses. These are software safeguards, not a claim of certified functional safety.</p></div>
+        <div><h3>Installation Sequences & Auxiliary Actuation</h3><p>I implemented command handling for installation-related operations, including the runner-installation sequence, and control commands for the magnetic holding equipment, drilling mechanisms, and lighting.</p></div>
+        <div><h3>Streamlit Operator Interface</h3><p>I built a Python/Streamlit interface with steering presets and individual wheel-angle inputs, mobile speed/position controls, upper-platform axis commands, individual and combined homing, run/stop controls, and live camera-view functionality.</p></div>
+        <div><h3>Wiring, Assembly & Integration</h3><p>I helped wire and assemble the controllers, drivers, encoders, homing sensors, and communication equipment, and supported the integration of embedded software with the physical robot.</p></div>
+      </div>
+    </section>
+
+    <section class="am-racing-section" aria-labelledby="am-wallbot-skills">
+      <p class="am-racing-kicker">03 / TECHNICAL TOOLKIT</p>
+      <h2 id="am-wallbot-skills">Software, Tools &amp; Skills</h2>
+      {% assign skill_groups = 'software,modeling,manufacturing' | split: ',' %}
+      {% for group_name in skill_groups %}
+        <div class="am-racing-tag-group">
+          {% case group_name %}
+            {% when 'software' %}<h3>Programming &amp; Software</h3>
+            {% when 'modeling' %}<h3>Embedded Systems &amp; Motion Control</h3>
+            {% when 'manufacturing' %}<h3>Electrical &amp; System Integration</h3>
+          {% endcase %}
+          <div class="am-racing-tags">
+            {% for skill in site.data.engineering_skills %}
+              {% if skill.group == group_name and project.skills contains skill.id %}
+                <a href="{{ '/projects/' | relative_url }}?skill={{ skill.id | url_encode }}">{{ skill.label | escape }}</a>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
+    </section>
+
+    <!-- <section class="am-racing-section am-wallbot-publication" aria-labelledby="am-wallbot-publication">
+      <p class="am-racing-kicker">04 / RELATED PUBLICATION</p>
+      <h2 id="am-wallbot-publication">Research Publication</h2>
+      <h3>Autonomous Construction Robot with Telescopic Arm for Drywall Panel Installation</h3>
+      <p>42nd International Symposium on Automation and Robotics in Construction (ISARC 2025). This paper documents the Wall-bot robot and its integrated construction-robotics system.</p>
+      <a class="am-wallbot-paper-link" href="https://www.iaarc.org/publications/fulltext/058_Autonomous_Construction_Robot_with_Telescopic_Arm_for_Drywall_Panel_Installation.pdf" target="_blank" rel="noopener noreferrer">Read the ISARC 2025 paper <span aria-hidden="true">↗</span></a>
+    </section> -->
+
+
+    <!-- <aside class="am-pelletsense-related" aria-labelledby="am-wallbot-publication">
+      <p class="am-racing-kicker">RELATED PUBLICATION</p>
+      <h2 id="am-wallbot-publication">Research Publication</h2>
+      <h3>Autonomous Construction Robot with Telescopic Arm for Drywall Panel Installation</h3>
+      <p>42nd International Symposium on Automation and Robotics in Construction (ISARC 2025). This paper documents the Wall-bot robot and its integrated construction-robotics system.</p>
+      <a class="am-wallbot-paper-link" href="https://www.iaarc.org/publications/fulltext/058_Autonomous_Construction_Robot_with_Telescopic_Arm_for_Drywall_Panel_Installation.pdf" target="_blank" rel="noopener noreferrer">Read the ISARC 2025 paper <span aria-hidden="true">↗</span></a>
+      <a href="{{ '/projects/camera-housing/' | relative_url }}">View the housing case study &rarr;</a>
+     </aside> -->
+
+<div class="am-related-project">
+<div class="am-related-label">RELATED RESEARCH</div>
+  <h2 id="am-wallbot-publication">Research Publication</h2>
+  <h3>Autonomous Construction Robot with Telescopic Arm for Drywall Panel Installation</h3>
+  <p>42nd International Symposium on Automation and Robotics in Construction (ISARC 2025). This paper documents the Wall-bot robot and its integrated construction-robotics system.</p>
+  <a href="https://www.iaarc.org/publications/fulltext/058_Autonomous_Construction_Robot_with_Telescopic_Arm_for_Drywall_Panel_Installation.pdf" target="_blank" rel="noopener noreferrer">
+    Read the ISARC 2025 paper &rarr;
+  </a>
+</div>
+
+
+    <a class="am-back" href="{{ '/projects/' | relative_url }}">&larr; Browse all projects</a>
+  </div>
+</article>
+<script src="{{ '/assets/js/am-racing-simulator-detail.js' | relative_url }}" defer></script>

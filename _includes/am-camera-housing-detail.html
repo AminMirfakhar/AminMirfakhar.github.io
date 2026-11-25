@@ -1,0 +1,142 @@
+{% assign project = site.data.engineering_projects | where: "id", "camera-housing" | first %}
+{% assign hero_image = '/assets/img/projects/Camera Housing/photo_2026-11-19_09-59-52.jpg' | relative_url %}
+{% assign image_two = '/assets/img/projects/Camera Housing/photo_2026-11-19_09-59-35.jpg' | relative_url %}
+{% assign image_three = '/assets/img/projects/Camera Housing/photo_2026-11-11_08-55-52.jpg' | relative_url %}
+{% assign image_four = '/assets/img/projects/Camera Housing/Camera-Housing-Overview.png' | relative_url %}
+{% assign image_five = '/assets/img/projects/Camera Housing/Illumination-Overview.png' | relative_url %}
+
+<link rel="stylesheet" href="{{ '/assets/css/engineering.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/am-racing-simulator-detail.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/am-camera-housing-detail.css' | relative_url }}">
+
+<article class="am-site am-racing am-camera-housing" data-am-racing>
+  <nav class="am-breadcrumb" aria-label="Breadcrumb">
+    <a href="{{ '/projects/' | relative_url }}">&larr; All projects</a>
+  </nav>
+
+  <section class="am-racing-hero" aria-labelledby="am-camera-housing-title">
+    <div class="am-racing-backdrop" style="background-image: url('{{ hero_image }}')" aria-hidden="true"></div>
+    <div class="am-racing-hero-content">
+      <p class="am-racing-eyebrow">INDUSTRIAL PROJECT <span aria-hidden="true">/</span> DSDA · 2024</p>
+      <h1 id="am-camera-housing-title">Industrial Camera <span>&amp; Illumination Housing</span></h1>
+      <p class="am-racing-subtitle">Mechanical Design · Environmental Protection · Thermal Management</p>
+      <div class="am-racing-hero-grid">
+        <section class="am-racing-intro" aria-label="Short project introduction">
+          <p>Designed and developed protective <strong>industrial camera and illumination housings</strong> for machine-vision applications in harsh mining and mineral-processing environments. The assemblies incorporated IP66-oriented environmental protection, dedicated air-cooling and water-cooling configurations, sealed optical windows, and adjustable mounting systems.</p>
+          <p>I was responsible for the <strong>complete mechanical design</strong>, from initial CAD development and component integration through manufacturing preparation, assembly, and installation support. The housings supported the PelletSense and Conveyor Belt Monitoring projects.</p>
+        </section>
+        <section class="am-racing-media" aria-label="Camera and illumination housing project gallery">
+          <div class="am-racing-featured" data-am-racing-gallery>
+            <img src="{{ hero_image }}" alt="Finished industrial camera housing on its adjustable mount" data-am-racing-featured loading="eager">
+            <button type="button" class="am-racing-nav am-racing-prev" data-am-racing-prev aria-label="Previous gallery image">&#8249;</button>
+            <button type="button" class="am-racing-nav am-racing-next" data-am-racing-next aria-label="Next gallery image">&#8250;</button>
+          </div>
+          <div class="am-racing-thumbnails" aria-label="Choose project image">
+            <button type="button" class="am-racing-thumb is-active" data-racing-image="{{ hero_image }}" data-racing-label="Camera housing and mounting assembly" aria-label="Show camera housing and mount" aria-pressed="true"><img src="{{ hero_image }}" alt="" loading="eager"></button>
+            <button type="button" class="am-racing-thumb" data-racing-image="{{ image_two }}" data-racing-label="Camera housing on adjustable mounting system" aria-label="Show adjustable mount" aria-pressed="false"><img src="{{ image_two }}" alt="" loading="lazy"></button>
+            <button type="button" class="am-racing-thumb" data-racing-image="{{ image_three }}" data-racing-label="Camera and illumination housings" aria-label="Show assembled housing equipment" aria-pressed="false"><img src="{{ image_three }}" alt="" loading="lazy"></button>
+            <button type="button" class="am-racing-thumb" data-racing-image="{{ image_four }}" data-racing-label="Camera housing construction and design features" aria-label="Show camera housing overview" aria-pressed="false"><img src="{{ image_four }}" alt="" loading="lazy"></button>
+            <button type="button" class="am-racing-thumb" data-racing-image="{{ image_five }}" data-racing-label="Industrial illumination unit and features" aria-label="Show illumination housing overview" aria-pressed="false"><img src="{{ image_five }}" alt="" loading="lazy"></button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <div class="am-racing-content">
+    <section class="am-racing-section" aria-labelledby="am-housing-overview">
+      <p class="am-racing-kicker">01 / PROJECT CONTEXT</p>
+      <h2 id="am-housing-overview">Project Overview &amp; Technical Details</h2>
+      <p>Industrial machine-vision equipment operating in mining and mineral-processing facilities must withstand dust, moisture, elevated temperatures, and demanding installation conditions while maintaining reliable optical performance.</p>
+      <p>This project involved developing protective housings for industrial cameras and illumination equipment, combining environmental protection, thermal management, optical integration, and mechanical adjustability in manufacturable assemblies.</p>
+      <p>The camera and illumination housings incorporated sealing interfaces, gaskets, and protective optical windows to support an IP66-oriented design. Particular attention was given to maintaining enclosure integrity while allowing access to internal equipment and preserving the optical path required for image acquisition and illumination.</p>
+      <p>To address different operating conditions, separate <strong>air-cooled and water-cooled configurations</strong> were developed. These designs required consideration of cooling connections, internal component arrangements, available installation space, and the thermal requirements of the enclosed equipment.</p>
+      <p>The mechanical construction combined machined cylindrical tubes, laser-cut plates, welded assemblies, and CNC-machined components. Precision-machined end caps, threaded interfaces, and mounting holes enabled assembly, sealing, and integration of the optical and cooling components.</p>
+      <p>Adjustable mounting systems were also developed to allow camera and illumination positioning for different industrial installations. These arrangements provided flexibility in viewing angles and equipment orientation while maintaining mechanical stability.</p>
+      <p>The designs were developed in <strong>SolidWorks</strong> and visualized using <strong>KeyShot</strong>, with attention to dimensional tolerances, manufacturing processes, assembly sequences, and component accessibility. The resulting hardware supported the PelletSense and Conveyor Belt Monitoring systems.</p>
+    </section>
+
+    <section class="am-racing-section" aria-labelledby="am-housing-role">
+      <p class="am-racing-kicker">02 / PERSONAL CONTRIBUTIONS</p>
+      <h2 id="am-housing-role">My Role &amp; Contributions</h2>
+      <p>I independently designed the complete camera and illumination housings and their adjustable mounting systems, taking responsibility for their mechanical development from concept through manufacturing and physical integration.</p>
+      <div class="am-racing-roles">
+        <div><h3>Complete Mechanical Design &amp; CAD Development:</h3><p>I designed the entire camera and illumination housing assemblies and their adjustable mounting mechanisms in SolidWorks. This included the enclosure geometry, internal component arrangement, mechanical interfaces, mounting configurations, and assembly details. I also created KeyShot renderings for design visualization and technical presentations.</p></div>
+        <div><h3>Environmental Protection &amp; Sealing Design:</h3><p>I developed the housings with provisions for IP66-level dust and water protection, incorporating gaskets, sealing interfaces, and protective optical windows. The design required balancing environmental protection with the mechanical interfaces, optical access, and assembly requirements of the equipment.</p></div>
+        <div><h3>Air &amp; Water Cooling Configurations:</h3><p>I developed both air-cooled and water-cooled housing configurations to accommodate different thermal and operating requirements. I considered cooling arrangements, connection interfaces, internal space constraints, and mechanical integration with the camera and illumination assemblies.</p></div>
+        <div><h3>Optical &amp; Industrial Camera Integration:</h3><p>I integrated the mechanical requirements of industrial cameras, lenses, illumination equipment, and protective optical windows into the enclosure designs. This included accommodating camera dimensions, optical access, positioning, and alignment while protecting the equipment from the industrial environment.</p></div>
+        <div><h3>Adjustable Mounting System Design:</h3><p>I independently designed adjustable mounting assemblies that allowed control over camera and illumination positioning and orientation. These mechanisms provided installation flexibility for different equipment layouts and required fields of view.</p></div>
+        <div><h3>Design for Manufacturing &amp; Precision Components:</h3><p>I developed the housing designs around a combination of machined tubes, laser-cut metal plates, welded structures, and CNC-machined components. I designed precision end caps, threaded connections, mounting holes, and assembly interfaces while considering manufacturing tolerances, component fit, sealing, and practical assembly.</p></div>
+        <div><h3>Manufacturing Oversight &amp; Hands-On Assembly:</h3><p>I monitored the manufacturing process, reviewed component quality and fit, and participated in assembling the housings and mounting mechanisms. I also supported packaging, equipment integration, and installation at industrial facilities.</p></div>
+      </div>
+    </section>
+
+    <section class="am-racing-section am-racing-skills" aria-labelledby="am-housing-skills">
+      <p class="am-racing-kicker">03 / TECHNICAL TOOLKIT</p>
+      <h2 id="am-housing-skills">Software, Tools &amp; Skills</h2>
+      <div class="am-racing-tag-group"><h3>Design &amp; Visualization</h3><div class="am-racing-tags">
+        {% for skill in site.data.engineering_skills %}{% if skill.group == 'software' and project.skills contains skill.id %}<a href="{{ '/projects/' | relative_url }}?skill={{ skill.id | url_encode }}">{{ skill.label | escape }}</a>{% endif %}{% endfor %}
+      </div></div>
+      <div class="am-racing-tag-group"><h3>Mechanical &amp; Thermal Engineering</h3><div class="am-racing-tags">
+        {% for skill in site.data.engineering_skills %}{% if skill.group == 'modeling' and project.skills contains skill.id %}<a href="{{ '/projects/' | relative_url }}?skill={{ skill.id | url_encode }}">{{ skill.label | escape }}</a>{% endif %}{% endfor %}
+      </div></div>
+      <div class="am-racing-tag-group"><h3>Manufacturing &amp; Integration</h3><div class="am-racing-tags">
+        {% for skill in site.data.engineering_skills %}{% if skill.group == 'manufacturing' and project.skills contains skill.id %}<a href="{{ '/projects/' | relative_url }}?skill={{ skill.id | url_encode }}">{{ skill.label | escape }}</a>{% endif %}{% endfor %}
+      </div></div>
+    </section>
+
+    <!-- <section class="am-racing-section am-housing-related" aria-labelledby="am-housing-related-title">
+      <p class="am-racing-kicker">04 / CONNECTED WORK</p>
+      <h2 id="am-housing-related-title">Related Projects</h2>
+      <div class="am-housing-related-items">
+        <div><h3><a href="{{ '/projects/pellet-sizing/' | relative_url }}">PelletSense — Industrial Pellet Size Monitoring &amp; Control</a></h3><p>The camera and illumination housings were developed as part of the industrial imaging equipment for measuring iron ore pellet size, shape, and distribution.</p><a class="am-housing-related-link" href="{{ '/projects/pellet-sizing/' | relative_url }}">View PelletSense &rarr;</a></div>
+        <div><h3><a href="{{ '/projects/conveyor/' | relative_url }}">Conveyor Belt Monitoring System</a></h3><p>The housing designs also supported imaging equipment for industrial conveyor belt monitoring in challenging mining environments.</p><a class="am-housing-related-link" href="{{ '/projects/conveyor/' | relative_url }}">View conveyor monitoring &rarr;</a></div>
+      </div>
+    </section> -->
+
+    <!-- <aside class="am-beltsense-related" aria-labelledby="am-beltsense-related-title">
+      <p class="am-racing-kicker">RELATED PROJECTS</p>
+      <h2 id="am-beltsense-related-title">Related Engineering Projects</h2>
+     <div class="am-beltsense-related-item"><h3>Camera &amp; Illumination Housing</h3><p>Protective imaging enclosures, cooling systems, optical interfaces, and adjustable mounting equipment developed for harsh industrial operating conditions.</p><a href="{{ '/projects/camera-housing/' | relative_url }}">View the housing case study &rarr;</a></div> 
+      <div class="am-beltsense-related-item"><h3>Conveyor Belt Monitoring System</h3><p>The housing designs also supported imaging equipment for industrial conveyor belt monitoring in challenging mining environments.</p><a href="{{ '/projects/conveyor/' | relative_url }}">View conveyor monitoring &rarr;</a></div>
+      <div class="am-beltsense-related-item"><h3>PelletSense — Pellet Size Monitoring</h3><p>A related R&amp;D-to-deployment machine-vision project for measuring iron ore pellet dimensions, shape, and distribution using a similar camera hardware platform.</p><a href="{{ '/projects/pellet-sizing/' | relative_url }}">View the PelletSense case study &rarr;</a></div>
+    </aside> -->
+
+
+<div class="am-related-project">
+
+  <div class="am-related-label">
+    Related Projects
+  </div>
+
+  <h2>Related Engineering Projects</h2>
+
+  <div class="am-related-item">
+    <h3>Conveyor Belt Monitoring System</h3>
+    <p>
+      The housing designs also supported imaging equipment for industrial conveyor belt monitoring in challenging mining environments.
+    </p>
+    <a href="{{ '/projects/conveyor/' | relative_url }}">View conveyor monitoring &rarr;</a>
+  </div>
+
+
+  <div class="am-related-item">
+    <h3>PelletSense — Pellet Size Monitoring</h3>
+    <p>
+      A related R&amp;D-to-deployment machine-vision project
+      for measuring iron ore pellet dimensions, shape,
+      and distribution using a similar camera
+      hardware platform.
+    </p>
+    <a href="{{ '/projects/pellet-sizing/' | relative_url }}">
+      View the PelletSense case study &rarr;
+    </a>
+  </div>
+
+</div>
+
+
+    <a class="am-back" href="{{ '/projects/' | relative_url }}">&larr; Browse all projects</a>
+  </div>
+</article>
+<script src="{{ '/assets/js/am-racing-simulator-detail.js' | relative_url }}" defer></script>

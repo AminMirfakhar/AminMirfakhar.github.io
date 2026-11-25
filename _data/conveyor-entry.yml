@@ -1,0 +1,47 @@
+# Replace ONLY the existing - id: conveyor entry in engineering_projects.yml
+- id: conveyor
+  title: BeltSense — Industrial Conveyor Belt Condition Monitoring System
+  period: '2022'
+  organization: DSDA
+  project_type: industrial
+  categories:
+  - image-processing
+  - automation
+  technologies:
+  - Python
+  - YOLO
+  - OpenCV
+  - Streamlit
+  - Laser triangulation (R&D prototype)
+  - Industrial computer vision
+  image: /assets/img/projects/Belt Condition Monitoring/Industrial Conveyor with BELTSENSE Monitor.png
+  summary: Researched conveyor belt inspection technologies and developed computer-vision and laser-triangulation R&D prototypes; contributed to manufacturing for the final vision-only monitoring system deployed for Golgohar.
+  challenge: Choosing a practical inspection architecture for conveyor damage and splice monitoring while evaluating a prototype laser-triangulation method and accommodating the industrial imaging environment.
+  contributions:
+  - Technology benchmarking and client requirements analysis
+  - Python, YOLO, and OpenCV defect-detection prototype with Streamlit interface
+  - Developed and tested a laser-triangulation algorithm in R&D only
+  - Camera placement and optical configuration evaluation
+  - Technical proposal and client coordination
+  - Participation in hardware manufacturing and integration
+  outcome: The final system deployed for Golgohar adopted camera-based defect inspection without laser triangulation. I participated in development and manufacturing, not on-site installation.
+  skills:
+  - python
+  - opencv
+  - yolo
+  - streamlit
+  - laser-triangulation
+  - surface-defect-detection
+  - conveyor-inspection
+  - optical-configuration
+  - industrial-camera-integration
+  - requirements-engineering
+  - feasibility-study
+  - rd-prototyping
+  - technical-proposals
+  - client-presentations
+  - technology-benchmarking
+  - condition-monitoring
+  - manufacturing-oversight
+  - hardware-integration
+  url: /projects/conveyor/

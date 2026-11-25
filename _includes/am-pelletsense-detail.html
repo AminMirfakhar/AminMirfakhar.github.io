@@ -1,0 +1,123 @@
+{% assign project = site.data.engineering_projects | where: "id", "pellet-sizing" | first %}
+{% assign hero_image = '/assets/img/projects/Pellet Size Monitoring/Cleaned Industrial Pellet Detection System.png' | relative_url %}
+{% assign camera_image = '/assets/img/projects/Camera Housing/DSC_0213_withoutlogo.png' | relative_url %}
+
+<link rel="stylesheet" href="{{ '/assets/css/engineering.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/am-racing-simulator-detail.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/am-pelletsense-detail.css' | relative_url }}">
+
+<article class="am-site am-racing am-pelletsense" data-am-racing>
+  <nav class="am-breadcrumb" aria-label="Breadcrumb">
+    <a href="{{ '/projects/' | relative_url }}">&larr; All projects</a>
+  </nav>
+
+  <section class="am-racing-hero" aria-labelledby="pelletsense-title">
+    <div class="am-racing-backdrop" style="background-image: url('{{ hero_image }}')" aria-hidden="true"></div>
+
+    <div class="am-racing-hero-content">
+      <p class="am-racing-eyebrow">INDUSTRIAL R&amp;D PROJECT <span aria-hidden="true">/</span> DSDA · 2022</p>
+      <h1 id="pelletsense-title">PelletSense <span>Pellet Size Monitoring</span></h1>
+      <p class="am-racing-subtitle">Industrial Computer Vision · R&amp;D &amp; Feasibility · Process Monitoring</p>
+
+      <div class="am-racing-hero-grid">
+        <section class="am-racing-intro" aria-label="Short project overview">
+          <p><strong>PelletSense</strong> is an industrial machine-vision system developed to monitor the size, shape, and distribution of iron ore pellets during pelletizing operations. By combining industrial imaging equipment and AI-based image analysis, it provides quantitative measurements to support pellet quality assessment and production monitoring.</p>
+          <p>Developed initially as an R&amp;D project for Golgohar Mining and Industrial Company, the work progressed from feasibility studies, client consultations, and computer-vision prototyping to the design, manufacturing, and installation of industrial imaging equipment.</p>
+        </section>
+
+        <section class="am-racing-media" aria-label="PelletSense image gallery">
+          <div class="am-racing-featured" data-am-racing-gallery>
+            <img src="{{ hero_image }}" alt="PelletSense industrial pellet detection system" data-am-racing-featured loading="eager">
+            <button type="button" class="am-racing-nav am-racing-prev" data-am-racing-prev aria-label="Previous project image">&#8249;</button>
+            <button type="button" class="am-racing-nav am-racing-next" data-am-racing-next aria-label="Next project image">&#8250;</button>
+          </div>
+          <div class="am-racing-thumbnails" aria-label="Choose project image">
+            <button type="button" class="am-racing-thumb is-active" data-racing-image="{{ hero_image }}" data-racing-label="PelletSense monitoring system" aria-label="Show PelletSense system" aria-pressed="true">
+              <img src="{{ hero_image }}" alt="PelletSense monitoring system" loading="lazy">
+            </button>
+            <button type="button" class="am-racing-thumb" data-racing-image="{{ camera_image }}" data-racing-label="Camera housing developed for PelletSense" aria-label="Show camera housing" aria-pressed="false">
+              <img src="{{ camera_image }}" alt="Industrial camera housing developed for PelletSense" loading="lazy">
+            </button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <div class="am-racing-content">
+    <section class="am-racing-section" aria-labelledby="pelletsense-overview">
+      <p class="am-racing-kicker">01 / PROJECT CONTEXT</p>
+      <h2 id="pelletsense-overview">Project Overview &amp; Technical Details</h2>
+      <p>PelletSense was developed to address the challenges of measuring and monitoring iron ore pellet characteristics in an industrial pelletizing environment. Pellet size, shape, and size distribution are important indicators of process performance and product quality, requiring reliable measurement under continuously changing operating conditions.</p>
+      <p>The project began with a comprehensive feasibility and requirements study covering hardware and software. Imaging considerations included industrial camera selection, color versus monochrome sensors, visible versus infrared illumination, placement above the pelletizing disc or conveyor belt, working distances, lenses, focal lengths, and fields of view.</p>
+      <p>Requirements were refined through multiple technical meetings and presentations with Golgohar's engineering and control teams. The discussions aligned the system architecture, measurement capabilities, installation constraints, and operator requirements with the client's industrial needs.</p>
+      <p>The harsh environment introduced requirements for protection, cooling, optical access, and flexible installation. Dedicated camera and illumination housings were developed with provisions for IP66-oriented protection, air/water cooling, modular construction, and adjustable mounting.</p>
+      <p>On the software side, the system needed to identify individual pellets and measure dimensions, circularity, and size distribution. Initial feasibility testing used deep-learning-based instance segmentation, circle fitting, and camera calibration to obtain meaningful measurements from images. The vision pipeline continued to evolve during subsequent development.</p>
+      <p>The feasibility study also examined which pelletizing-process parameters influence pellet formation, which variables operators can adjust, and how measured pellet characteristics could support monitoring and future process-control functions. Following prototype demonstrations, technical evaluations, and client approval, the project progressed to hardware manufacturing and on-site installation.</p>
+    </section>
+
+    <section class="am-racing-section" aria-labelledby="pelletsense-role">
+      <p class="am-racing-kicker">02 / PERSONAL CONTRIBUTIONS</p>
+      <h2 id="pelletsense-role">My Role &amp; Contributions</h2>
+      <p>I contributed across the R&amp;D project's lifecycle, from defining technical requirements and proving initial feasibility to client coordination, mechanical design, manufacturing oversight, and installation support.</p>
+      <div class="am-racing-roles">
+        <div><h3>System Requirements &amp; Feasibility Study:</h3><p>I investigated hardware and software requirements, comparing imaging configurations, camera and illumination technologies, installation locations, optical parameters, and environmental constraints. I also examined the pelletizing process to identify factors affecting pellet characteristics, distinguish controllable variables, and define the measurements needed by operators.</p></div>
+        <div><h3>Client Presentations &amp; Technical Requirement Alignment:</h3><p>I prepared and delivered technical presentations and participated in multiple meetings with Golgohar's engineering and control teams. I presented proposed hardware and software solutions, addressed questions, gathered feedback, and refined the requirements against site conditions, operator needs, and control-system expectations.</p></div>
+        <div><h3>Computer Vision Prototyping:</h3><p>I developed an initial Python proof of concept using YOLO-based instance segmentation to detect pellets. The prototype combined segmentation, circle fitting, and camera calibration to estimate pellet dimensions and size distributions. I created a Streamlit web interface for demonstrating and evaluating the prototype.</p></div>
+        <div><h3>Technical &amp; Financial Proposal Development:</h3><p>Using the feasibility study, prototype results, and client discussions, I prepared the technical and financial proposal, covering the system architecture, equipment requirements, software approach, implementation considerations, and estimated costs. The proposal supported the client's decision to proceed with an on-site installation.</p></div>
+        <div><h3>Computer Vision Development Oversight:</h3><p>I participated in reviewing and overseeing subsequent development by the programming team. The vision pipeline progressed through Detectron2 and later Segment Anything Model (SAM) approaches; my role was technical coordination and requirements alignment rather than direct implementation of those later versions.</p></div>
+        <div><h3>Industrial Camera &amp; Illumination Hardware Design:</h3><p>I designed protective camera and illumination housings and adjustable mounting assemblies. Using SolidWorks and KeyShot, I developed modular designs with provisions for IP66-level protection, air/water cooling, optical interfaces, and flexible camera positioning. The detailed hardware design is covered in the <a href="{{ '/projects/camera-housing/' | relative_url }}">Camera &amp; Illumination Housing</a> project.</p></div>
+        <div><h3>Manufacturing &amp; Mechanical Integration:</h3><p>I considered machining, CNC manufacturing, welding, tolerances, assembly interfaces, and component fit during hardware development. I monitored manufacturing activities and assisted with assembly and integration of the camera and illumination systems.</p></div>
+        <div><h3>On-Site Installation &amp; Deployment:</h3><p>I helped prepare, package, and install the hardware at Golgohar's facility, supporting the transition from the R&amp;D prototype to an installed industrial measurement system.</p></div>
+      </div>
+    </section>
+
+    <section class="am-racing-section am-racing-skills" aria-labelledby="pelletsense-skills">
+      <p class="am-racing-kicker">03 / TECHNICAL TOOLKIT</p>
+      <h2 id="pelletsense-skills">Software, Tools &amp; Skills</h2>
+      <div class="am-racing-tag-group"><h3>Software &amp; Computer Vision</h3><div class="am-racing-tags">
+        {% for skill in site.data.engineering_skills %}{% if skill.group == 'software' and project.skills contains skill.id %}<a href="{{ '/projects/' | relative_url }}?skill={{ skill.id | url_encode }}">{{ skill.label | escape }}</a>{% endif %}{% endfor %}
+      </div></div>
+      <div class="am-racing-tag-group"><h3>Modeling &amp; Industrial Hardware</h3><div class="am-racing-tags">
+        {% for skill in site.data.engineering_skills %}{% if skill.group == 'modeling' and project.skills contains skill.id %}<a href="{{ '/projects/' | relative_url }}?skill={{ skill.id | url_encode }}">{{ skill.label | escape }}</a>{% endif %}{% endfor %}
+      </div></div>
+      <div class="am-racing-tag-group"><h3>Engineering &amp; Project Development</h3><div class="am-racing-tags">
+        {% for skill in site.data.engineering_skills %}{% if skill.group == 'manufacturing' and project.skills contains skill.id %}<a href="{{ '/projects/' | relative_url }}?skill={{ skill.id | url_encode }}">{{ skill.label | escape }}</a>{% endif %}{% endfor %}
+      </div></div>
+    </section>
+
+    <!-- <aside class="am-pelletsense-related" aria-labelledby="pelletsense-related-title">
+      <p class="am-racing-kicker">RELATED ENGINEERING PROJECT</p>
+      <h2 id="pelletsense-related-title">Camera &amp; Illumination Housing</h2>
+      <p>Explore the detailed mechanical design of the protective camera and illumination enclosures, cooling arrangements, optical interfaces, mounting assemblies, and manufacturing considerations developed for this system.</p>
+      <a href="{{ '/projects/camera-housing/' | relative_url }}">View the housing case study &rarr;</a>
+    </aside> -->
+
+    <div class="am-related-project">
+
+      <div class="am-related-label">
+        Related Engineering Project
+      </div>
+
+      <h3>Camera &amp; Illumination Housing</h3>
+
+      <p>
+        Explore the detailed mechanical design of
+        the protective camera and illumination enclosures,
+        cooling arrangements, optical interfaces,
+        mounting assemblies, and manufacturing
+        considerations developed for this system.
+      </p>
+
+      <a href="/projects/camera-housing/">
+        View the housing case study &rarr;
+      </a>
+
+    </div>
+
+
+    <a class="am-back" href="{{ '/projects/' | relative_url }}">&larr; Browse all projects</a>
+  </div>
+</article>
+
+<script src="{{ '/assets/js/am-racing-simulator-detail.js' | relative_url }}" defer></script>

@@ -1,0 +1,116 @@
+{% assign project = site.data.engineering_projects | where: "id", "pipeline-inspection" | first %}
+{% assign hero_image = '/assets/img/projects/Pipeline Inspection Robot/Pipeline-Robot-Side.webp' | relative_url %}
+{% assign front_image = '/assets/img/projects/Pipeline Inspection Robot/Pipeline-Robot-Front.webp' | relative_url %}
+<link rel="stylesheet" href="{{ '/assets/css/engineering.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/am-racing-simulator-detail.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/am-pipeline-inspection-detail.css' | relative_url }}">
+<article class="am-site am-racing am-pipeline" data-am-racing>
+  <nav class="am-breadcrumb" aria-label="Breadcrumb"><a href="{{ '/projects/' | relative_url }}">&larr; All projects</a></nav>
+  <section class="am-racing-hero" aria-labelledby="am-pipeline-title">
+    <div class="am-racing-backdrop" style="background-image: url('{{ hero_image }}')" aria-hidden="true"></div>
+    <div class="am-racing-hero-content">
+      <p class="am-racing-eyebrow">RESEARCH &amp; DEVELOPMENT <span aria-hidden="true">/</span> DSDA · 2023</p>
+      <h1 id="am-pipeline-title">Pipeline <span>Inspection Robot</span></h1>
+      <p class="am-racing-subtitle">Radially Expandable Robot · Remote Visual Inspection · Embedded Motion Control</p>
+      <div class="am-racing-hero-grid">
+        <section class="am-racing-intro" aria-label="Short project overview">
+          <p>A radially expandable, six-wheel pipeline inspection robot developed as a DSDA R&amp;D project for remote inspection of confined pipe environments. A screw-driven mechanism adjusts the robot’s diameter and wheel-to-wall contact force for traction, including vertical travel.</p>
+          <p>I was responsible for the mechanical design in SolidWorks, mechanical and electronic hardware selection, Arduino and ESP32-CAM programming, and the Streamlit control interface. I also supported wiring, assembly, and prototype integration.</p>
+        </section>
+        <section class="am-racing-media" aria-label="Project media gallery">
+          <div class="am-racing-featured" data-am-racing-gallery>
+            <img src="{{ hero_image }}" alt="Side-view studio rendering of the six-wheel expanding pipeline inspection robot" data-am-racing-featured loading="eager">
+            <button type="button" class="am-racing-nav am-racing-prev" data-am-racing-prev aria-label="Previous image">&#8249;</button>
+            <button type="button" class="am-racing-nav am-racing-next" data-am-racing-next aria-label="Next image">&#8250;</button>
+          </div>
+          <div class="am-racing-thumbnails" aria-label="Choose project image">
+            <button type="button" class="am-racing-thumb is-active" data-racing-image="{{ hero_image }}" data-racing-label="Side-view concept rendering of the robot" aria-label="Show side view" aria-pressed="true"><img src="{{ hero_image }}" alt="" loading="eager"></button>
+            <button type="button" class="am-racing-thumb" data-racing-image="{{ front_image }}" data-racing-label="Front-view concept rendering of the robot" aria-label="Show front view" aria-pressed="false"><img src="{{ front_image }}" alt="" loading="lazy"></button>
+          </div>
+          <p class="am-pipeline-media-note">Conceptual studio renderings based on the project CAD design.</p>
+        </section>
+      </div>
+    </div>
+  </section>
+  <div class="am-racing-content">
+    <section class="am-racing-section" aria-labelledby="am-pipeline-overview">
+      <p class="am-racing-kicker">01 / PROJECT CONTEXT</p>
+      <h2 id="am-pipeline-overview">Project Overview &amp; Technical Details</h2>
+      <p>Pipeline inspection robots must navigate narrow cylindrical spaces, maintain contact with the pipe wall, and carry their own weight while moving in horizontal or vertical orientations. This project explored a compact, radially expandable inspection robot capable of adapting its contact geometry to different pipe diameters.</p>
+      <p>The robot uses six DC motors to drive its wheel modules. A separate geared DC motor drives a central screw-and-nut expansion mechanism, opening or closing the articulated legs to control the robot’s effective diameter. Adjusting the wall contact force enables friction-based traction for locomotion and vertical climbing under the robot’s own weight.</p>
+      <p>The mechanical configuration combines a cylindrical central body, articulated radial leg assemblies, bearings, gears, and the screw-driven actuator. Component sizing and packaging had to account for the limited internal pipe space, the wheel contact arrangement, and access for mechanical and electronic assembly.</p>
+      <p>An Arduino Mega serves as the primary motion controller. An ESP32 camera module provides wireless network connectivity and passes commands between a Python/Streamlit web interface and the Arduino. The interface enables remote adjustment of wheel speed and direction, operation of the expansion motor, and control of a two-degree-of-freedom front camera driven by servo motors.</p>
+      <p>The inspection interface also supports enabling or disabling the camera, viewing the interior of the pipe, capturing photographs, recording videos, and switching an onboard flashlight on or off. These functions allow an operator to document conditions without directly accessing the inspection location.</p>
+      <p>The robot was developed as an R&amp;D collaboration with an undergraduate student, who conducted mathematical modeling and simulation in MATLAB and ADAMS, together with finite-element and mechanical strength studies. My work focused on the physical mechanical design, hardware integration, embedded control, and operator interface.</p>
+    </section>
+    <section class="am-racing-section" aria-labelledby="am-pipeline-roles">
+      <p class="am-racing-kicker">02 / PERSONAL CONTRIBUTIONS</p>
+      <h2 id="am-pipeline-roles">My Role &amp; Contributions</h2>
+      <p>I was responsible for the mechanical design, hardware selection, embedded programming, and remote operator interface, while also supporting wiring, assembly, and integration.</p>
+      <div class="am-racing-roles">
+        <div>
+          <h3>Mechanical Design &amp; CAD Development</h3>
+          <p>I led the robot’s mechanical design in SolidWorks, developing the cylindrical body, six radial wheel assemblies, articulated legs, central expansion arrangement, and interfaces for electronics and inspection hardware. The layout accounted for confined-space packaging, assembly access, and component integration.</p>
+        </div>
+        <div>
+          <h3>Mechanical Hardware Selection</h3>
+          <p>I selected mechanical and actuation components, including the six DC wheel-drive motors, geared DC expansion motor, gears, bearings, and screw-and-nut elements. The selections addressed the available space, required mobility, and the loads imposed by pipe-wall contact and vertical movement.</p>
+        </div>
+        <div>
+          <h3>Screw-Driven Expansion Mechanism</h3>
+          <p>I developed the mechanical layout for the central geared-motor-driven screw mechanism that expands and contracts the legs. Adjusting the robot diameter changes wheel contact with the pipe wall and provides the friction needed to support locomotion, particularly during vertical climbing.</p>
+        </div>
+        <div>
+          <h3>Arduino-Based Motor Control</h3>
+          <p>I programmed the Arduino Mega to receive operator commands and control the direction and speed of the six drive motors, as well as the geared expansion motor. I also integrated control of the camera servos and onboard flashlight.</p>
+        </div>
+        <div>
+          <h3>ESP32-CAM &amp; Wireless Communication</h3>
+          <p>I programmed and integrated the ESP32 camera module as the wireless communication link between the web interface and the Arduino. The architecture allowed remote commands to reach the main motion controller while supporting camera-based inspection.</p>
+        </div>
+        <div>
+          <h3>Streamlit Web UI &amp; Remote Inspection</h3>
+          <p>I developed the Python/Streamlit interface for commanding wheel speed and direction, expanding or retracting the legs, and positioning the front camera through its two servo-controlled axes. Operators could activate or deactivate the camera, view the pipe interior, capture images, record video, and operate the flashlight.</p>
+        </div>
+        <div>
+          <h3>Wiring, Assembly &amp; Prototype Integration</h3>
+          <p>I assisted with wiring and mechanical assembly, connecting the motors, servo mechanisms, Arduino controller, ESP32 camera system, and supporting components. I helped integrate the mechanical hardware and control software into the R&amp;D prototype.</p>
+        </div>
+        <div>
+          <h3>Collaboration &amp; Engineering Scope</h3>
+          <p>I worked alongside an undergraduate student responsible for MATLAB and ADAMS modeling, finite-element analysis, and mechanical strength evaluations. My own responsibilities centered on mechanical CAD, component selection, controller programming, and the web-based operating interface.</p>
+        </div>
+      </div>
+    </section>
+    <section class="am-racing-section am-racing-skills" aria-labelledby="am-pipeline-skills">
+      <p class="am-racing-kicker">03 / TECHNICAL TOOLKIT</p>
+      <h2 id="am-pipeline-skills">Software, Tools &amp; Skills</h2>
+      <div class="am-racing-tag-group"><h3>Software &amp; Programming</h3>
+        <div class="am-racing-tags">
+          {% for skill in site.data.engineering_skills %}
+            {% if skill.group == 'software' and project.skills contains skill.id %}
+              <a href="{{ '/projects/' | relative_url }}?skill={{ skill.id | url_encode }}">{{ skill.label | escape }}</a>
+            {% endif %}
+          {% endfor %}
+        </div></div>
+      <div class="am-racing-tag-group"><h3>Robotics &amp; Mechanical Design</h3>
+        <div class="am-racing-tags">
+          {% for skill in site.data.engineering_skills %}
+            {% if skill.group == 'modeling' and project.skills contains skill.id %}
+              <a href="{{ '/projects/' | relative_url }}?skill={{ skill.id | url_encode }}">{{ skill.label | escape }}</a>
+            {% endif %}
+          {% endfor %}
+        </div></div>
+      <div class="am-racing-tag-group"><h3>Prototyping &amp; Integration</h3>
+        <div class="am-racing-tags">
+          {% for skill in site.data.engineering_skills %}
+            {% if skill.group == 'manufacturing' and project.skills contains skill.id %}
+              <a href="{{ '/projects/' | relative_url }}?skill={{ skill.id | url_encode }}">{{ skill.label | escape }}</a>
+            {% endif %}
+          {% endfor %}
+        </div></div>
+    </section>
+    <a class="am-back" href="{{ '/projects/' | relative_url }}">&larr; Browse all projects</a>
+  </div>
+</article>
+<script src="{{ '/assets/js/am-racing-simulator-detail.js' | relative_url }}" defer></script>

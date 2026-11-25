@@ -1,0 +1,25 @@
+# Append only missing IDs to your existing engineering_skills.yml.
+- id: eplan-electric-p8
+  label: EPLAN Electric P8
+  group: software
+- id: electrical-wiring-diagrams
+  label: Electrical Wiring Diagrams
+  group: modeling
+- id: industrial-electrical-schematics
+  label: Industrial Electrical Schematics
+  group: modeling
+- id: control-cubicle-design
+  label: Control Cubicle Design
+  group: modeling
+- id: electrical-cabinet-layout
+  label: Electrical Cabinet Layout
+  group: modeling
+- id: electromechanical-coordination
+  label: Electromechanical Design Coordination
+  group: modeling
+- id: industrial-electrical-documentation
+  label: Industrial Electrical Documentation
+  group: manufacturing
+- id: atex-awareness
+  label: ATEX & Hazardous-Area Awareness
+  group: manufacturing

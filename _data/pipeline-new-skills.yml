@@ -1,0 +1,66 @@
+- id: arduino-cpp
+  label: Arduino C/C++
+  group: software
+- id: python
+  label: Python
+  group: software
+- id: streamlit
+  label: Streamlit
+  group: software
+- id: pipeline-robotics
+  label: Pipeline Robotics
+  group: modeling
+- id: confined-space-robotics
+  label: Confined-Space Robotics
+  group: modeling
+- id: mechanical-design
+  label: Mechanical Design
+  group: modeling
+- id: expandable-mechanisms
+  label: Expandable Mechanisms
+  group: modeling
+- id: dc-motor-control
+  label: DC Motor Control
+  group: modeling
+- id: servo-motor-control
+  label: Servo Motor Control
+  group: modeling
+- id: geared-motor-selection
+  label: Geared Motor Selection
+  group: modeling
+- id: screw-nut-mechanisms
+  label: Screw & Nut Mechanisms
+  group: modeling
+- id: bearing-selection
+  label: Bearing Selection
+  group: modeling
+- id: robot-control-interface
+  label: Robot Control Interface
+  group: modeling
+- id: wireless-robot-communication
+  label: Wireless Robot Communication
+  group: modeling
+- id: esp32-cam
+  label: ESP32-CAM
+  group: modeling
+- id: arduino-mega
+  label: Arduino Mega
+  group: modeling
+- id: remote-visual-inspection
+  label: Remote Visual Inspection
+  group: modeling
+- id: live-video-streaming
+  label: Live Video Streaming
+  group: modeling
+- id: image-video-capture
+  label: Image & Video Capture
+  group: modeling
+- id: electrical-wiring
+  label: Electrical Wiring
+  group: manufacturing
+- id: rd-prototyping
+  label: R&D Prototyping
+  group: manufacturing
+- id: electromechanical-integration
+  label: Electromechanical Integration
+  group: manufacturing

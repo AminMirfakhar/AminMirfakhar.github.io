@@ -1,0 +1,44 @@
+# Replace ONLY the existing rock-breaker item in engineering_projects.yml.
+- id: rock-breaker
+  title: Gyratory Crusher De-Clogging Robot — Modeling & Optimization
+  period: '2024'
+  organization: DSDACO
+  project_type: industrial
+  categories:
+  - dynamic-modeling
+  - mechanical-design
+  technologies:
+  - MATLAB
+  - Simulink
+  - MSC ADAMS
+  - Newton–Euler inverse dynamics
+  - NSGA-II
+  - Hydraulic actuator optimization
+  skills:
+  - matlab
+  - simulink
+  - msc-adams
+  - kinematic-modeling
+  - inverse-kinematics
+  - dynamic-modeling
+  - newton-euler-dynamics
+  - workspace-analysis
+  - hydraulic-actuator-modeling
+  - nsga-ii
+  - multi-objective-optimization
+  - pareto-front-analysis
+  - actuator-mounting-optimization
+  image: ''
+  summary: R&D study of an excavator-mounted de-clogging robot for gyratory crushers; contributed to kinematic
+    and dynamic models, multibody simulation, and geometry/actuator optimization.
+  challenge: Developing a mechanism capable of accessing deep crusher feed openings while balancing reach,
+    hydraulic actuation requirements, and structural dimensions.
+  contributions:
+  - MATLAB forward and inverse kinematics
+  - Newton–Euler dynamic modeling
+  - Simulink and MSC ADAMS simulation
+  - Hydraulic actuator mounting and force calculations
+  - NSGA-II link-length and workspace optimization
+  outcome: Modeling and design optimization for a proposed excavator-mounted de-clogging robot; not presented
+    as a manufactured installation.
+  url: /projects/rock-breaker/

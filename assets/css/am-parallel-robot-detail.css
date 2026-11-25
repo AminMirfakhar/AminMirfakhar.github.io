@@ -1,0 +1,71 @@
+/* Parallel robot page — extends the shared AXISPRO layout without changing it. */
+.am-site.am-racing.am-parallel-robot {
+  --racing-orange: #eb7047;
+}
+
+/* The sole render is a static, noninteractive gallery image. */
+.am-parallel-robot .am-parallel-featured {
+  background: rgba(243, 245, 247, 0.96);
+  aspect-ratio: 16 / 10;
+}
+
+.am-parallel-robot .am-parallel-featured img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.am-parallel-robot .am-parallel-media {
+  margin: 0;
+}
+
+.am-parallel-robot .am-parallel-image-caption {
+  color: #dbe3eb;
+  font-size: 0.76rem;
+  margin: 9px 0 0;
+  text-align: left;
+}
+
+.am-parallel-robot .am-racing-backdrop {
+  background-position: center 54%;
+  filter: saturate(0.8);
+}
+
+/* Preserve the one-column contribution layout and justified text. */
+.am-parallel-robot .am-racing-roles {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.am-parallel-robot .am-racing-roles > div {
+  padding: 0;
+  border: none;
+}
+.am-parallel-robot .am-racing-roles p,
+.am-parallel-robot .am-racing-section > p:not(.am-racing-kicker) {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
+.am-parallel-robot .am-parallel-publication h3 {
+  font-weight: 750;
+  font-size: 1.06rem;
+  line-height: 1.5;
+  margin: 0 0 13px;
+}
+.am-parallel-robot .am-parallel-paper-link {
+  display: inline-block;
+  margin-top: 4px;
+  color: #eb7047;
+  font-weight: 700;
+  text-decoration: none;
+}
+.am-parallel-robot .am-parallel-paper-link:hover,
+.am-parallel-robot .am-parallel-paper-link:focus-visible {
+  text-decoration: underline;
+}
+
+@media (max-width: 850px) {
+  .am-parallel-robot .am-parallel-media { width: 100%; }
+}

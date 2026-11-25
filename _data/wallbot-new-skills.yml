@@ -1,0 +1,84 @@
+- id: arduino-cpp
+  label: Arduino C/C++
+  group: software
+- id: python
+  label: Python
+  group: software
+- id: streamlit
+  label: Streamlit
+  group: software
+- id: accelstepper
+  label: AccelStepper
+  group: software
+- id: arduino-mega
+  label: Arduino Mega
+  group: software
+- id: ethernet-w5100
+  label: W5100 Ethernet Shield
+  group: software
+- id: udp-communication
+  label: UDP Communication
+  group: software
+- id: i2c
+  label: I²C
+  group: software
+- id: tca9548a
+  label: TCA9548A Multiplexer
+  group: software
+- id: as5600
+  label: AS5600 Magnetic Encoder
+  group: software
+- id: interrupt-handling
+  label: Interrupt Handling
+  group: modeling
+- id: mobile-robotics
+  label: Mobile Robotics
+  group: modeling
+- id: closed-loop-steering
+  label: Closed-Loop Steering
+  group: modeling
+- id: encoder-feedback
+  label: Encoder Feedback
+  group: modeling
+- id: pwm-motor-control
+  label: PWM Motor Control
+  group: modeling
+- id: stepper-motor-control
+  label: Stepper Motor Control
+  group: modeling
+- id: multi-axis-motion-control
+  label: Multi-Axis Motion Control
+  group: modeling
+- id: acceleration-ramping
+  label: Velocity & Acceleration Ramping
+  group: modeling
+- id: homing-systems
+  label: Homing Systems
+  group: modeling
+- id: motion-limits
+  label: Motion Constraints
+  group: modeling
+- id: automated-sequences
+  label: Automated Motion Sequences
+  group: modeling
+- id: electronic-component-selection
+  label: Electronic Component Selection
+  group: manufacturing
+- id: electrical-wiring
+  label: Electrical Wiring
+  group: manufacturing
+- id: motor-driver-integration
+  label: Motor Driver Integration
+  group: manufacturing
+- id: sensor-integration
+  label: Sensor Integration
+  group: manufacturing
+- id: embedded-control-architecture
+  label: Embedded Control Architecture
+  group: manufacturing
+- id: hmi-development
+  label: HMI Development
+  group: manufacturing
+- id: electromechanical-integration
+  label: Electromechanical Integration
+  group: manufacturing
