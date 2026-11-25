@@ -1,0 +1,89 @@
+{% assign project = site.data.engineering_projects | where: "id", "mgt75-gas-skid" | first %}
+{% assign skid_image = '/assets/img/projects/MGT-75 Gas Skid/mgt75-gas-skid-hero.webp' | relative_url %}
+
+<link rel="stylesheet" href="{{ '/assets/css/engineering.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/am-racing-simulator-detail.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/am-mgt75-gas-skid-detail.css' | relative_url }}">
+
+<article class="am-site am-racing am-mgt75-skid">
+  <nav class="am-breadcrumb" aria-label="Breadcrumb">
+    <a href="{{ '/projects/' | relative_url }}">← All projects</a>
+  </nav>
+
+  <header class="am-racing-hero" aria-labelledby="mgt75-title">
+    <div class="am-racing-backdrop" style="background-image: url('{{ skid_image }}')" aria-hidden="true"></div>
+    <div class="am-racing-hero-content">
+      <p class="am-racing-eyebrow">INDUSTRIAL ENGINEERING PROJECT <span aria-hidden="true">/</span> KTF</p>
+      <h1 id="mgt75-title">MGT-75 Fuel Gas Skid <span>Electrical Design &amp; Control Cubicle</span></h1>
+      <p class="am-racing-subtitle">EPLAN · SolidWorks · Industrial Electrical Engineering</p>
+
+      <div class="am-racing-hero-grid">
+        <section class="am-racing-intro" aria-label="Short project overview">
+          <p>I was responsible for preparing the electrical wiring documentation in EPLAN and developing the 3D control cubicle assembly in SolidWorks for an MGT-75 gas turbine fuel gas skid project at Kian Tajhiz Fartak (KTF).</p>
+          <p>The work introduced me to industrial electrical documentation, cabinet layout, and electrical design considerations for potentially explosive atmospheres, including ATEX requirements.</p>
+        </section>
+
+        <figure class="am-racing-media" aria-label="Fuel gas skid project image">
+          <div class="am-racing-featured">
+            <img src="{{ skid_image }}"
+                 alt="Conceptual industrial rendering of a turbine fuel gas skid with piping, valves, instruments and a control enclosure"
+                 loading="eager" fetchpriority="high" width="1648" height="928">
+          </div>
+          <!-- <figcaption class="am-racing-media-note">AI-generated conceptual rendering based on the project's reference photograph; shown for system context, not as the cubicle CAD model.</figcaption> -->
+        </figure>
+      </div>
+    </div>
+  </header>
+
+  <div class="am-racing-content">
+    <section class="am-racing-section" aria-labelledby="mgt75-overview">
+      <p class="am-racing-kicker">01 / PROJECT OVERVIEW &amp; TECHNICAL DETAILS</p>
+      <h2 id="mgt75-overview">Project Overview &amp; Technical Details</h2>
+      <p>The MGT-75 fuel gas skid is an auxiliary system for a gas turbine, bringing together equipment for filtering, regulating, monitoring, and controlling the gas supplied to the turbine. The wider project integrates process piping, valves, actuators, instrumentation, and associated electrical systems.</p>
+      <p>My portion of the work focused on the electrical engineering documentation and the physical arrangement of the associated control cubicle. The electrical documentation was developed in EPLAN, while the cubicle and its equipment arrangement were modeled as a 3D assembly in SolidWorks.</p>
+      <p>The work required understanding how electrical connections relate to industrial equipment and how the documented electrical system is accommodated within a physical cabinet. It also provided exposure to the considerations surrounding electrical equipment used near potentially flammable gases and the relevance of ATEX requirements to hazardous-area applications.</p>
+      <p>The overall skid's mechanical and process design, manufacture, and testing formed part of the broader company project. My confirmed responsibilities were the EPLAN wiring documentation and SolidWorks cubicle modeling, not design ownership of the complete skid or formal hazardous-area certification.</p>
+    </section>
+
+    <section class="am-racing-section" aria-labelledby="mgt75-role">
+      <p class="am-racing-kicker">02 / MY ROLE &amp; CONTRIBUTIONS</p>
+      <h2 id="mgt75-role">My Role &amp; Contributions</h2>
+      <p>I worked across electrical documentation and mechanical CAD to support the control cubicle development, gaining practical experience with industrial electrical workflows and hazardous-area design considerations.</p>
+      <div class="am-racing-roles">
+        <div><h3>EPLAN Electrical Wiring Documentation</h3><p>I prepared the project's electrical wiring documentation in EPLAN, representing the connections required for the industrial equipment and organizing the resulting electrical drawings.</p></div>
+        <div><h3>Industrial Electrical Schematics</h3><p>I developed my understanding of industrial wiring conventions, electrical component interfaces, and drawing organization while working on the EPLAN project.</p></div>
+        <div><h3>SolidWorks Control Cubicle Assembly</h3><p>I created a three-dimensional assembly of the electrical cubicle in SolidWorks, modeling the cabinet arrangement and placement of its internal electrical equipment.</p></div>
+        <div><h3>Electrical–Mechanical Design Coordination</h3><p>I worked between the wiring documentation and 3D cabinet layout to understand how electrical design requirements translate into physical enclosure space and equipment arrangement.</p></div>
+        <div><h3>ATEX &amp; Hazardous-Area Awareness</h3><p>I was introduced to ATEX standards and the importance of equipment selection and electrical design considerations in potentially explosive gas environments. This was practical learning and exposure, not a claim of ATEX certification responsibility.</p></div>
+      </div>
+    </section>
+
+    <section class="am-racing-section am-racing-skills" aria-labelledby="mgt75-skills">
+      <p class="am-racing-kicker">03 / SOFTWARE, TOOLS &amp; ENGINEERING SKILLS</p>
+      <h2 id="mgt75-skills">Software, Tools &amp; Engineering Skills</h2>
+      {% assign skill_groups = "software|Electrical &amp; CAD Software,modeling|Industrial Electrical &amp; Cabinet Design,manufacturing|Industrial Engineering Practices" | split: "," %}
+      {% for group_record in skill_groups %}
+        {% assign group_parts = group_record | split: "|" %}
+        <div class="am-racing-tag-group">
+          <h3>{{ group_parts[1] }}</h3>
+          <div class="am-racing-tags">
+            {% for skill in site.data.engineering_skills %}
+              {% if skill.group == group_parts[0] and project.skills contains skill.id %}
+                <a href="{{ '/projects/' | relative_url }}?skill={{ skill.id | url_encode }}">{{ skill.label | escape }}</a>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
+    </section>
+
+    <!-- <section class="am-racing-section am-mgt75-source" aria-labelledby="mgt75-reference">
+      <p class="am-racing-kicker">04 / PROJECT REFERENCE</p>
+      <h2 id="mgt75-reference">Related Industrial Project</h2>
+      <p>Additional information about the overall fuel gas skid is available on Kian Tajhiz Fartak's project page. This external reference describes the larger industrial system; my individual work centered on EPLAN electrical documentation and SolidWorks control cubicle assembly.</p>
+      <p><a href="https://www.ktfco.co/company_projects/mgt-75-gas-skid/" target="_blank" rel="noopener noreferrer">MGT-75 Fuel Gas Skid — KTF project page ↗</a></p>
+    </section>
+-->
+    <a class="am-back" href="{{ '/projects/' | relative_url }}">← Browse all projects</a> 
+  </div>
+</article>

@@ -231,3 +231,89 @@ body:has(.am-site)  .post {
 #navbar .nav-link {
   text-transform: capitalize;
 }
+
+
+
+
+
+/* ==========================================
+   RELATED ENGINEERING PROJECTS
+   Unified styling across project pages
+   ========================================== */
+
+.am-related-project {
+  border: 1px solid #d7e0e7;
+  border-radius: 12px;
+  padding: 22px 24px;
+  margin: 28px 0 32px;
+  background: transparent;
+}
+
+/* Small orange section number / label */
+.am-related-project .am-related-label {
+  color: #eb7047;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+
+/* Main section heading */
+.am-related-project h2 {
+  color: var(--am-ink, #152338);
+  font-size: 1.4rem;
+  font-weight: 750;
+  line-height: 1.25;
+  margin: 0 0 18px;
+}
+
+/* Individual related project titles */
+.am-related-project h3 {
+  color: var(--am-ink, #152338);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0 0 6px;
+}
+
+/* Descriptions */
+.am-related-project p {
+  font-size: 1rem;
+  line-height: 1.7;
+  text-align: justify;
+  margin: 0 0 16px;
+}
+
+/* Links */
+.am-related-project a {
+  color: #eb7047;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.am-related-project a:hover {
+  text-decoration: underline;
+}
+
+/* Space between multiple related projects */
+.am-related-project .am-related-item + .am-related-item {
+  margin-top: 24px;
+}
+
+/* Dark mode */
+html[data-theme="dark"] .am-related-project {
+  border-color: #394651;
+}
+
+/* Mobile */
+@media (max-width: 580px) {
+  .am-related-project {
+    padding: 18px;
+  }
+
+  .am-related-project h2 {
+    font-size: 1.25rem;
+  }
+}

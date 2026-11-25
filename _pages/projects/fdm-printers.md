@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "FDM 3D Printers — Cartesian and Core-XY"
+title: "FDM 3D Printers — Cartesian & CoreXY Development"
 permalink: /projects/fdm-printers/
 nav: false
 project_id: fdm-printers
 ---
-{% include am-project-detail.html %}
+{% include am-fdm-printers-detail.html %}

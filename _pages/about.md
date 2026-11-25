@@ -27,12 +27,15 @@ nav: false
   </section>
 
   <section class="am-section" id="focus" aria-labelledby="focus-title">
-    <div class="am-section-heading"><p class="am-kicker">01 / WHAT I DO</p><h2 id="focus-title">Research meets engineering.</h2><p>I work at the intersection of robotics, automation, optimization, and manufacturing—connecting rigorous methods with systems that have to work outside the lab.</p></div>
-    <div class="am-focus-grid">
-      <article class="am-focus"><span class="am-focus-icon">01</span><h3>Robotics & control</h3><p>Kinematics, dynamics, motion planning, and control for robotic systems and industrial platforms.</p></article>
-      <article class="am-focus"><span class="am-focus-icon">02</span><h3>Intelligent manufacturing</h3><p>Multi-objective optimization and non-planar toolpath generation for additive manufacturing.</p></article>
-      <article class="am-focus"><span class="am-focus-icon">03</span><h3>Industrial automation</h3><p>PLC-based systems, machine vision, hardware integration, and production-oriented automation.</p></article>
+    <div class="am-section-heading"><p class="am-kicker">01 / WHAT I DO</p><h2 id="focus-title">Research meets engineering.</h2><p>I work at the intersection of robotics, automation, optimization, and manufacturing—connecting rigorous methods with systems that have to work outside the lab.</p> <p><strong>Robotics & control:</strong> Kinematics, dynamics, motion planning, and control for robotic systems and industrial platforms.</p>
+    <p><strong>Industrial automationl:</strong> PLC-based systems, machine vision, hardware integration, and production-oriented automation.</p>
+    <p><strong>Intelligent manufacturing:</strong> Multi-objective optimization and non-planar toolpath generation for additive manufacturing.</p>
     </div>
+    <!-- <div class="am-focus-grid"> 
+       <article class="am-focus"><span class="am-focus-icon">01</span><h3>Robotics & control</h3><p>Kinematics, dynamics, motion planning, and control for robotic systems and industrial platforms.</p></article> 
+       <article class="am-focus"><span class="am-focus-icon">02</span><h3>Intelligent manufacturing</h3><p>Multi-objective optimization and non-planar toolpath generation for additive manufacturing.</p></article> 
+      <article class="am-focus"><span class="am-focus-icon">03</span><h3>Industrial automation</h3><p>PLC-based systems, machine vision, hardware integration, and production-oriented automation.</p></article>  
+   </div> -->
   </section>
 
 
@@ -42,7 +45,7 @@ nav: false
       <a class="am-project-card" href="{{ '/projects/hexapod/' | relative_url }}"><div class="am-project-art"><img src="{{ '/assets/img/projects/Hexapod/AxisXtreme-1.jpg' | relative_url }}" alt="Technical illustration of a six-axis motion platform" loading="lazy"></div><div class="am-project-body"><div class="am-project-tags">INDUSTRIAL ROBOTICS · 2023–24</div><h3>6-DOF Motion Simulator</h3><p>2.2-ton payload capacity, kinematics and dynamics, PLC programming, and servo integration.</p><span class="am-card-link">View details ↗</span></div></a>
       <a class="am-project-card" href="{{ '/projects/drywall/' | relative_url }}"><div class="am-project-art"><img src="{{ '/assets/img/projects/Drywall Panel Robot/Clean Robotic Construction Site.png' | relative_url }}" alt="Technical illustration of a construction robot and wall panel" loading="lazy"></div><div class="am-project-body"><div class="am-project-tags">CONSTRUCTION ROBOTICS · 2023–24</div><h3>Autonomous Drywall Robot</h3><p>Hardware selection, programming, and interface development for automated construction.</p><span class="am-card-link">View details ↗</span></div></a>
       <a class="am-project-card" href="{{ '/projects/conveyor/' | relative_url }}"><div class="am-project-art"><img src="{{ '/assets/img/projects/Belt Condition Monitoring/Industrial Conveyor with BELTSENSE Monitor.png' | relative_url }}" alt="Technical illustration of machine vision inspection above a conveyor" loading="lazy"></div><div class="am-project-body"><div class="am-project-tags">MACHINE VISION · 2022–23</div><h3>Conveyor Belt Monitoring</h3><p>AI-assisted defect detection with image processing and segmentation for production use.</p><span class="am-card-link">View details ↗</span></div></a>
-      <a class="am-project-card" href="{{ '/projects/fdm-printers/' | relative_url }}"><div class="am-project-art"><span class="am-feature-glyph" aria-hidden="true">3D</span></div><div class="am-project-body"><div class="am-project-tags">ACADEMIC PROJECT · 2019</div><h3>Cartesian & Core-XY FDM Printers</h3><p>Designed and built two FDM 3D printer architectures at IUST.</p><span class="am-card-link">View details ↗</span></div></a>
+      <a class="am-project-card" href="{{ '/projects/fdm-printers/' | relative_url }}"><div class="am-project-art"><img src="{{ '/assets/img/projects/FDM Printers/fdm-cartesian-construction.webp' | relative_url }}" alt="Technical illustration of fdm 3d printer" loading="lazy"><span class="am-feature-glyph" aria-hidden="true">3D</span></div><div class="am-project-body"><div class="am-project-tags">ACADEMIC PROJECT · 2019</div><h3>Cartesian & Core-XY FDM Printers</h3><p>Designed and built two FDM 3D printer architectures at IUST.</p><span class="am-card-link">View details ↗</span></div></a>
     </div>
   </section>
 

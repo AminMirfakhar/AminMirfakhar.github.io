@@ -432,7 +432,7 @@
 - id: rock-breaker
   title: Gyratory Crusher De-Clogging Robot — Modeling & Optimization
   period: '2024'
-  organization: DSDACO
+  organization: DSDA
   project_type: industrial
   categories:
   - dynamic-modeling
@@ -535,27 +535,84 @@
 
 
 - id: fdm-printers
-  title: FDM 3D Printers — Cartesian and Core-XY
+  title: FDM 3D Printers — Cartesian & CoreXY Development
   period: '2019'
   organization: IUST
   project_type: academic-project
   categories:
-  - mechanical-design
-  - additive-manufacturing
+    - mechanical-design
+    - additive-manufacturing
   technologies:
-  - Cartesian FDM
-  - Core-XY FDM
-  - 3D printing
-  image: ''
-  summary: Designed and built Cartesian and Core-XY FDM 3D printers at IUST.
-  challenge: Designing and building working fused-deposition modeling printer mechanisms.
+    - SolidWorks
+    - Arduino Mega / RAMPS
+    - Marlin Firmware
+    - Cartesian and CoreXY Motion
+  image: /assets/img/projects/FDM Printers/fdm-cartesian-construction.webp
+  skills:
+    - solidworks
+    - arduino-mega
+    - ramps-controller
+    - marlin-firmware
+    - cartesian-motion
+    - corexy
+    - stepper-motor-control
+    - belt-drive-systems
+    - linear-motion-systems
+    - electrical-wiring
+    - fdm-printing
+    - rapid-prototyping
+    - hands-on-assembly
+    - machine-calibration
+  summary: Designed and built a Cartesian FDM printer with a team, then independently converted it to CoreXY using SolidWorks, Arduino Mega/RAMPS, Marlin, and reused components.
+  challenge: Develop and integrate a functional FDM printer, then redesign the motion architecture while reusing much of the existing machine.
   contributions:
-  - Designed Cartesian and Core-XY printer systems
-  - Built the printers
-  outcome: Design and build documented in the supplied project list; print-quality measurements can
-    be added later.
+    - Designed Cartesian and CoreXY assemblies in SolidWorks
+    - Selected and integrated Arduino Mega/RAMPS electronics, motors, drivers, and endstops
+    - Configured Marlin firmware, assembled, wired, calibrated, and tested the printers
+    - Independently redesigned and rebuilt the machine in a CoreXY configuration
+  outcome: The original Cartesian build and subsequent CoreXY conversion were assembled and test-printed. Proposal targets of 400 × 400 × 400 mm and 100 µm are not verified performance claims.
   url: /projects/fdm-printers/
 
 
 
 
+# ---------------------------------------------------------------------------------------------------------------
+
+
+
+- id: mgt75-gas-skid
+  title: MGT-75 Fuel Gas Skid — Electrical Design & Control Cubicle
+  period: ''
+  organization: DSDA
+  project_type: industrial
+  categories:
+  - automation
+  - mechanical-design
+  technologies:
+  - EPLAN Electric
+  - SolidWorks
+  - Industrial Electrical Documentation
+  - ATEX Awareness
+  image: /assets/img/projects/MGT-75 Gas Skid/mgt75-gas-skid-hero.webp
+  skills:
+  - eplan
+  - solidworks
+  - electrical-wiring-diagrams
+  - industrial-electrical-schematics
+  - control-cubicle-design
+  - electrical-cabinet-layout
+  - electromechanical-coordination
+  - industrial-electrical-documentation
+  - atex-awareness
+  summary: Prepared electrical wiring documentation in EPLAN and developed the 3D electrical control cubicle
+    assembly in SolidWorks for an MGT-75 fuel gas skid project.
+  challenge: Document industrial wiring connections and develop the physical control cubicle arrangement in
+    an application with hazardous-area electrical considerations.
+  contributions:
+  - Prepared electrical wiring documentation using EPLAN
+  - Modeled the control cubicle assembly in SolidWorks
+  - Coordinated the electrical drawings with physical cabinet layout
+  - Developed familiarity with ATEX and industrial electrical engineering considerations
+  outcome: Delivered electrical documentation and cubicle CAD work as part of the wider industrial gas skid
+    project; no formal ATEX certification or final cabinet installation is claimed.
+  url: /projects/mgt75-gas-skid/

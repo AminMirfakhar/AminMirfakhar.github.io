@@ -1,0 +1,107 @@
+{% assign project = site.data.engineering_projects | where: "id", "fdm-printers" | first %}
+{% assign frame_image = '/assets/img/projects/FDM Printers/fdm-cartesian-construction.webp' | relative_url %}
+{% assign component_image = '/assets/img/projects/FDM Printers/fdm-custom-component.webp' | relative_url %}
+
+<link rel="stylesheet" href="{{ '/assets/css/engineering.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/am-racing-simulator-detail.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/am-fdm-printers-detail.css' | relative_url }}">
+
+<article class="am-site am-racing am-fdm-printers" data-am-racing>
+  <nav class="am-breadcrumb" aria-label="Breadcrumb">
+    <a href="{{ '/projects/' | relative_url }}">← All projects</a>
+  </nav>
+
+  <header class="am-racing-hero" aria-labelledby="fdm-title">
+    <div class="am-racing-backdrop" style="background-image: url('{{ frame_image }}')" aria-hidden="true"></div>
+    <div class="am-racing-hero-content">
+      <p class="am-racing-eyebrow">ACADEMIC ENGINEERING PROJECT <span aria-hidden="true">/</span> IUST · 2019</p>
+      <h1 id="fdm-title">FDM 3D Printers <span>Cartesian &amp; CoreXY Development</span></h1>
+      <p class="am-racing-subtitle">SolidWorks · Arduino Mega / RAMPS · Marlin Firmware</p>
+
+      <div class="am-racing-hero-grid">
+        <section class="am-racing-intro" aria-label="Short project overview">
+          <p>I designed and helped build a custom Cartesian FDM 3D printer, then independently redesigned and rebuilt it as a CoreXY system. The project covered SolidWorks CAD, linear motion design, electronics, wiring, Marlin firmware configuration, calibration, and test printing.</p>
+          <p>The CoreXY conversion reused much of the original hardware, with newly designed and 3D-printed components to accommodate the revised motion architecture.</p>
+        </section>
+
+        <section class="am-racing-media" aria-label="Project photo gallery">
+          <div class="am-racing-featured" data-am-racing-gallery>
+            <img src="{{ frame_image }}"
+                 alt="Aluminum-profile Cartesian FDM printer frame under construction with rods and lead screws"
+                 data-am-racing-featured
+                 loading="eager" fetchpriority="high" width="1536" height="1024">
+            <button type="button" class="am-racing-nav am-racing-prev" data-am-racing-prev aria-label="Previous project image">&#8249;</button>
+            <button type="button" class="am-racing-nav am-racing-next" data-am-racing-next aria-label="Next project image">&#8250;</button>
+          </div>
+          <div class="am-racing-thumbnails" aria-label="Select project image">
+            <button type="button" class="am-racing-thumb is-active"
+                    data-racing-image="{{ frame_image }}"
+                    data-racing-label="Cartesian printer mechanical assembly during construction — AI-enhanced original photograph"
+                    aria-label="Show Cartesian printer construction" aria-pressed="true">
+              <img src="{{ frame_image }}" alt="Cartesian FDM printer under construction" loading="eager">
+            </button>
+            <button type="button" class="am-racing-thumb"
+                    data-racing-image="{{ component_image }}"
+                    data-racing-label="Custom 3D-printed mechanical assembly — AI-enhanced original photograph"
+                    aria-label="Show custom 3D-printed component" aria-pressed="false">
+              <img src="{{ component_image }}" alt="Custom 3D-printed carriage component with shaft clamps" loading="lazy">
+            </button>
+          </div>
+          <!-- <p class="am-racing-media-note" data-am-racing-caption aria-live="polite">Cartesian printer mechanical assembly during construction — AI-enhanced original photograph</p> -->
+        </section>
+      </div>
+    </div>
+  </header>
+
+  <div class="am-racing-content">
+    <section class="am-racing-section" aria-labelledby="fdm-overview">
+      <p class="am-racing-kicker">01 / PROJECT OVERVIEW &amp; TECHNICAL DETAILS</p>
+      <h2 id="fdm-overview">Project Overview &amp; Technical Details</h2>
+      <p>This academic engineering project at Iran University of Science and Technology involved the design, construction, and subsequent modification of a custom fused deposition modeling (FDM) 3D printer. The work progressed through two distinct stages: an initial collaboratively built Cartesian printer, followed by an independently executed CoreXY conversion.</p>
+
+      <h3>Stage 1 — Cartesian Printer</h3>
+      <p>I developed the printer's mechanical design in SolidWorks. The original layout used an aluminum-profile frame, linear guide rods and bearings, belt-driven X and Y motion, and lead screws for the Z axis. The electronics included an Arduino Mega with a RAMPS shield, stepper drivers, stepper motors, a power supply, and mechanical microswitch endstops.</p>
+      <p>The project team assembled and wired the machine, configured Marlin firmware for the custom hardware and motion arrangement, and performed calibration and test printing. The initial project proposal specified a target build volume of 400 × 400 × 400 mm and a target resolution of 100 µm; these were design objectives, not documented measured results.</p>
+
+      <h3>Stage 2 — CoreXY Redesign</h3>
+      <p>I later initiated a redesign of the original machine in SolidWorks to use CoreXY motion, in which coordinated belt movement from two motors controls planar positioning. The new design retained much of the existing mechanical and electronic hardware, while requiring a revised motion layout and newly designed, 3D-printed parts.</p>
+      <p>I carried out the CoreXY conversion independently, including the redesign, fabrication of additional parts, disassembly and reassembly, complete electrical wiring, firmware reconfiguration, calibration, troubleshooting, and test printing. The result was practical experience in taking an electromechanical prototype through two complete motion-system configurations.</p>
+    </section>
+
+    <section class="am-racing-section" aria-labelledby="fdm-role">
+      <p class="am-racing-kicker">02 / MY ROLE &amp; CONTRIBUTIONS</p>
+      <h2 id="fdm-role">My Role &amp; Contributions</h2>
+      <p>My responsibilities extended from CAD and component selection through physical assembly and commissioning. The first printer was a collaborative build; the CoreXY redesign and its mechanical, electrical, and firmware implementation were my independent work.</p>
+      <div class="am-racing-roles">
+        <div><h3>SolidWorks Mechanical Design</h3><p>I designed the 3D assemblies for both machine configurations, developing the frame, linear-axis mechanisms, and component arrangements. I redesigned the mechanical layout for CoreXY while reusing existing hardware wherever practical.</p></div>
+        <div><h3>Linear Motion &amp; Transmission</h3><p>I worked with guide rods, linear bearings, belt-driven X–Y axes, and lead-screw Z motion on the Cartesian printer, then redesigned the planar belt transmission around the CoreXY architecture.</p></div>
+        <div><h3>Electronics Selection &amp; Integration</h3><p>I helped select and integrate the Arduino Mega, RAMPS controller, stepper motors and drivers, power supply, and endstop switches. For the CoreXY version, I completed the electrical integration and wiring myself.</p></div>
+        <div><h3>Marlin Firmware Configuration</h3><p>I configured Marlin for the printer's hardware and motion system, then independently updated its configuration for CoreXY kinematics, motor operation, and axis setup.</p></div>
+        <div><h3>Custom 3D-Printed Components</h3><p>I redesigned and printed additional mechanical parts to support the CoreXY conversion, focusing on using available components instead of replacing the entire printer.</p></div>
+        <div><h3>Mechanical Assembly &amp; Wiring</h3><p>I participated in constructing and wiring the original Cartesian printer, then independently disassembled and rebuilt the system with its new mechanism and electrical layout.</p></div>
+        <div><h3>Calibration, Testing &amp; Troubleshooting</h3><p>I calibrated axis motion and endstops, tested machine operation through 3D printing, and worked through mechanical and firmware issues during commissioning, including the independent CoreXY upgrade.</p></div>
+      </div>
+    </section>
+
+    <section class="am-racing-section am-racing-skills" aria-labelledby="fdm-skills">
+      <p class="am-racing-kicker">03 / SOFTWARE, TOOLS &amp; ENGINEERING SKILLS</p>
+      <h2 id="fdm-skills">Software, Tools &amp; Engineering Skills</h2>
+      {% assign skill_groups = "software|Software &amp; Firmware,modeling|Mechanical Design &amp; Mechatronics,manufacturing|Fabrication &amp; Assembly" | split: "," %}
+      {% for group_record in skill_groups %}
+        {% assign group_parts = group_record | split: "|" %}
+        <div class="am-racing-tag-group">
+          <h3>{{ group_parts[1] }}</h3>
+          <div class="am-racing-tags">
+            {% for skill in site.data.engineering_skills %}
+              {% if skill.group == group_parts[0] and project.skills contains skill.id %}
+                <a href="{{ '/projects/' | relative_url }}?skill={{ skill.id | url_encode }}">{{ skill.label | escape }}</a>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
+    </section>
+    <a class="am-back" href="{{ '/projects/' | relative_url }}">← Browse all projects</a>
+  </div>
+</article>
+<script src="{{ '/assets/js/am-racing-simulator-detail.js' | relative_url }}" defer></script>

@@ -1,0 +1,38 @@
+- id: fdm-printers
+  title: FDM 3D Printers — Cartesian & CoreXY Development
+  period: '2019'
+  organization: IUST
+  project_type: academic-project
+  categories:
+    - mechanical-design
+    - additive-manufacturing
+  technologies:
+    - SolidWorks
+    - Arduino Mega / RAMPS
+    - Marlin Firmware
+    - Cartesian and CoreXY Motion
+  image: /assets/img/projects/FDM Printers/fdm-cartesian-construction.webp
+  skills:
+    - solidworks
+    - arduino-mega
+    - ramps-controller
+    - marlin-firmware
+    - cartesian-motion
+    - corexy
+    - stepper-motor-control
+    - belt-drive-systems
+    - linear-motion-systems
+    - electrical-wiring
+    - fdm-printing
+    - rapid-prototyping
+    - hands-on-assembly
+    - machine-calibration
+  summary: Designed and built a Cartesian FDM printer with a team, then independently converted it to CoreXY using SolidWorks, Arduino Mega/RAMPS, Marlin, and reused components.
+  challenge: Develop and integrate a functional FDM printer, then redesign the motion architecture while reusing much of the existing machine.
+  contributions:
+    - Designed Cartesian and CoreXY assemblies in SolidWorks
+    - Selected and integrated Arduino Mega/RAMPS electronics, motors, drivers, and endstops
+    - Configured Marlin firmware, assembled, wired, calibrated, and tested the printers
+    - Independently redesigned and rebuilt the machine in a CoreXY configuration
+  outcome: The original Cartesian build and subsequent CoreXY conversion were assembled and test-printed. Proposal targets of 400 × 400 × 400 mm and 100 µm are not verified performance claims.
+  url: /projects/fdm-printers/
